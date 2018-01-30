@@ -1,0 +1,41 @@
+# WEST BENGAL
+state = {
+   # META
+   id = 431
+   name = "STATE_431"
+   manpower = 18778100
+   state_category = city
+
+   # RESOURCES
+   resources = {
+      steel = 20
+      tungsten = 16
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = RAJ
+      controller = RAJ
+      add_core_of = RAJ
+
+      # VICTORY POINTS
+      victory_points = { 4245 5 }
+
+      # BUILDINGS
+      buildings = {
+         4245 = {
+            naval_base = 6
+         }
+         infrastructure = 5
+         industrial_complex = 1
+         dockyard = 1
+         air_base = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1159 1609 4062 4204 4245 4435 4644 7220 7475 7537 7565 7593 7662 10077 10389 12050 12338
+   }
+}

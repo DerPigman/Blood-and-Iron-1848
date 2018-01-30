@@ -1,0 +1,34 @@
+# THRACE
+state = {
+   # META
+   id = 184
+   name = "STATE_184"
+   manpower = 382500
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      chromium = 16
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = TUR
+      controller = TUR
+      add_core_of = GRE
+
+      # VICTORY POINTS
+      victory_points = { 6923 5 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      878 893 3937 6923 6990 9791 9862 9930 11774 11813 11905
+   }
+}

@@ -1,0 +1,37 @@
+# HINTERPOMMERN
+state = {
+   # META
+   id = 63
+   name = "STATE_63"
+   manpower = 724417
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      steel = 36
+      aluminium = 12
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = GER
+      controller = GER
+      add_core_of = GER
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         11372 = {
+            naval_base = 1
+         }
+         infrastructure = 6
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      9252 9277 9306 9361 11260 11288 11316 11343 11372
+   }
+}

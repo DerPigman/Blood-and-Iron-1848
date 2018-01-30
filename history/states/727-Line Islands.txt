@@ -1,0 +1,33 @@
+# LINE ISLANDS
+state = {
+   # META
+   id = 727
+   name = "STATE_727"
+   manpower = 5367
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = USA
+      controller = USA
+      add_core_of = USA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         13048 = {
+            naval_base = 1
+         }
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      13048 13049 13053
+   }
+}

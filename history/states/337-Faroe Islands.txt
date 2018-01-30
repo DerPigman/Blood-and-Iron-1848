@@ -1,0 +1,33 @@
+# FAROE ISLANDS
+state = {
+   # META
+   id = 337
+   name = "STATE_337"
+   manpower = 25900
+   state_category = enclave
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = DEN
+      controller = DEN
+      add_core_of = DEN
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         13003 = {
+            naval_base = 1
+         }
+         infrastructure = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      13003
+   }
+}

@@ -1,0 +1,35 @@
+# DODECANESE
+state = {
+   # META
+   id = 164
+   name = "STATE_164"
+   manpower = 120000
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ITA
+      controller = ITA
+      add_core_of = GRE
+
+      # VICTORY POINTS
+      victory_points = { 10007 1 }
+
+      # BUILDINGS
+      buildings = {
+         10007 = {
+            naval_base = 4
+         }
+         infrastructure = 5
+         air_base = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      7003 10007
+   }
+}

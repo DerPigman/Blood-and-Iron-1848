@@ -1,0 +1,138 @@
+####  ROM - Romania  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 46
+set_research_slots = 3
+
+# [1] META
+set_convoys = 0
+set_national_unity = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+}
+
+oob = "ROM_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   tech_support = 1
+   tech_engineers = 1
+   tech_mountaineers = 1
+   early_fighter = 1
+   gwtank = 1
+   basic_light_tank = 1
+   infantry_weapons = 1
+   infantry_weapons1 = 1
+   early_destroyer = 1
+   early_light_cruiser = 1
+   early_submarine = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideologie = {
+         popularity = 60
+      }
+      liberalism_ideologie = {
+         popularity = 19
+      }
+      centrism_ideologie = {
+         popularity = 16
+      }
+      socialism_ideologie = {
+         popularity = 3
+      }
+      jacobinism_ideologie = {
+         popularity = 0
+      }
+      marxism_ideologie = {
+         popularity = 0
+      }
+      nationalism_ideologie = {
+         popularity = 2
+      }
+      authoritarianism_ideologie = {
+         popularity = 0
+      }
+      monarchism_ideologie = {
+         popularity = 0
+      }
+      oligarchism_ideologie = {
+         popularity = 0
+      }
+   }
+   ruling_party = monarchism_ideologie
+   last_election = 1907.3.1
+   election_frequency = 48
+   elections_allowed = no
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Carol I"
+   desc = "POLITICS_CAROL_I_DESC"
+   picture = "Portrait_Romania_Carol_I.dds"
+   expire = "1960.1.1"
+   ideology = constitutional
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Take Ionescu"
+   desc = "POLITICS_TAKE_IONESCU_DESC"
+   picture = "Portrait_Romania_Take_Ionescu.dds"
+   expire = "1960.1.1"
+   ideology = centrism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Ion I. C. Brătianu"
+   desc = "POLITICS_ION_I_C_BRăTIANU_DESC"
+   picture = "Portrait_Romania_Ion_I_C_Brătianu.dds"
+   expire = "1960.1.1"
+   ideology = liberalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Petre P. Carp"
+   desc = "POLITICS_PETRE_P_CARP_DESC"
+   picture = "Portrait_Romania_Petre_P_Carp.dds"
+   expire = "1960.1.1"
+   ideology = conservatism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Nicolae Iorga"
+   desc = "POLITICS_NICOLAE_IORGA_DESC"
+   picture = "Portrait_Romania_Nicolae_Iorga.dds"
+   expire = "1960.1.1"
+   ideology = nationalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Mihail Gheorghiu Bujor"
+   desc = "POLITICS_MIHAIL_GHEORGHIU_BUJOR_DESC"
+   picture = "Portrait_Romania_Mihail_Gheorghiu_Bujor.dds"
+   expire = "1960.1.1"
+   ideology = socialism
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

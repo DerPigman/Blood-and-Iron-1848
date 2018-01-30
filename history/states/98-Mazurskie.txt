@@ -1,0 +1,30 @@
+# PLOCK
+state = {
+   # META
+   id = 98
+   name = "STATE_98"
+   manpower = 1412100
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = POL
+      controller = POL
+      add_core_of = SOV
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 6
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      548 3230 6259 6321 6347 6401 6567 9290 9316 11385
+   }
+}

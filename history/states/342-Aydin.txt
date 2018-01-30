@@ -1,0 +1,38 @@
+# ANTALYA
+state = {
+   # META
+   id = 342
+   name = "STATE_342"
+   manpower = 362689
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      chromium = 46
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = TUR
+      controller = TUR
+      add_core_of = TUR
+
+      # VICTORY POINTS
+      victory_points = { 1005 1 }
+
+      # BUILDINGS
+      buildings = {
+         1005 = {
+            naval_base = 4
+         }
+         infrastructure = 3
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1005 1119 9941 10122 11917 12013 12016 12096
+   }
+}

@@ -1,0 +1,35 @@
+# SOUTH TYROL
+state = {
+   # META
+   id = 39
+   name = "STATE_39"
+   manpower = 641650
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      aluminium = 22
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = ITA
+      controller = ITA
+      add_core_of = ITA
+      add_core_of = AUS
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 6
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      6631 6675 9630 11615
+   }
+}

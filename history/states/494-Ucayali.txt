@@ -1,0 +1,30 @@
+# UCAYALI
+state = {
+   # META
+   id = 494
+   name = "STATE_494"
+   manpower = 735826
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = PRU
+      controller = PRU
+      add_core_of = PRU
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      2212 2226 5166 8160 8191 10940
+   }
+}

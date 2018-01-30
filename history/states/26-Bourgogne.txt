@@ -1,0 +1,32 @@
+# AUVERGNE
+state = {
+   # META
+   id = 26
+   name = "STATE_26"
+   manpower = 877800
+   state_category = town
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+      victory_points = { 3594 3 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 5
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      590 769 3594 3754 6644 6773 6789 9593 9607 9748 11576
+   }
+}

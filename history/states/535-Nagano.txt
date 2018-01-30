@@ -1,0 +1,38 @@
+# KOSHINETSU
+state = {
+   # META
+   id = 535
+   name = "STATE_535"
+   manpower = 3871000
+   state_category = large_city
+
+   # RESOURCES
+   resources = {
+      steel = 35
+      tungsten = 10
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = JAP
+      controller = JAP
+      add_core_of = JAP
+
+      # VICTORY POINTS
+      victory_points = { 10032 15 }
+
+      # BUILDINGS
+      buildings = {
+         arms_factory = 1
+         industrial_complex = 2
+         infrastructure = 3
+         dockyard = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      998 7102 7217 10015 10032
+   }
+}

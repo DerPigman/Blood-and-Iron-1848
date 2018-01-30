@@ -1,0 +1,35 @@
+# IWO JIMA
+state = {
+   # META
+   id = 645
+   name = "STATE_645"
+   manpower = 1018
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = JAP
+      controller = JAP
+      add_core_of = JAP
+
+      # VICTORY POINTS
+      victory_points = { 13025 5 }
+
+      # BUILDINGS
+      buildings = {
+         13025 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+         air_base = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      13025
+   }
+}

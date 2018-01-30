@@ -1,0 +1,41 @@
+# TOHOKU
+state = {
+   # META
+   id = 533
+   name = "STATE_533"
+   manpower = 6575000
+   state_category = large_city
+
+   # RESOURCES
+   resources = {
+      steel = 35
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = JAP
+      controller = JAP
+      add_core_of = JAP
+
+      # VICTORY POINTS
+      victory_points = { 6994 5 }
+      victory_points = { 7169 15 }
+
+      # BUILDINGS
+      buildings = {
+         9859 = {
+            naval_base = 6
+         }
+         arms_factory = 1
+         industrial_complex = 2
+         infrastructure = 3
+         air_base = 6
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1024 1063 1165 3848 4067 4118 4122 4153 6870 6873 6994 7169 9807 9859 9865 11847 12056
+   }
+}

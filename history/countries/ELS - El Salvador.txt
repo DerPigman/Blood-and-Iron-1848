@@ -1,0 +1,104 @@
+####  ELS - El Salvador  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 314
+set_research_slots = 3
+
+# [1] META
+set_convoys = 5
+set_national_unity = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_timed_idea = { idea = ELS_military_rule days = 365 }
+add_ideas = {
+   ELS_military_rule
+}
+
+oob = "ELS_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+   early_fighter = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideologie = {
+         popularity = 9
+      }
+      liberalism_ideologie = {
+         popularity = 8
+      }
+      centrism_ideologie = {
+         popularity = 53
+      }
+      socialism_ideologie = {
+         popularity = 30
+      }
+      jacobinism_ideologie = {
+         popularity = 0
+      }
+      marxism_ideologie = {
+         popularity = 0
+      }
+      nationalism_ideologie = {
+         popularity = 0
+      }
+      authoritarianism_ideologie = {
+         popularity = 0
+      }
+      monarchism_ideologie = {
+         popularity = 0
+      }
+      oligarchism_ideologie = {
+         popularity = 0
+      }
+   }
+   ruling_party = authoritarianism_ideologie
+   last_election = 1907.1.12
+   election_frequency = 48
+   elections_allowed = yes
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Manuel Enrique Araujo"
+   desc = "POLITICS_MANUEL_ENRIQUE_ARAUJO_DESC"
+   picture = "Portrait_El_Salvador_Manuel_Enrique_Araujo.dds"
+   expire = "1960.1.1"
+   ideology = centrism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Arturo Araujo"
+   desc = "POLITICS_ARTURO_ARAUJO_DESC"
+   picture = "Portrait_El_Salvador_Arturo_Araujo.dds"
+   expire = "1960.1.1"
+   ideology = socialism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Fernando Figueroa"
+   desc = "POLITICS_FERNANDO_FIGUEROA_DESC"
+   picture = "Portrait_El_Salvador_Fernando_Figueroa.dds"
+   expire = "1960.1.1"
+   ideology = military_dictatorship
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

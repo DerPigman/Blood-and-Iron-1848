@@ -1,0 +1,35 @@
+# ABRUZZO
+state = {
+   # META
+   id = 157
+   name = "STATE_157"
+   manpower = 2979335
+   state_category = city
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ITA
+      controller = ITA
+      add_core_of = ITA
+
+      # VICTORY POINTS
+      victory_points = { 925 1 }
+
+      # BUILDINGS
+      buildings = {
+         925 = {
+            naval_base = 4
+         }
+         infrastructure = 6
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      925 963 967 3910 3923 3966 6831 6926 9838 11790 11861
+   }
+}

@@ -1,0 +1,32 @@
+# EASTERN SLOVAKIA
+state = {
+   # META
+   id = 71
+   name = "STATE_71"
+   manpower = 1197800
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = HUN
+      controller = HUN
+      add_core_of = CZE
+      add_core_of = SLO
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 4
+         industrial_complex = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      555 581 3550 3581 6586 6604 11554
+   }
+}

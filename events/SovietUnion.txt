@@ -1,0 +1,68 @@
+﻿###########################
+# Soviet Events
+###########################
+
+add_namespace = soviet.BaI
+
+# Meeting of the Imperial Duma
+country_event = {
+	id = soviet.BaI.1
+	title = soviet.BaI.1.t
+	desc = soviet.BaI.1.d
+	picture = GFX_report_event_soviet_german_soldier_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.BaI.1.a
+		complete_national_focus = SOV_strengthen_the_tsar
+		add_ideas = {
+			SOV_god_save_the_tsar_1
+		}
+	}
+	
+	option = {
+		name = soviet.BaI.1.b
+		complete_national_focus = SOV_reform_the_constitution
+	}
+	
+	option = {
+		name = soviet.BaI.1.c
+		complete_national_focus = SOV_work_out_a_compromise
+	}
+}
+
+# Meeting of the Imperial Duma
+country_event = {
+	id = soviet.BaI.2
+	title = soviet.BaI.2.t
+	desc = soviet.BaI.2.d
+	picture = GFX_report_event_soviet_german_soldier_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.BaI.2.a
+	}	
+	option = {
+		name = soviet.BaI.2.b
+	}
+}
+
+# Second Bloody Sunday
+country_event = {
+	id = soviet.BaI.3
+	title = soviet.BaI.3.t
+	desc = soviet.BaI.3.d
+	picture = GFX_report_event_soviet_german_soldier_handshake
+
+	is_triggered_only = yes
+	
+	option = {
+		name = soviet.BaI.3.a
+		add_manpower = -5000
+	}	
+	option = {
+		name = soviet.BaI.3.b
+	}
+}

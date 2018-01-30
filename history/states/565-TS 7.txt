@@ -1,0 +1,34 @@
+# BODAYBO
+state = {
+   # META
+   id = 565
+   name = "STATE_565"
+   manpower = 195325
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      steel = 32
+      chromium = 12
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1666 1761 4716 4762 4795 4835 4868 7736 7759 7854 10583 10654 12506 12538 12575
+   }
+}

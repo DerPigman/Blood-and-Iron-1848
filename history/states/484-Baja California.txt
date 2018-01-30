@@ -1,0 +1,34 @@
+# BAJA CALIFORNIA
+state = {
+   # META
+   id = 484
+   name = "STATE_484"
+   manpower = 108841
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = MEX
+      controller = MEX
+      add_core_of = MEX
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         1892 = {
+            naval_base = 2
+         }
+         infrastructure = 3
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1892 1904 7964 8119 12461 12736 12859
+   }
+}

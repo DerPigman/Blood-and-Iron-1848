@@ -1,0 +1,30 @@
+# BALUCHISTAN
+state = {
+   # META
+   id = 444
+   name = "STATE_444"
+   manpower = 463500
+   state_category = wasteland
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = RAJ
+      controller = RAJ
+      add_core_of = PAK
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1179 5043 5075 7917 8013 8066 12761 12774
+   }
+}

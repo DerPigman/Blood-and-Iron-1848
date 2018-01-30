@@ -1,0 +1,36 @@
+# SOFIA
+state = {
+   # META
+   id = 48
+   name = "STATE_48"
+   manpower = 1891500
+   state_category = city
+
+   # RESOURCES
+   resources = {
+      aluminium = 2
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = BUL
+      controller = BUL
+      add_core_of = BUL
+
+      # VICTORY POINTS
+      victory_points = { 949 15 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 5
+         industrial_complex = 6
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      793 949 965 3971 9771 11754
+   }
+}

@@ -1,0 +1,154 @@
+####  GER - Germany  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 64
+set_research_slots = 4
+
+# [1] META
+set_convoys = 200
+set_national_unity = 0.9
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+   GER_emperor_wilhelm_ii
+}
+
+oob = "GER_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+   infantry_weapons1 = 1
+   tech_recon = 1
+   tech_support = 1
+   tech_engineers = 1
+   tech_mountaineers = 1
+   motorised_infantry = 1
+   gw_artillery = 1
+   interwar_antiair = 1
+   gwtank = 1
+   basic_light_tank = 1
+   improved_light_tank = 1
+   basic_heavy_tank = 1
+   early_fighter = 1
+   fighter1 = 1
+   early_bomber = 1
+   tactical_bomber1 = 1
+   strategic_bomber1 = 1
+   CAS1 = 1
+   naval_bomber1 = 1
+   early_submarine = 1
+   basic_submarine = 1
+   early_destroyer = 1
+   basic_destroyer = 1
+   early_light_cruiser = 1
+   basic_light_cruiser = 1
+   early_heavy_cruiser = 1
+   early_battleship = 1
+   basic_battleship = 1
+   early_battlecruiser = 1
+   mobile_warfare = 1
+   trade_interdiction = 1
+   formation_flying = 1
+   synth_oil_experiments = 1
+   transport = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideologie = {
+         popularity = 19
+      }
+      liberalism_ideologie = {
+         popularity = 16
+      }
+      centrism_ideologie = {
+         popularity = 29
+      }
+      socialism_ideologie = {
+         popularity = 14
+      }
+      jacobinism_ideologie = {
+         popularity = 0
+      }
+      marxism_ideologie = {
+         popularity = 0
+      }
+      nationalism_ideologie = {
+         popularity = 9
+      }
+      authoritarianism_ideologie = {
+         popularity = 3
+      }
+      monarchism_ideologie = {
+         popularity = 0
+      }
+      oligarchism_ideologie = {
+         popularity = 0
+      }
+   }
+   ruling_party = centrism_ideologie
+   last_election = 1907.1.25
+   election_frequency = 48
+   elections_allowed = no
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Wilhelm II"
+   desc = "POLITICS_WILHELM_II_DESC"
+   picture = "Portrait_Germany_Wilhelm_II.dds"
+   expire = "1960.1.1"
+   ideology = constitutional
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Georg von Hertling"
+   desc = "POLITICS_GEORG_VON_HERTLING_DESC"
+   picture = "Portrait_Germany_Georg_von_Hertling.dds"
+   expire = "1960.1.1"
+   ideology = centrism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Friedrich Ebert"
+   desc = "POLITICS_FRIEDRICH_EBERT_DESC"
+   picture = "Portrait_Germany_Friedrich_Ebert.dds"
+   expire = "1960.1.1"
+   ideology = socialism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Walter Lohmann"
+   desc = "POLITICS_WALTER_LOHMANN_DESC"
+   picture = "Portrait_Germany_Walter_Lohmann.dds"
+   expire = "1960.1.1"
+   ideology = liberalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Ernst von Heydebrand"
+   desc = "POLITICS_ERNST_VON_HEYDEBRAND_DESC"
+   picture = "Portrait_Germany_Ernst_von_Heydebrand.dds"
+   expire = "1960.1.1"
+   ideology = conservatism
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

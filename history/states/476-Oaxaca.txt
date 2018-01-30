@@ -1,0 +1,34 @@
+# OAXACA
+state = {
+   # META
+   id = 476
+   name = "STATE_476"
+   manpower = 1663331
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = MEX
+      controller = MEX
+      add_core_of = MEX
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         10889 = {
+            naval_base = 2
+         }
+         infrastructure = 3
+         air_base = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      2021 8236 10773 10889 12712
+   }
+}

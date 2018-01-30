@@ -1,0 +1,83 @@
+bookmarks = {
+	bookmark = {
+		name = "ALL_THAT_IS_LEFT"
+		desc = "ALL_THAT_IS_LEFT_DESC"
+		date = 1920.1.1.12
+		picture = "GFX_select_date_1920_WIP"
+		default_country = "USA"
+	
+		SOV = {
+			history = SOV_NUCLEAR_AGE_DESC
+			ideology = stalinism_ideologie
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		USA = {
+			history = USA_NUCLEAR_AGE_DESC
+			ideology = liberalism_ideologie
+			ideas = {
+				stability_6
+			}
+			focuses = {
+
+			}
+		}
+		OCE = {
+			history = OCE_NUCLEAR_AGE_DESC
+			ideology = conservatism_ideologie
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		JAP = {
+			history = JAP_NUCLEAR_AGE_DESC
+			ideology = liberalism_ideologie
+			ideas={
+
+			}	
+			focuses = {
+
+			}		
+		}
+		
+		PRC = {
+			history = PRC_NUCLEAR_AGE_DESC
+			ideology = marxism_ideologie
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		
+		"VIN"={
+			minor = yes
+			history = "VIN_NUCLEAR_AGE_DESC"
+			ideology = conservatism_ideologie
+			ideas = {
+				
+			}
+			focuses = {
+			
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

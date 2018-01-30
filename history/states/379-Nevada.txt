@@ -1,0 +1,35 @@
+# NEVADA
+state = {
+   # META
+   id = 379
+   name = "STATE_379"
+   manpower = 91057
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      steel = 136
+      tungsten = 62
+      aluminium = 44
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = USA
+      controller = USA
+      add_core_of = USA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1862 4521 4607 4736 4799 4816 7756 7827 7879 10422 10591 12134 12399 12425
+   }
+}

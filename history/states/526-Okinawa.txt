@@ -1,0 +1,35 @@
+# OKINAWA
+state = {
+   # META
+   id = 526
+   name = "STATE_526"
+   manpower = 578000
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = JAP
+      controller = JAP
+      add_core_of = JAP
+
+      # VICTORY POINTS
+      victory_points = { 11932 10 }
+
+      # BUILDINGS
+      buildings = {
+         11932 = {
+            naval_base = 3
+         }
+         infrastructure = 3
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1123 7115 10124 11932
+   }
+}

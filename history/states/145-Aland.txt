@@ -1,0 +1,33 @@
+# ALAND
+state = {
+   # META
+   id = 145
+   name = "STATE_145"
+   manpower = 27400
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = FIN
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         9228 = {
+            naval_base = 1
+         }
+         infrastructure = 5
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      9228
+   }
+}

@@ -1,0 +1,30 @@
+# RUB AL KHALI
+state = {
+   # META
+   id = 678
+   name = "STATE_678"
+   manpower = 42
+   state_category = wasteland
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SAU
+      controller = SAU
+      add_core_of = SAU
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 0
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      4932 5081 8030 8118 10870 12740 12768
+   }
+}

@@ -1,0 +1,35 @@
+# DERNA
+state = {
+   # META
+   id = 451
+   name = "STATE_451"
+   manpower = 45628
+   state_category = wasteland
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ITA
+      controller = ITA
+      add_core_of = LBA
+
+      # VICTORY POINTS
+      victory_points = { 1130 5 }
+
+      # BUILDINGS
+      buildings = {
+         1130 = {
+            naval_base = 6
+         }
+         infrastructure = 2
+         air_base = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1130 1204 4136 4151 7082 9992 10120 12094
+   }
+}

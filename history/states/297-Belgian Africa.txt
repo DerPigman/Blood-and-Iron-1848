@@ -1,0 +1,33 @@
+# EQUATORIAL GUINEA
+state = {
+   # META
+   id = 297
+   name = "STATE_297"
+   manpower = 185000
+   state_category = enclave
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SPR
+      controller = SPR
+      add_core_of = SPR
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         1903 = {
+            naval_base = 1
+         }
+         infrastructure = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1903 8244
+   }
+}

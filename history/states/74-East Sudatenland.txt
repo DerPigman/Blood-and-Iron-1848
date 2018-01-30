@@ -1,0 +1,31 @@
+# EASTERN SUDETENLAND
+state = {
+   # META
+   id = 74
+   name = "STATE_74"
+   manpower = 820000
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = AUS
+      controller = AUS
+      add_core_of = CZE
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 7
+         arms_factory = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      421 3414 3583 6485
+   }
+}

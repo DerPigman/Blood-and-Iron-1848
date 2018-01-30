@@ -1,0 +1,37 @@
+# AEGEAN ISLANDS
+state = {
+   # META
+   id = 187
+   name = "STATE_187"
+   manpower = 322600
+   state_category = small_island
+
+   # RESOURCES
+   resources = {
+      chromium = 10
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = GRE
+      controller = GRE
+      add_core_of = GRE
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         8435 = {
+            naval_base = 1
+         }
+         infrastructure = 4
+         dockyard = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      3401 6550 8435
+   }
+}

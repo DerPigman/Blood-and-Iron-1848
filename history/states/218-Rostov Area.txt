@@ -1,0 +1,37 @@
+# ROSTOV
+state = {
+   # META
+   id = 218
+   name = "STATE_218"
+   manpower = 1501076
+   state_category = city
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+
+      # VICTORY POINTS
+      victory_points = { 9417 15 }
+
+      # BUILDINGS
+      buildings = {
+         9417 = {
+            naval_base = 5
+         }
+         infrastructure = 5
+         arms_factory = 2
+         industrial_complex = 1
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      585 6445 9417 9430 11418 11434 11450 11559
+   }
+}

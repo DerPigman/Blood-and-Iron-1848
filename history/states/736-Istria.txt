@@ -1,0 +1,33 @@
+# ISTRIA
+state = {
+   # META
+   id = 736
+   name = "STATE_736"
+   manpower = 1063159
+   state_category = city
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = AUS
+      controller = AUS
+      add_core_of = YUG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         11735 = {
+            naval_base = 5
+         }
+         infrastructure = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      599 6626 11595 11735
+   }
+}

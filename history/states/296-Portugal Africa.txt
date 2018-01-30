@@ -1,0 +1,36 @@
+# PORTUGUESE GUINEA
+state = {
+   # META
+   id = 296
+   name = "STATE_296"
+   manpower = 364900
+   state_category = enclave
+
+   # RESOURCES
+   resources = {
+      rubber = 1
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = POR
+      controller = POR
+      add_core_of = POR
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         12891 = {
+            naval_base = 1
+         }
+         infrastructure = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      12747 12891
+   }
+}

@@ -1,0 +1,33 @@
+# BRITISH SOMALILAND
+state = {
+   # META
+   id = 269
+   name = "STATE_269"
+   manpower = 344700
+   state_category = enclave
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         12759 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1905 5068 8094 10777 10833 10921 12759 12814
+   }
+}

@@ -1,0 +1,36 @@
+# ARAGON
+state = {
+   # META
+   id = 166
+   name = "STATE_166"
+   manpower = 1055731
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      steel = 24
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = SPR
+      controller = SPR
+      add_core_of = SPR
+
+      # VICTORY POINTS
+      victory_points = { 3816 1 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 6
+         industrial_complex = 1
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      790 798 813 871 899 915 948 3816 3909 3954 6878 6901 7213 9812 9813 9840 9842 11737 11793 11819 11821 11838
+   }
+}

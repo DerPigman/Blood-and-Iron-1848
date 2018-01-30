@@ -1,0 +1,36 @@
+# EAST BENGAL
+state = {
+   # META
+   id = 430
+   name = "STATE_430"
+   manpower = 31973300
+   state_category = town
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = RAJ
+      controller = RAJ
+      add_core_of = PAK
+      add_core_of = RAJ
+
+      # VICTORY POINTS
+      victory_points = { 11929 1 }
+
+      # BUILDINGS
+      buildings = {
+         11968 = {
+            naval_base = 3
+         }
+         infrastructure = 5
+         industrial_complex = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      997 1075 2843 4162 4616 7078 7124 7179 7634 9935 9991 9993 10035 10416 10443 11911 11929 11968 12010 12423
+   }
+}

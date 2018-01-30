@@ -1,0 +1,41 @@
+# CAMPANIA
+state = {
+   # META
+   id = 117
+   name = "STATE_117"
+   manpower = 5333611
+   state_category = city
+
+   # RESOURCES
+   resources = {
+      aluminium = 16
+      steel = 24
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = ITA
+      controller = ITA
+      add_core_of = ITA
+
+      # VICTORY POINTS
+      victory_points = { 819 20 }
+
+      # BUILDINGS
+      buildings = {
+         819 = {
+            naval_base = 6
+         }
+         infrastructure = 6
+         arms_factory = 2
+         industrial_complex = 3
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      819 851 883 955 3958 3968 6843 6939 6972 6980 9826 11803
+   }
+}

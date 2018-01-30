@@ -1,0 +1,33 @@
+# CAPE VERDE
+state = {
+   # META
+   id = 702
+   name = "STATE_702"
+   manpower = 150600
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = POR
+      controller = POR
+      add_core_of = POR
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         13014 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      13014
+   }
+}

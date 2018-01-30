@@ -1,0 +1,34 @@
+# MARCUS ISLAND
+state = {
+   # META
+   id = 648
+   name = "STATE_648"
+   manpower = 42
+   state_category = tiny_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = JAP
+      controller = JAP
+      add_core_of = JAP
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         13026 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+         air_base = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      13026
+   }
+}

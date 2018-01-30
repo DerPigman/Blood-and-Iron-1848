@@ -1,0 +1,33 @@
+# UGANDA
+state = {
+   # META
+   id = 548
+   name = "STATE_548"
+   manpower = 3515625
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      rubber = 4
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = KEN
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      3854 7088 7133 8223 12929 12989 13177
+   }
+}

@@ -1,0 +1,39 @@
+# SOUTHERN SLOVAKIA
+state = {
+   # META
+   id = 664
+   name = "STATE_664"
+   manpower = 854300
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      steel = 20
+      chromium = 4
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = HUN
+      controller = HUN
+      add_core_of = CZE
+      add_core_of = HUN
+      add_core_of = SLO
+      add_claim_by = HUN
+
+      # VICTORY POINTS
+      victory_points = { 6573 1 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 6
+         industrial_complex = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      3565 3716 6561 6573 9537 11679
+   }
+}

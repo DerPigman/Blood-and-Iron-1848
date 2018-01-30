@@ -1,0 +1,39 @@
+# OMAN
+state = {
+   # META
+   id = 294
+   name = "STATE_294"
+   manpower = 369000
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      oil = 2
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = OMA
+      controller = OMA
+      add_core_of = OMA
+
+      # VICTORY POINTS
+      victory_points = { 10760 3 }
+
+      # BUILDINGS
+      buildings = {
+         10760 = {
+            naval_base = 3
+         }
+         infrastructure = 2
+         arms_factory = 1
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1947 2018 2059 2103 4993 5049 8002 8020 10760
+   }
+}

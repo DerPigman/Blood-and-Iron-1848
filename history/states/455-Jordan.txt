@@ -1,0 +1,32 @@
+# JORDAN
+state = {
+   # META
+   id = 455
+   name = "STATE_455"
+   manpower = 932000
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = JOR
+
+      # VICTORY POINTS
+      victory_points = { 7151 1 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1544 4017 4115 4440 4562 4574 4591 4603 7001 7151 7170 10089 11976
+   }
+}

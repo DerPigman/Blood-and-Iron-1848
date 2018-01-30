@@ -1,0 +1,33 @@
+# ASSAM
+state = {
+   # META
+   id = 432
+   name = "STATE_432"
+   manpower = 8977100
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      oil = 6
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = RAJ
+      controller = RAJ
+      add_core_of = RAJ
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1497 1525 1553 1581 7455 10090 10349 10514 12366 12395
+   }
+}

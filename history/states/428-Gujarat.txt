@@ -1,0 +1,38 @@
+# GUJARAT
+state = {
+   # META
+   id = 428
+   name = "STATE_428"
+   manpower = 10590200
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      oil = 4
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = RAJ
+      controller = RAJ
+      add_core_of = RAJ
+
+      # VICTORY POINTS
+      victory_points = { 9975 1 }
+
+      # BUILDINGS
+      buildings = {
+         9975 = {
+            naval_base = 2
+         }
+         infrastructure = 4
+         arms_factory = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1061 1103 1144 1190 4064 4090 4132 4187 7020 7150 7165 7207 9975 10118 11952 12037 12092
+   }
+}

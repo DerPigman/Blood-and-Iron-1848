@@ -1,0 +1,32 @@
+# TUCUMAN
+state = {
+   # META
+   id = 508
+   name = "STATE_508"
+   manpower = 781311
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ARG
+      controller = ARG
+      add_core_of = ARG
+
+      # VICTORY POINTS
+      victory_points = { 8216 1 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      2136 2224 8195 8216 8253 11001 12928 12978
+   }
+}

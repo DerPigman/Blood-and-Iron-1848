@@ -1,0 +1,41 @@
+# KANTO
+state = {
+   # META
+   id = 282
+   name = "STATE_282"
+   manpower = 13773000
+   state_category = megalopolis
+
+   # RESOURCES
+   resources = {
+      aluminium = 2
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = JAP
+      controller = JAP
+      add_core_of = JAP
+
+      # VICTORY POINTS
+      victory_points = { 1182 50 }
+
+      # BUILDINGS
+      buildings = {
+         9998 = {
+            naval_base = 6
+         }
+         infrastructure = 8
+         air_base = 6
+         industrial_complex = 6
+         arms_factory = 4
+         dockyard = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      993 1097 1113 1182 4000 4100 4184 4188 7016 9998 11908
+   }
+}

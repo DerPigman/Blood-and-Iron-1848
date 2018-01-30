@@ -1,0 +1,32 @@
+# STALINO
+state = {
+   # META
+   id = 227
+   name = "STATE_227"
+   manpower = 3767336
+   state_category = city
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+      add_core_of = UKR
+
+      # VICTORY POINTS
+      victory_points = { 6474 10 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 5
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      502 3421 3449 3466 3479 3491 6420 6474 6493 6776
+   }
+}

@@ -1,0 +1,40 @@
+# NATAL
+state = {
+   # META
+   id = 719
+   name = "STATE_719"
+   manpower = 3962157
+   state_category = city
+
+   # RESOURCES
+   resources = {
+      chromium = 116
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = SAF
+      controller = SAF
+      add_core_of = SAF
+
+      # VICTORY POINTS
+      victory_points = { 1468 3 }
+      victory_points = { 4696 1 }
+
+      # BUILDINGS
+      buildings = {
+         1468 = {
+            naval_base = 2
+         }
+         infrastructure = 5
+         industrial_complex = 2
+         air_base = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1468 1494 1833 4556 4584 4696 7576 7900 8178
+   }
+}

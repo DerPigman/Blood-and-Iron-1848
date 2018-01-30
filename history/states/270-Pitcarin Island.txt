@@ -1,0 +1,33 @@
+# PITCAIRN ISLAND
+state = {
+   # META
+   id = 270
+   name = "STATE_270"
+   manpower = 40
+   state_category = enclave
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         1280 = {
+            naval_base = 1
+         }
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1280
+   }
+}

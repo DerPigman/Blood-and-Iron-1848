@@ -1,0 +1,34 @@
+# SOUTH GEORGIA
+state = {
+   # META
+   id = 720
+   name = "STATE_720"
+   manpower = 30
+   state_category = tiny_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+      add_claim_by = ARG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         10995 = {
+            naval_base = 1
+         }
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      10995
+   }
+}

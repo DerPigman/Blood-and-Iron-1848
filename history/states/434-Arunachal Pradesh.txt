@@ -1,0 +1,33 @@
+# ARUNACHAL PRADESH
+state = {
+   # META
+   id = 434
+   name = "STATE_434"
+   manpower = 200000
+   state_category = wasteland
+
+   # RESOURCES
+   resources = {
+      tungsten = 54
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = RAJ
+      controller = RAJ
+      add_core_of = RAJ
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1116 1996 10810 12322 12730
+   }
+}

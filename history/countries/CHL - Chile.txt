@@ -1,0 +1,111 @@
+####  CHL - Chile  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 279
+set_research_slots = 3
+
+# [1] META
+set_convoys = 20
+set_national_unity = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+}
+
+oob = "CHL_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+   tech_mountaineers = 1
+   gw_artillery = 1
+   early_fighter = 1
+   CAS1 = 1
+   early_submarine = 1
+   early_destroyer = 1
+   early_light_cruiser = 1
+   early_heavy_cruiser = 1
+   early_battleship = 1
+   transport = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideologie = {
+         popularity = 21
+      }
+      liberalism_ideologie = {
+         popularity = 17
+      }
+      centrism_ideologie = {
+         popularity = 38
+      }
+      socialism_ideologie = {
+         popularity = 9
+      }
+      jacobinism_ideologie = {
+         popularity = 0
+      }
+      marxism_ideologie = {
+         popularity = 4
+      }
+      nationalism_ideologie = {
+         popularity = 11
+      }
+      authoritarianism_ideologie = {
+         popularity = 0
+      }
+      monarchism_ideologie = {
+         popularity = 0
+      }
+      oligarchism_ideologie = {
+         popularity = 0
+      }
+   }
+   ruling_party = liberalism_ideologie
+   last_election = 1910.1.1
+   election_frequency = 48
+   elections_allowed = yes
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Juan Luis Sanfuentes"
+   desc = "POLITICS_JUAN_LUIS_SANFUENTES_DESC"
+   picture = "Portrait_Chile_Juan_Luis_Sanfuentes.dds"
+   expire = "1960.1.1"
+   ideology = centrism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Ramón Barros Luco"
+   desc = "POLITICS_RAMON_BARROS_LUCO_DESC"
+   picture = "Portrait_Chile_Ramon_Barros_Luco.dds"
+   expire = "1960.1.1"
+   ideology = liberalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Luis Emilio Recabarren"
+   desc = "POLITICS_LUIS_EMILIO_RECABARREN_DESC"
+   picture = "Portrait_Chile_Luis_Emilio_Recabarren.dds"
+   expire = "1960.1.1"
+   ideology = marxism
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

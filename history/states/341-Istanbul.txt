@@ -1,0 +1,43 @@
+# ISTANBUL
+state = {
+   # META
+   id = 341
+   name = "STATE_341"
+   manpower = 1404509
+   state_category = city
+
+   # RESOURCES
+   resources = {
+      chromium = 84
+      steel = 20
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = TUR
+      controller = TUR
+      add_core_of = GRE
+      add_core_of = TUR
+
+      # VICTORY POINTS
+      victory_points = { 9833 20 }
+
+      # BUILDINGS
+      buildings = {
+         9833 = {
+            naval_base = 8
+         }
+         infrastructure = 5
+         industrial_complex = 1
+         dockyard = 1
+         arms_factory = 2
+         air_base = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      849 922 3879 3893 6895 9833 9888 9902 11829 11842
+   }
+}

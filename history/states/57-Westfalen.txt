@@ -1,0 +1,35 @@
+# WESTFALEN
+state = {
+   # META
+   id = 57
+   name = "STATE_57"
+   manpower = 5109333
+   state_category = large_city
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = GER
+      controller = GER
+      add_core_of = GER
+
+      # VICTORY POINTS
+      victory_points = { 495 5 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 8
+         arms_factory = 6
+         industrial_complex = 3
+         air_base = 3
+         radar_station = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      405 495 3355 3398 6535 6622 9443 9509 11346 11431
+   }
+}

@@ -1,0 +1,39 @@
+# MONTENEGRO
+state = {
+   # META
+   id = 105
+   name = "STATE_105"
+   manpower = 895500
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      chromium = 36
+      aluminium = 112
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = TUR
+      controller = TUR
+      add_core_of = MNT
+      add_core_of = TUR
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         9809 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      833 867 937 3922 6913 6940 9809 9821 9849 9874 11858
+   }
+}

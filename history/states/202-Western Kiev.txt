@@ -1,0 +1,39 @@
+# KIEV
+state = {
+   # META
+   id = 202
+   name = "STATE_202"
+   manpower = 2495352
+   state_category = city
+
+   # RESOURCES
+   resources = {
+      oil = 14
+      aluminium = 12
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+      add_core_of = UKR
+
+      # VICTORY POINTS
+      victory_points = { 525 25 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 7
+         arms_factory = 4
+         industrial_complex = 3
+         air_base = 8
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      489 504 525 582 3494 3543 6497 9465 9543 9568 11557
+   }
+}

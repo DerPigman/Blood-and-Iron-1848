@@ -1,0 +1,33 @@
+# ANDAMAN
+state = {
+   # META
+   id = 733
+   name = "STATE_733"
+   manpower = 29500
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         12251 = {
+            naval_base = 2
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      10321 12251
+   }
+}

@@ -1,0 +1,37 @@
+# OKLAHOMA
+state = {
+   # META
+   id = 374
+   name = "STATE_374"
+   manpower = 2396039
+   state_category = city
+
+   # RESOURCES
+   resources = {
+      oil = 100
+      aluminium = 32
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = USA
+      controller = USA
+      add_core_of = USA
+
+      # VICTORY POINTS
+      victory_points = { 1806 1 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 4
+         industrial_complex = 3
+         air_base = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1618 1806 2043 4919 5103 6803 7762 7904 7945 8025 9822 10702 10798 11743 11802 12624
+   }
+}

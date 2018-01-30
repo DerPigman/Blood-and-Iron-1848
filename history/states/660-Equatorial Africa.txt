@@ -1,0 +1,33 @@
+# EQUATORIAL AFRICA
+state = {
+   # META
+   id = 660
+   name = "STATE_660"
+   manpower = 2572456
+   state_category = wasteland
+
+   # RESOURCES
+   resources = {
+      rubber = 4
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1473 1883 1974 1993 2081 3123 3165 3181 4897 4978 5084 7919 7963 8078 9152 11108 11194 12719 12830
+   }
+}

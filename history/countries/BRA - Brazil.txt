@@ -1,0 +1,131 @@
+####  BRA - Brazil  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 500
+set_research_slots = 3
+
+# [1] META
+set_convoys = 40
+set_national_unity = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+   BRA_coffee_with_milk
+}
+
+oob = "BRA_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+   tech_support = 1
+   tech_engineers = 1
+   gw_artillery = 1
+   gwtank = 1
+   early_fighter = 1
+   CAS1 = 1
+   early_submarine = 1
+   early_destroyer = 1
+   early_light_cruiser = 1
+   early_battleship = 1
+   transport = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideologie = {
+         popularity = 4
+      }
+      liberalism_ideologie = {
+         popularity = 41
+      }
+      centrism_ideologie = {
+         popularity = 46
+      }
+      socialism_ideologie = {
+         popularity = 0
+      }
+      jacobinism_ideologie = {
+         popularity = 0
+      }
+      marxism_ideologie = {
+         popularity = 0
+      }
+      nationalism_ideologie = {
+         popularity = 9
+      }
+      authoritarianism_ideologie = {
+         popularity = 0
+      }
+      monarchism_ideologie = {
+         popularity = 0
+      }
+      oligarchism_ideologie = {
+         popularity = 0
+      }
+   }
+   ruling_party = nationalism_ideologie
+   last_election = 1910.3.15
+   election_frequency = 48
+   elections_allowed = yes
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Pedro III"
+   desc = "POLITICS_PEDRO_III_DESC"
+   picture = "Portrait_Brazil_Pedro_III.dds"
+   expire = "2000.1.1"
+   ideology = constitutional
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Nilo Peçanha"
+   desc = "POLITICS_NILO_PECANHA_DESC"
+   picture = "Portrait_Brazil_Nilo_Pecanha.dds"
+   expire = "1960.1.1"
+   ideology = nationalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Delfim Moreira"
+   desc = "POLITICS_DELFIM_MOREIRA_DESC"
+   picture = "Portrait_Brazil_Delfim_Moreira.dds"
+   expire = "1960.1.1"
+   ideology = liberalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Venceslau Brás"
+   desc = "POLITICS_VENCESLAU_BRAS_DESC"
+   picture = "Portrait_Brazil_Venceslau_Bras.dds"
+   expire = "1960.1.1"
+   ideology = centrism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Hermes da Fonseca"
+   desc = "POLITICS_HERMES_DA_FONSECA_DESC"
+   picture = "Portrait_Brazil_Hermes_da_Fonseca.dds"
+   expire = "1960.1.1"
+   ideology = conservatism
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

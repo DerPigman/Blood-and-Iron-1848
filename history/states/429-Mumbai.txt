@@ -1,0 +1,39 @@
+# BOMBAY
+state = {
+   # META
+   id = 429
+   name = "STATE_429"
+   manpower = 17355600
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      tungsten = 26
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = RAJ
+      controller = RAJ
+      add_core_of = RAJ
+
+      # VICTORY POINTS
+      victory_points = { 1349 10 }
+
+      # BUILDINGS
+      buildings = {
+         1349 = {
+            naval_base = 6
+         }
+         infrastructure = 4
+         industrial_complex = 1
+         air_base = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1349 1405 4072 4353 7013 7060 7119 7177 7232 10019 10210 10270 12142 12182 12269
+   }
+}

@@ -1,0 +1,33 @@
+# JOHNSTON ATOLL
+state = {
+   # META
+   id = 630
+   name = "STATE_630"
+   manpower = 1
+   state_category = tiny_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = USA
+      controller = USA
+      add_core_of = USA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         13051 = {
+            naval_base = 1
+         }
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      13051
+   }
+}

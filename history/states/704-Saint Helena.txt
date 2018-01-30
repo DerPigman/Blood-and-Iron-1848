@@ -1,0 +1,33 @@
+# SAINT HELENA
+state = {
+   # META
+   id = 704
+   name = "STATE_704"
+   manpower = 2485
+   state_category = tiny_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         13016 = {
+            naval_base = 1
+         }
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      13016
+   }
+}

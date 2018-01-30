@@ -1,0 +1,32 @@
+# AYAGUZ
+state = {
+   # META
+   id = 589
+   name = "STATE_589"
+   manpower = 535191
+   state_category = pastoral
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+      add_core_of = KAZ
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1239 1668 1840 4651 4764 4773 4845 7332 7405 7711 7784 7795 7856 10146 10290 10547 10550 10619 10680 12529 12662 13148 13149 13197
+   }
+}

@@ -1,0 +1,34 @@
+# OBERSCHLESIEN
+state = {
+   # META
+   id = 67
+   name = "STATE_67"
+   manpower = 1402591
+   state_category = city
+
+   # RESOURCES
+   resources = {
+      steel = 60
+      aluminium = 20
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = GER
+      controller = GER
+      add_core_of = GER
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 6
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      479 6512 9457 9511 11467
+   }
+}

@@ -1,0 +1,38 @@
+# DANZIG
+state = {
+   # META
+   id = 85
+   name = "STATE_85"
+   manpower = 1080100
+   state_category = city
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = GER
+      controller = GER
+      add_core_of = GER
+
+      # VICTORY POINTS
+      victory_points = { 362 10 }
+
+      # BUILDINGS
+      buildings = {
+         362 = {
+            naval_base = 5
+         }
+         infrastructure = 6
+         arms_factory = 2
+         industrial_complex = 1
+         dockyard = 1
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      279 334 362 389 3295 3324 9263
+   }
+}

@@ -1,0 +1,31 @@
+# PESHAWAR
+state = {
+   # META
+   id = 442
+   name = "STATE_442"
+   manpower = 4684400
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = RAJ
+      controller = RAJ
+      add_core_of = PAK
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1978 2084 4558 4998 12717 12763
+   }
+}

@@ -1,0 +1,35 @@
+# MACAU
+state = {
+   # META
+   id = 729
+   name = "STATE_729"
+   manpower = 157805
+   state_category = enclave
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = POR
+      controller = POR
+      add_core_of = CHI
+      add_core_of = PRC
+
+      # VICTORY POINTS
+      victory_points = { 4189 1 }
+
+      # BUILDINGS
+      buildings = {
+         4189 = {
+            naval_base = 1
+         }
+         infrastructure = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      4189
+   }
+}

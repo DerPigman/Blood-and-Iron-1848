@@ -1,0 +1,31 @@
+# BOBRUYSK
+state = {
+   # META
+   id = 204
+   name = "STATE_204"
+   manpower = 1041084
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+      add_core_of = BLR
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 5
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      304 331 360 386 3350 3759 6373 11313
+   }
+}

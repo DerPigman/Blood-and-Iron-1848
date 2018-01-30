@@ -1,0 +1,35 @@
+# CHACO AUSTRAL
+state = {
+   # META
+   id = 509
+   name = "STATE_509"
+   manpower = 704241
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      tungsten = 46
+      steel = 8
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = ARG
+      controller = ARG
+      add_core_of = ARG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      2106 2208 5143 5213 8169 8255 10944 10965 10986 12922 12943
+   }
+}

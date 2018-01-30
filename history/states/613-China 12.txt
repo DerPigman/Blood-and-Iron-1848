@@ -1,0 +1,41 @@
+# SHANGHAI
+state = {
+   # META
+   id = 613
+   name = "STATE_613"
+   manpower = 17305100
+   state_category = large_city
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = CHI
+      controller = JAP
+      add_core_of = CHI
+      add_core_of = PRC
+
+      # VICTORY POINTS
+      victory_points = { 7014 10 }
+      victory_points = { 11913 20 }
+
+      # BUILDINGS
+      buildings = {
+         7014 = {
+            naval_base = 6
+            coastal_bunker = 1
+            bunker = 1
+         }
+         infrastructure = 5
+         industrial_complex = 1
+         air_base = 6
+         dockyard = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      996 1089 4091 7014 7120 10034 10076 11913 11928 11982 12052 12076 13142
+   }
+}

@@ -1,0 +1,37 @@
+# SIAULIAI
+state = {
+   # META
+   id = 189
+   name = "STATE_189"
+   manpower = 697100
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      steel = 3
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = LIT
+      controller = LIT
+      add_core_of = LIT
+
+      # VICTORY POINTS
+      victory_points = { 9483 1 }
+
+      # BUILDINGS
+      buildings = {
+         6314 = {
+            naval_base = 1
+         }
+         infrastructure = 5
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      530 3337 3354 6229 6314 6360 6376 9483 9499 9731
+   }
+}

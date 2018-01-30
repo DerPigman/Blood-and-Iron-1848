@@ -1,0 +1,33 @@
+# COMORO ISLANDS
+state = {
+   # META
+   id = 708
+   name = "STATE_708"
+   manpower = 126703
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         13072 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      13072
+   }
+}

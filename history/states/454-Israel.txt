@@ -1,0 +1,38 @@
+# PALESTINE
+state = {
+   # META
+   id = 454
+   name = "STATE_454"
+   manpower = 933142
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = PAL
+      add_core_of = ISR
+
+      # VICTORY POINTS
+      victory_points = { 1086 1 }
+      victory_points = { 4206 1 }
+
+      # BUILDINGS
+      buildings = {
+         4206 = {
+            naval_base = 3
+         }
+         infrastructure = 5
+         industrial_complex = 1
+         air_base = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1 1015 1065 1086 1201 4088 4206 7107 7176 11970
+   }
+}

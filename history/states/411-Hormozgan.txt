@@ -1,0 +1,34 @@
+# ISFAHAN
+state = {
+   # META
+   id = 411
+   name = "STATE_411"
+   manpower = 885272
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      oil = 14
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = PER
+      controller = PER
+      add_core_of = PER
+
+      # VICTORY POINTS
+      victory_points = { 2026 1 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1963 2026 4928 4983 5067 8031 8074 10828 12756
+   }
+}

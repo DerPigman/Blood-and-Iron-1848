@@ -1,0 +1,30 @@
+# GORNO-ALTAYSK
+state = {
+   # META
+   id = 654
+   name = "STATE_654"
+   manpower = 153510
+   state_category = wasteland
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      4781 4800 10531 10713 12509
+   }
+}

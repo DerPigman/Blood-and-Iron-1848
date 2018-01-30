@@ -1,0 +1,31 @@
+# PAMIR
+state = {
+   # META
+   id = 732
+   name = "STATE_732"
+   manpower = 230000
+   state_category = wasteland
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 1
+         state_category = 0
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1483 1675 4316 4391 4467 4768 4923 5062 10408 10530 12370 12511
+   }
+}

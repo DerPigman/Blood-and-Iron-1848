@@ -1,0 +1,35 @@
+# BURGAS
+state = {
+   # META
+   id = 211
+   name = "STATE_211"
+   manpower = 1575499
+   state_category = town
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = BUL
+      controller = BUL
+      add_core_of = BUL
+
+      # VICTORY POINTS
+      victory_points = { 9783 5 }
+
+      # BUILDINGS
+      buildings = {
+         9783 = {
+            naval_base = 3
+         }
+         infrastructure = 4
+         industrial_complex = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      649 6967 9612 9769 9783 9919
+   }
+}

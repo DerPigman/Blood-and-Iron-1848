@@ -1,0 +1,36 @@
+# ULAN UDE
+state = {
+   # META
+   id = 564
+   name = "STATE_564"
+   manpower = 370893
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      steel = 20
+      chromium = 34
+      tungsten = 28
+      aluminium = 8
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1696 4705 4766 4837 7751 7816 7835 7860 10528 10658 12507 12644
+   }
+}

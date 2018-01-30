@@ -1,0 +1,32 @@
+# TAKLAMAKAN
+state = {
+   # META
+   id = 287
+   name = "STATE_287"
+   manpower = 478000
+   state_category = wasteland
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SIK
+      controller = SIK
+      add_core_of = SIK
+      add_core_of = CHI
+      add_core_of = PRC
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1698 1943 2074 4947 4973 5736 8042 8086 10315 10885 10911 12864
+   }
+}

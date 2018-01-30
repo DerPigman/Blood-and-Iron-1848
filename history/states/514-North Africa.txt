@@ -1,0 +1,30 @@
+# ALGERIAN DESERT
+state = {
+   # META
+   id = 514
+   name = "STATE_514"
+   manpower = 207733
+   state_category = wasteland
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 0
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1043 1095 1901 1958 2049 4903 5035 5095 7041 8061 8077 8088 10731 10749 12711 12842 12849
+   }
+}

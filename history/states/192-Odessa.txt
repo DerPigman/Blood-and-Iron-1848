@@ -1,0 +1,38 @@
+# ODESSA
+state = {
+   # META
+   id = 192
+   name = "STATE_192"
+   manpower = 1469986
+   state_category = city
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+      add_core_of = UKR
+
+      # VICTORY POINTS
+      victory_points = { 11670 10 }
+
+      # BUILDINGS
+      buildings = {
+         11670 = {
+            naval_base = 3
+            coastal_bunker = 1
+         }
+         infrastructure = 5
+         industrial_complex = 3
+         air_base = 6
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      741 754 3575 3738 3757 9698 9714 11670 11703
+   }
+}

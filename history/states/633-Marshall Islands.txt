@@ -1,0 +1,36 @@
+# MARSHALL ISLANDS
+state = {
+   # META
+   id = 633
+   name = "STATE_633"
+   manpower = 52517
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = JAP
+      controller = JAP
+      add_core_of = JAP
+
+      # VICTORY POINTS
+      victory_points = { 13041 3 }
+      victory_points = { 13046 1 }
+
+      # BUILDINGS
+      buildings = {
+         13040 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+         air_base = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1002 13039 13040 13041 13042 13043 13044 13045 13046
+   }
+}

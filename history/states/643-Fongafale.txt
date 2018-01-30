@@ -1,0 +1,33 @@
+# ELLICE ISLANDS
+state = {
+   # META
+   id = 643
+   name = "STATE_643"
+   manpower = 493
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         13056 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      13054 13055 13056 13057
+   }
+}

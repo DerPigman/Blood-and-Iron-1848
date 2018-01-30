@@ -1,0 +1,31 @@
+# SALLA
+state = {
+   # META
+   id = 147
+   name = "STATE_147"
+   manpower = 4630
+   state_category = enclave
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = FIN
+
+      # VICTORY POINTS
+      victory_points = { 197 1 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      197 9158 11085
+   }
+}

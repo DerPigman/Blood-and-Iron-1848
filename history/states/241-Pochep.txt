@@ -1,0 +1,33 @@
+# GOMEL
+state = {
+   # META
+   id = 241
+   name = "STATE_241"
+   manpower = 943422
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+      add_core_of = BLR
+
+      # VICTORY POINTS
+      victory_points = { 9288 10 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 5
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      289 6233 6344 6354 9247 9288 9342 9371 9396 11230 11271 11355 11383
+   }
+}

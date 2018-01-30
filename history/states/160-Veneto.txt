@@ -1,0 +1,43 @@
+# VENETO
+state = {
+   # META
+   id = 160
+   name = "STATE_160"
+   manpower = 3963151
+   state_category = large_city
+
+   # RESOURCES
+   resources = {
+      steel = 32.000
+      aluminium = 18.000
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = ITA
+      controller = ITA
+      add_core_of = ITA
+
+      # VICTORY POINTS
+      victory_points = { 6626 1 }
+      victory_points = { 11584 10 }
+
+      # BUILDINGS
+      buildings = {
+         11584 = {
+            naval_base = 6
+         }
+         infrastructure = 6
+         arms_factory = 2
+         industrial_complex = 5
+         dockyard = 2
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      603 628 656 3604 3657 6656 9582 9598 9613 11584 11598
+   }
+}

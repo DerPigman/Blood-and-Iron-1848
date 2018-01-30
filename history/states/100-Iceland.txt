@@ -1,0 +1,35 @@
+# ICELAND
+state = {
+   # META
+   id = 100
+   name = "STATE_100"
+   manpower = 115870
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = DEN
+      controller = DEN
+      add_core_of = DEN
+      add_core_of = ICE
+
+      # VICTORY POINTS
+      victory_points = { 12674 1 }
+
+      # BUILDINGS
+      buildings = {
+         12674 = {
+            naval_base = 1
+         }
+         infrastructure = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      4861 12674 12689
+   }
+}

@@ -1,0 +1,30 @@
+# SOUTHERN SAHARA
+state = {
+   # META
+   id = 515
+   name = "STATE_515"
+   manpower = 1482744
+   state_category = wasteland
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1956 2068 4902 4913 5136 7939 8028 8128 10758 10780 10805 10893 10917 13138
+   }
+}

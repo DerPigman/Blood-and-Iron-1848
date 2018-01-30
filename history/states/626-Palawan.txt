@@ -1,0 +1,33 @@
+# PALAWAN
+state = {
+   # META
+   id = 626
+   name = "STATE_626"
+   manpower = 83041
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = PHI
+      controller = PHI
+      add_core_of = PHI
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         4429 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      4429 7419 10145
+   }
+}

@@ -1,0 +1,33 @@
+# STANLEYVILLE
+state = {
+   # META
+   id = 718
+   name = "STATE_718"
+   manpower = 6229078
+   state_category = pastoral
+
+   # RESOURCES
+   resources = {
+      rubber = 6.000
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = BEL
+      controller = BEL
+      add_core_of = COG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1181 1950 2034 2073 2154 2220 4201 4941 6027 7161 9962 10766 11934 12783 12808 12847 13176
+   }
+}

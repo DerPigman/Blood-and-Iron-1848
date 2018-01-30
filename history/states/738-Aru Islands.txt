@@ -1,0 +1,34 @@
+# ARU ISLANDS
+state = {
+   # META
+   id = 738
+   name = "STATE_738"
+   manpower = 36146
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = INS
+      controller = INS
+      add_core_of = INS
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         4579 = {
+            naval_base = 1
+         }
+         infrastructure = 1
+         state_category = 0
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      4579
+   }
+}

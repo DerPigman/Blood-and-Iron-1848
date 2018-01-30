@@ -1,0 +1,109 @@
+####  PRU - Peru  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 303
+set_research_slots = 3
+
+# [1] META
+set_convoys = 5
+set_national_unity = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+}
+
+oob = "PRU_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+   gw_artillery = 1
+   early_fighter = 1
+   cv_early_fighter = 1
+   early_bomber = 1
+   CAS1 = 1
+   early_submarine = 1
+   early_destroyer = 1
+   early_light_cruiser = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideologie = {
+         popularity = 0
+      }
+      liberalism_ideologie = {
+         popularity = 66
+      }
+      centrism_ideologie = {
+         popularity = 31
+      }
+      socialism_ideologie = {
+         popularity = 0
+      }
+      jacobinism_ideologie = {
+         popularity = 0
+      }
+      marxism_ideologie = {
+         popularity = 0
+      }
+      nationalism_ideologie = {
+         popularity = 3
+      }
+      authoritarianism_ideologie = {
+         popularity = 0
+      }
+      monarchism_ideologie = {
+         popularity = 0
+      }
+      oligarchism_ideologie = {
+         popularity = 0
+      }
+   }
+   ruling_party = liberalism_ideologie
+   last_election = 1908.9.24
+   election_frequency = 48
+   elections_allowed = yes
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Augusto B. Leguía"
+   desc = "POLITICS_AUGUSTO_B_LEGUIA_DESC"
+   picture = "Portrait_Peru_Augusto_B_Leguia.dds"
+   expire = "1960.1.1"
+   ideology = liberalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Guillermo Billinghurst"
+   desc = "POLITICS_GUILLERMO_BILLINGHURST_DESC"
+   picture = "Portrait_Peru_Guillermo_Billinghurst.dds"
+   expire = "1960.1.1"
+   ideology = centrism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Andrés Avelino Cáceres"
+   desc = "POLITICS_ANDRES_AVELINO_CACERES_DESC"
+   picture = "Portrait_Peru_Andres_Avelino_Caceres.dds"
+   expire = "1960.1.1"
+   ideology = nationalism
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

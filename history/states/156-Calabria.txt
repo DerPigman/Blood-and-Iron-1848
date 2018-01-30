@@ -1,0 +1,36 @@
+# CALABRIA
+state = {
+   # META
+   id = 156
+   name = "STATE_156"
+   manpower = 2966315
+   state_category = city
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ITA
+      controller = ITA
+      add_core_of = ITA
+
+      # VICTORY POINTS
+      victory_points = { 11837 15 }
+
+      # BUILDINGS
+      buildings = {
+         11837 = {
+            naval_base = 10
+         }
+         infrastructure = 5
+         dockyard = 5
+         air_base = 5
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      3901 6979 9784 9856 9990 10027 11837 11998 12066 12098
+   }
+}

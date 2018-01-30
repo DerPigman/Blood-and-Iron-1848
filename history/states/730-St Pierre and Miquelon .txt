@@ -1,0 +1,33 @@
+# ST PIERRE AND MIQUELON
+state = {
+   # META
+   id = 730
+   name = "STATE_730"
+   manpower = 3426
+   state_category = tiny_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         373 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      373
+   }
+}

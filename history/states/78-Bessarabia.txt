@@ -1,0 +1,36 @@
+# BESSARABIA
+state = {
+   # META
+   id = 78
+   name = "STATE_78"
+   manpower = 2863400
+   state_category = town
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         6727 = {
+            naval_base = 3
+         }
+         infrastructure = 4
+         industrial_complex = 2
+         air_base = 2
+         dockyard = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      414 565 657 687 3076 3407 3577 3701 3704 3707 3724 6600 6727 6743 9635 9683 11686 11705
+   }
+}

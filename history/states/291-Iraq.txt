@@ -1,0 +1,41 @@
+# BAGHDAD
+state = {
+   # META
+   id = 291
+   name = "STATE_291"
+   manpower = 2044165
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      oil = 22
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = IRQ
+      controller = IRQ
+      add_core_of = IRQ
+
+      # VICTORY POINTS
+      victory_points = { 2089 1 }
+      victory_points = { 2097 5 }
+
+      # BUILDINGS
+      buildings = {
+         2089 = {
+            naval_base = 1
+         }
+         infrastructure = 5
+         arms_factory = 1
+         industrial_complex = 2
+         air_base = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      78 2004 2089 2097 3795 7977 7994 8001 10876 12046 12726 12839 12855
+   }
+}

@@ -1,0 +1,34 @@
+# SOUTH CHAHAR
+state = {
+   # META
+   id = 611
+   name = "STATE_611"
+   manpower = 1470000
+   state_category = pastoral
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = MEN
+      controller = MEN
+      add_core_of = MEN
+      add_core_of = CHI
+      add_core_of = PRC
+
+      # VICTORY POINTS
+      victory_points = { 11752 3 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      828 952 1137 1489 1590 4495 4612 6904 7545 7674 9776 10397 11752
+   }
+}

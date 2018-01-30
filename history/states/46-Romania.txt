@@ -1,0 +1,42 @@
+# MUNTENIA
+state = {
+   # META
+   id = 46
+   name = "STATE_46"
+   manpower = 4461400
+   state_category = city
+
+   # RESOURCES
+   resources = {
+      oil = 70
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = ROM
+      controller = ROM
+      add_core_of = ROM
+
+      # VICTORY POINTS
+      victory_points = { 657 3 }
+      victory_points = { 3663 5 }
+      victory_points = { 9617 20 }
+
+      # BUILDINGS
+      buildings = {
+         657 = {
+            naval_base = 8
+         }
+         infrastructure = 6
+         arms_factory = 4
+         industrial_complex = 1
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      660 818 3636 3639 3663 6658 6695 9617 11619 11636
+   }
+}

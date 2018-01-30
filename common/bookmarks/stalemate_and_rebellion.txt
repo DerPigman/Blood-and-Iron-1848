@@ -1,0 +1,72 @@
+bookmarks = {
+	bookmark = {
+		name = "STALEMATE_AND_REBELLION"
+		desc = "STALEMATE_AND_REBELLION_DESC"
+		date = 1914.1.1.12
+		picture = "GFX_select_date_1910"
+		default_country = "USA"
+	
+		SOV = {
+			history = SOV_STALEMATE_AND_REBELLION
+			ideology = monarchism_ideologie
+			ideas = {
+				SOV_duma_of_public_anger
+			}
+			focuses = {
+
+			}
+		}
+		
+		AUS = {
+			history = AUS_STALEMATE_AND_REBELLION
+			ideology = monarchism_ideologie
+			ideas = {
+			}
+			focuses = {
+
+			}
+		}
+		GER = {
+			history = GER_STALEMATE_AND_REBELLION
+			ideology = liberalism_ideologie
+			ideas={
+
+			}	
+			focuses = {
+
+			}		
+		}
+		
+		PRC = {
+			history = PRC_NUCLEAR_AGE_DESC
+			ideology = marxism_ideologie
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+		
+		"VIN"={
+			minor = yes
+			history = "VIN_NUCLEAR_AGE_DESC"
+			ideology = conservatism_ideologie
+			ideas = {
+				
+			}
+			focuses = {
+			
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -1,0 +1,36 @@
+# TRINIDAD
+state = {
+   # META
+   id = 691
+   name = "STATE_691"
+   manpower = 413119
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      oil = 16
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         3284 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      3284 13012
+   }
+}

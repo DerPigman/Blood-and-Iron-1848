@@ -1,0 +1,34 @@
+# KUWAIT
+state = {
+   # META
+   id = 656
+   name = "STATE_656"
+   manpower = 80000
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+      victory_points = { 8085 1 }
+
+      # BUILDINGS
+      buildings = {
+         8085 = {
+            naval_base = 4
+         }
+         infrastructure = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      8085
+   }
+}

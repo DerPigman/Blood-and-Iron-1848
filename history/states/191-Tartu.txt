@@ -1,0 +1,34 @@
+# TARTU
+state = {
+   # META
+   id = 191
+   name = "STATE_191"
+   manpower = 376400
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = EST
+
+      # VICTORY POINTS
+      victory_points = { 9221 1 }
+
+      # BUILDINGS
+      buildings = {
+         4640 = {
+            naval_base = 1
+         }
+         infrastructure = 5
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      592 4640 6099 6178 6408 9221 9485 11057 11443 13127
+   }
+}

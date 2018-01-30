@@ -1,0 +1,38 @@
+# MARYLAND
+state = {
+   # META
+   id = 361
+   name = "STATE_361"
+   manpower = 2118394
+   state_category = city
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = USA
+      controller = USA
+      add_core_of = USA
+
+      # VICTORY POINTS
+      victory_points = { 3957 40 }
+      victory_points = { 6984 5 }
+
+      # BUILDINGS
+      buildings = {
+         6984 = {
+            naval_base = 2
+         }
+         infrastructure = 7
+         industrial_complex = 5
+         dockyard = 1
+         air_base = 6
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      3957 6823 6892 6929 6984 9758 9786 11892
+   }
+}

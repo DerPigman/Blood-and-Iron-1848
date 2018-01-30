@@ -1,0 +1,35 @@
+# EASTERN SWITZERLAND
+state = {
+   # META
+   id = 151
+   name = "STATE_151"
+   manpower = 1854711
+   state_category = city
+
+   # RESOURCES
+   resources = {
+      aluminium = 24
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = SWI
+      controller = SWI
+      add_core_of = SWI
+
+      # VICTORY POINTS
+      victory_points = { 663 10 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 6
+         industrial_complex = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      658 661 663 3641 3660 3662 9600 11601 11623
+   }
+}

@@ -1,0 +1,33 @@
+# NORTHWESTERN CANADA
+state = {
+   # META
+   id = 471
+   name = "STATE_471"
+   manpower = 27681
+   state_category = wasteland
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = CAN
+      controller = CAN
+      add_core_of = CAN
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         10548 = {
+            naval_base = 1
+         }
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      917 1411 1799 1872 3606 4678 5403 7869 7891 10548 12508 12571
+   }
+}

@@ -1,0 +1,36 @@
+# NOVA SCOTIA
+state = {
+   # META
+   id = 464
+   name = "STATE_464"
+   manpower = 490912
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = CAN
+      controller = CAN
+      add_core_of = CAN
+
+      # VICTORY POINTS
+      victory_points = { 7361 3 }
+
+      # BUILDINGS
+      buildings = {
+         7361 = {
+            naval_base = 4
+         }
+         infrastructure = 5
+         industrial_complex = 1
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1354 4360 4430 4623 7304 7361 7644 10244
+   }
+}

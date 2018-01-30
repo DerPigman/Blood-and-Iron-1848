@@ -1,0 +1,36 @@
+# PORTO
+state = {
+   # META
+   id = 180
+   name = "STATE_180"
+   manpower = 964700
+   state_category = town
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = POR
+      controller = POR
+      add_core_of = POR
+
+      # VICTORY POINTS
+      victory_points = { 9817 10 }
+
+      # BUILDINGS
+      buildings = {
+         9817 = {
+            naval_base = 3
+         }
+         infrastructure = 6
+         industrial_complex = 1
+         dockyard = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      724 877 3892 6921 6941 9817 11673
+   }
+}

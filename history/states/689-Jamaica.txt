@@ -1,0 +1,33 @@
+# JAMAICA
+state = {
+   # META
+   id = 689
+   name = "STATE_689"
+   manpower = 1075000
+   state_category = town
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         12304 = {
+            naval_base = 1
+         }
+         infrastructure = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      12304 12477
+   }
+}

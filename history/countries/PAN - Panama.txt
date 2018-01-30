@@ -1,0 +1,92 @@
+####  PAN - Panama  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 304
+set_research_slots = 3
+
+# [1] META
+set_convoys = 10
+set_national_unity = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+}
+
+oob = "PAN_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideologie = {
+         popularity = 42
+      }
+      liberalism_ideologie = {
+         popularity = 58
+      }
+      centrism_ideologie = {
+         popularity = 0
+      }
+      socialism_ideologie = {
+         popularity = 0
+      }
+      jacobinism_ideologie = {
+         popularity = 0
+      }
+      marxism_ideologie = {
+         popularity = 0
+      }
+      nationalism_ideologie = {
+         popularity = 0
+      }
+      authoritarianism_ideologie = {
+         popularity = 0
+      }
+      monarchism_ideologie = {
+         popularity = 0
+      }
+      oligarchism_ideologie = {
+         popularity = 0
+      }
+   }
+   ruling_party = liberalism_ideologie
+   last_election = 1908.6.25
+   election_frequency = 48
+   elections_allowed = yes
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Pablo Arosemena"
+   desc = "POLITICS_PABLO_AROSEMENA_DESC"
+   picture = "Portrait_Panama_Pablo_Arosemena.dds"
+   expire = "1960.1.1"
+   ideology = liberalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Pedro Antonio Díaz"
+   desc = "POLITICS_PEDRO_ANTONIO_DIAZ_DESC"
+   picture = "Portrait_Panama_Pedro_Antonio_Diaz.dds"
+   expire = "1960.1.1"
+   ideology = conservatism
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

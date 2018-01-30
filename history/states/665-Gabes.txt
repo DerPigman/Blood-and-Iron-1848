@@ -1,0 +1,30 @@
+# GABES
+state = {
+   # META
+   id = 665
+   name = "STATE_665"
+   manpower = 427824
+   state_category = pastoral
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1105 3987 4992 7005 9983 10026 10082 11935 11957 12000 13145 13179
+   }
+}

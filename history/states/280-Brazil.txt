@@ -1,0 +1,30 @@
+# MATO GROSSO
+state = {
+   # META
+   id = 280
+   name = "STATE_280"
+   manpower = 120000
+   state_category = pastoral
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = BRA
+      controller = BRA
+      add_core_of = BRA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      2142 2147 2204 8175 11010 12939
+   }
+}

@@ -1,0 +1,35 @@
+# HAWAII
+state = {
+   # META
+   id = 629
+   name = "STATE_629"
+   manpower = 368336
+   state_category = town
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = USA
+      controller = USA
+      add_core_of = USA
+
+      # VICTORY POINTS
+      victory_points = { 4180 15 }
+
+      # BUILDINGS
+      buildings = {
+         4180 = {
+            naval_base = 10
+         }
+         infrastructure = 3
+         air_base = 5
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      4180 7112 7195 10048 12021
+   }
+}

@@ -1,0 +1,38 @@
+# SOUTH SAKHALIN
+state = {
+   # META
+   id = 537
+   name = "STATE_537"
+   manpower = 295196
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      oil = 4
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = JAP
+      controller = JAP
+      add_core_of = JAP
+      add_claim_by = SOV
+
+      # VICTORY POINTS
+      victory_points = { 12446 1 }
+
+      # BUILDINGS
+      buildings = {
+         12446 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1322 1820 12446
+   }
+}

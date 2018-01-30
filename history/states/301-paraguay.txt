@@ -1,0 +1,34 @@
+# PARAGUAY
+state = {
+   # META
+   id = 301
+   name = "STATE_301"
+   manpower = 890100
+   state_category = town
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = PAR
+      controller = PAR
+      add_core_of = PAR
+
+      # VICTORY POINTS
+      victory_points = { 2152 5 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 4
+         arms_factory = 1
+         industrial_complex = 3
+         air_base = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      2152 2173 2194 11023 12901
+   }
+}

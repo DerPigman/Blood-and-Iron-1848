@@ -1,0 +1,34 @@
+# AZORES
+state = {
+   # META
+   id = 698
+   name = "STATE_698"
+   manpower = 212012
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = POR
+      controller = POR
+      add_core_of = POR
+
+      # VICTORY POINTS
+      victory_points = { 1751 3 }
+
+      # BUILDINGS
+      buildings = {
+         1751 = {
+            naval_base = 3
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1751
+   }
+}

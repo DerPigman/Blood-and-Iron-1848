@@ -1,0 +1,33 @@
+# GALAPAGOS ISLANDS
+state = {
+   # META
+   id = 649
+   name = "STATE_649"
+   manpower = 11532
+   state_category = tiny_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ECU
+      controller = ECU
+      add_core_of = ECU
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         5023 = {
+            naval_base = 1
+         }
+         infrastructure = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      5023
+   }
+}

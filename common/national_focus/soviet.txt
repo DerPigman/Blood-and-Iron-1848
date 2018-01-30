@@ -1,0 +1,854 @@
+focus_tree = {
+	id = soviet_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	
+	default = no
+	
+	#############################
+	#	Political Efforts		#
+	#############################
+
+	focus = {
+		id = SOV_political_efforts
+		icon = GFX_focus_SOV_imperial_duma
+		
+		cost = 5
+		
+		x = 4
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = soviet.BaI.1
+			every_country = {
+				limit = {
+					original_tag = ROOT
+					NOT = { tag = ROOT }
+				}
+				country_event = political.100
+			}
+		}
+	}
+	
+	#############################
+	#	Strenghten the Tsar		#
+	#############################
+	
+	focus = {
+		id = SOV_strengthen_the_tsar
+		icon = GFX_focus_SOV_strengthen_the_tsar
+		prerequisite = { focus = SOV_political_efforts }
+		mutually_exclusive = { focus = SOV_reform_the_constitution }
+		mutually_exclusive = { focus = SOV_work_out_a_compromise }
+		
+		cost = 0
+		
+		x = 8
+		y = 1
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+			
+		completion_reward = {
+			effect_tooltip = {
+				add_ideas = {
+					SOV_god_save_the_tsar_1
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_purge_the_deputies
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = SOV_reinforce_the_okhrana }
+		
+		cost = 10
+		
+		x = 6
+		y = 3
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_purge_the_deputies_tt
+			set_country_flag = SOV_purge_the_deputies
+			swap_ideas = { remove_idea = SOV_duma_of_public_anger add_idea = SOV_duma_of_public_anger_purged }
+			hidden_effect = {
+				country_event = { id =soviet.BaI.3 days = 120 random = 120 }
+			}
+		}
+	}
+	
+	
+	focus = {
+		id = SOV_reinforce_the_okhrana
+		icon = GFX_focus_SOV_secret_police
+		prerequisite = { focus = SOV_strengthen_the_tsar }
+		
+		cost = 10
+		
+		x = 6
+		y = 2
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { SOV_secret_police }
+		}
+	}
+	
+	focus = {
+		id = SOV_some_focus_1
+		icon = GFX
+		prerequisite = { focus = SOV_purge_the_deputies }
+		
+		cost = 10
+		
+		x = 6
+		y = 4
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_the_russian_pogrom
+		icon = GFX_focus_generic_war_on_jews
+		prerequisite = { focus = SOV_strengthen_the_tsar }
+		
+		cost = 10
+		
+		x = 10
+		y = 2
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+			
+		completion_reward = {
+			custom_effect_tooltip = SOV_the_russian_pogrom_tt
+			country_event = soviet.BaI.2
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = SOV_jesus_christ_conquers
+		icon = GFX_focus_generic_orthodox_cross
+		prerequisite = { focus = SOV_the_russian_pogrom }
+		
+		cost = 10
+		
+		x = 10
+		y = 4
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+			
+		completion_reward = {
+			add_ideas = { SOV_jesus_christ_conquers }
+		}
+	}
+	
+	focus = {
+		id = SOV_second_bloody_sunday
+		icon = GFX_goal_generic_secret_weapon
+		prerequisite = { focus = SOV_strengthen_the_tsar }
+		
+		cost = 10
+		
+		x = 8
+		y = 2
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			effect_tooltip = {
+				add_national_unity = -0.1
+				add_manpower = -5000
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_backed_by_terror
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = SOV_second_bloody_sunday }
+		prerequisite = { focus = SOV_the_russian_pogrom }
+		
+		cost = 10
+		
+		x = 9
+		y = 3
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_some_focus_2
+		icon = GFX
+		prerequisite = { focus = SOV_backed_by_terror }
+		
+		cost = 10
+		
+		x = 8
+		y = 4
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	#############################
+	#	End of the Duma 		#
+	#############################
+	
+	focus = {
+		id = SOV_abolish_the_duma
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		prerequisite = { focus = SOV_some_focus_2 }
+		prerequisite = { focus = SOV_some_focus_1 }
+		
+		cost = 10
+		
+		x = 7
+		y = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			hidden_effect = {
+				set_political_party = { ideology = conservatism_ideologie popularity = 0 banned = yes}
+				set_political_party = { ideology = liberalism_ideologie popularity = 0 banned = yes}
+				set_political_party = { ideology = centrism_ideologie popularity = 0 banned = yes}
+				set_political_party = { ideology = socialism_ideologie popularity = 0 banned = yes}
+				set_political_party = { ideology = jacobinism_ideologie popularity = 0 banned = yes}
+				set_political_party = { ideology = marxism_ideologie popularity = 0 banned = yes}
+				set_political_party = { ideology = nationalism_ideologie popularity = 0 banned = yes}
+				set_political_party = { ideology = authoritarianism_ideologie popularity = 0 banned = yes}
+				set_political_party = { ideology = oligarchism_ideologie popularity = 0 banned = yes}
+				set_political_party = { ideology = monarchism_ideologie popularity = 100 }
+				retire_country_leader = yes
+			}
+			custom_effect_tooltip = SOV_abolish_the_duma_tt
+			remove_ideas = { SOV_duma_of_public_anger }
+			swap_ideas = { remove_idea = SOV_god_save_the_tsar_1 add_idea = SOV_god_save_the_tsar_2 }
+		}
+	}
+	
+	focus = {
+		id = SOV_protect_the_tsar
+		icon = GFX_goal_anti_comintern_pact
+		prerequisite = { focus = SOV_abolish_the_duma }
+		mutually_exclusive = { focus = SOV_rise_of_the_workers }
+		
+		cost = 10
+		
+		x = 6
+		y = 6
+		
+		available = {
+			has_war = yes
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_rise_of_the_workers
+		icon = GFX_goal_generic_war_with_comintern
+		prerequisite = { focus = SOV_abolish_the_duma }
+		mutually_exclusive = { focus = SOV_protect_the_tsar }
+		
+		cost = 10
+		
+		x = 8
+		y = 6
+		
+		available = {
+			has_war = yes
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	#############################
+	#	Work out a Compormise	#
+	#############################
+
+	focus = {
+		id = SOV_work_out_a_compromise
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_political_efforts }
+		mutually_exclusive = { focus = SOV_reform_the_constitution }
+		mutually_exclusive = { focus = SOV_strengthen_the_tsar }
+		
+		cost = 10
+		
+		x = 4
+		y = 1
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	#############################
+	#	Reform the Constitution	#
+	#############################
+	
+	focus = {
+		id = SOV_reform_the_constitution
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = SOV_political_efforts }
+		mutually_exclusive = { focus = SOV_work_out_a_compromise }
+		mutually_exclusive = { focus = SOV_strengthen_the_tsar }
+		
+		cost = 10
+		
+		x = 1
+		y = 1
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	#############################
+	#	Diplomatic Efforts		#
+	#############################
+	
+	focus = {
+		id = SOV_diplomatic_efforts
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus = SOV_expansionist_efforts }
+		
+		cost = 5
+		
+		x = 16
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_completed_focus = SOV_political_efforts
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { diplomatic_efforts }
+		}
+	}
+	
+	focus = {
+		id = SOV_expansionist_efforts
+		icon = GFX_focus_expansionist_efforts
+		mutually_exclusive = { focus = SOV_diplomatic_efforts }
+		
+		cost = 5
+		
+		x = 18
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_completed_focus = SOV_political_efforts
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { expansionist_efforts }
+		}
+	}
+	
+	focus = {
+		id = SOV_balkan_dominance
+		icon = GFX_focus_generic_balkan_politics
+		prerequisite = { focus = SOV_diplomatic_efforts 
+						 focus = SOV_expansionist_efforts }
+		
+		cost = 5
+		
+		x = 14
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_bulgarian_friendship
+		icon = GFX_focus_improve_relation_bulgaria
+		prerequisite = { focus = SOV_balkan_dominance }
+		
+		cost = 5
+		
+		x = 15
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+			give_guarantee = BUL
+			diplomatic_relation = { country = BUL relation = non_aggression_pact }
+		}
+	}
+	
+	focus = {
+		id = SOV_serbian_friendship
+		icon = GFX_focus_improve_relation_serbia
+		prerequisite = { focus = SOV_balkan_dominance }
+		
+		cost = 5
+		
+		x = 13
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+			give_guarantee = SER
+			diplomatic_relation = { country = SER relation = non_aggression_pact }
+		}
+	}
+	
+	focus = {
+		id = SOV_liberate_romanian_slavs
+		icon = GFX_focus_war_on_romania
+		prerequisite = { focus = SOV_serbian_friendship }
+		prerequisite = { focus = SOV_bulgarian_friendship }
+		
+		cost = 5
+		
+		x = 15
+		y = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_weapons_for_our_brothers
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = SOV_serbian_friendship }
+		prerequisite = { focus = SOV_bulgarian_friendship }
+		
+		cost = 5
+		
+		x = 13
+		y = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_together_for_victory
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SOV_weapons_for_our_brothers }
+		
+		cost = 5
+		
+		x = 13
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_proclaim_the_great_slavic_empire
+		icon = GFX_focus_proclaim_the_great_slavic_empire
+		prerequisite = { focus = SOV_liberate_romanian_slavs }
+		
+		cost = 5
+		
+		x = 16
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_guaranteed = SER
+			SER = { has_opinion = { target = SOV value > 69 } }
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_cosmetic_tag = SOV_SLAVIC
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_eastern_europe_politics
+		icon = GFX_focus_generic_eastern_europe_politics
+		prerequisite = { focus = SOV_diplomatic_efforts 
+						 focus = SOV_expansionist_efforts }
+		
+		cost = 5
+		
+		x = 18
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_accept_polish_independence
+		icon = GFX_focus_improve_relation_poland
+		prerequisite = { focus = SOV_eastern_europe_politics }
+		
+		cost = 5
+		
+		x = 17
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	
+}

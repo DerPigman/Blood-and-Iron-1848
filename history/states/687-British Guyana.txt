@@ -1,0 +1,36 @@
+# BRITISH GUYANA
+state = {
+   # META
+   id = 687
+   name = "STATE_687"
+   manpower = 309000
+   state_category = pastoral
+
+   # RESOURCES
+   resources = {
+      aluminium = 112
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         4982 = {
+            naval_base = 1
+         }
+         infrastructure = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      4982 8107 12716
+   }
+}

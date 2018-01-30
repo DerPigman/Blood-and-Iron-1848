@@ -1,0 +1,102 @@
+####  COL - Colombia  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 306
+set_research_slots = 3
+
+# [1] META
+set_convoys = 10
+set_national_unity = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+}
+
+oob = "COL_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+   early_fighter = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideologie = {
+         popularity = 44
+      }
+      liberalism_ideologie = {
+         popularity = 38
+      }
+      centrism_ideologie = {
+         popularity = 16
+      }
+      socialism_ideologie = {
+         popularity = 0
+      }
+      jacobinism_ideologie = {
+         popularity = 0
+      }
+      marxism_ideologie = {
+         popularity = 0
+      }
+      nationalism_ideologie = {
+         popularity = 2
+      }
+      authoritarianism_ideologie = {
+         popularity = 0
+      }
+      monarchism_ideologie = {
+         popularity = 0
+      }
+      oligarchism_ideologie = {
+         popularity = 0
+      }
+   }
+   ruling_party = centrism_ideologie
+   last_election = 1910.6.15
+   election_frequency = 48
+   elections_allowed = yes
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Enrique Olaya Herrera"
+   desc = "POLITICS_ENRIQUE_OLAYA_HERRERA_DESC"
+   picture = "Portrait_Colombia_Enrique_Olaya_Herrera.dds"
+   expire = "1960.1.1"
+   ideology = liberalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "José Vicente Concha"
+   desc = "POLITICS_JOSE_VICENTE_CONCHA_DESC"
+   picture = "Portrait_Colombia_Jose_Vicente_Concha.dds"
+   expire = "1960.1.1"
+   ideology = conservatism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Carlos Eugenio Restrepo"
+   desc = "POLITICS_CARLOS_EUGENIO_RESTREPO_DESC"
+   picture = "Portrait_Colombia_Carlos_Eugenio_Restrepo.dds"
+   expire = "1960.1.1"
+   ideology = centrism
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

@@ -1,0 +1,34 @@
+# JALISCO
+state = {
+   # META
+   id = 478
+   name = "STATE_478"
+   manpower = 2470875
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      tungsten = 10
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = MEX
+      controller = MEX
+      add_core_of = MEX
+
+      # VICTORY POINTS
+      victory_points = { 13089 1 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      2051 5052 10172 12746 12873 13089
+   }
+}

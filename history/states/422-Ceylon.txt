@@ -1,0 +1,39 @@
+# CEYLON
+state = {
+   # META
+   id = 422
+   name = "STATE_422"
+   manpower = 5500000
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      rubber = 116
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+      victory_points = { 10201 3 }
+
+      # BUILDINGS
+      buildings = {
+         10201 = {
+            naval_base = 5
+         }
+         infrastructure = 3
+         industrial_complex = 1
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1213 4219 7260 7344 10201 10229 10287 12258
+   }
+}

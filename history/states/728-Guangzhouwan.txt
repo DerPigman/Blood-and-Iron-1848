@@ -1,0 +1,34 @@
+# GUANGZHOUWAN
+state = {
+   # META
+   id = 728
+   name = "STATE_728"
+   manpower = 200000
+   state_category = enclave
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = CHI
+      add_core_of = PRC
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         11981 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      11981
+   }
+}

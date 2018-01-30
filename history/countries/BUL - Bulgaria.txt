@@ -1,0 +1,133 @@
+####  BUL - Bulgaria  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 48
+set_research_slots = 3
+
+# [1] META
+set_convoys = 0
+set_national_unity = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+}
+
+oob = "BUL_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+   infantry_weapons1 = 1
+   tech_support = 1
+   tech_engineers = 1
+   motorised_infantry = 1
+   early_fighter = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideologie = {
+         popularity = 54
+      }
+      liberalism_ideologie = {
+         popularity = 17
+      }
+      centrism_ideologie = {
+         popularity = 15
+      }
+      socialism_ideologie = {
+         popularity = 3
+      }
+      jacobinism_ideologie = {
+         popularity = 0
+      }
+      marxism_ideologie = {
+         popularity = 0
+      }
+      nationalism_ideologie = {
+         popularity = 11
+      }
+      authoritarianism_ideologie = {
+         popularity = 0
+      }
+      monarchism_ideologie = {
+         popularity = 0
+      }
+      oligarchism_ideologie = {
+         popularity = 0
+      }
+   }
+   ruling_party = monarchism_ideologie
+   last_election = 1908.5.25
+   election_frequency = 48
+   elections_allowed = no
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Ferdinand I"
+   desc = "POLITICS_FERDINAND_I_DESC"
+   picture = "Portrait_Bulgaria_Ferdinand_I.dds"
+   expire = "1960.1.1"
+   ideology = constitutional
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Aleksandar Stamboliyski"
+   desc = "POLITICS_ALEKSANDAR_STAMBOLIYSKI_DESC"
+   picture = "Portrait_Bulgaria_Aleksandar_Stamboliyski.dds"
+   expire = "1960.1.1"
+   ideology = centrism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Stoyan Danev"
+   desc = "POLITICS_STOYAN_DANEV_DESC"
+   picture = "Portrait_Bulgaria_Stoyan_Danev.dds"
+   expire = "1960.1.1"
+   ideology = liberalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Aleksandar Malinov"
+   desc = "POLITICS_ALEKSANDAR_MALINOV_DESC"
+   picture = "Portrait_Bulgaria_Aleksandar_Malinov.dds"
+   expire = "1960.1.1"
+   ideology = conservatism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Ivan Evstratiev Geshov"
+   desc = "POLITICS_IVAN_EVSTRATIEV_GESHOV_DESC"
+   picture = "Portrait_Bulgaria_Ivan_Evstratiev_Geshov.dds"
+   expire = "1960.1.1"
+   ideology = nationalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Yanko Sakazov"
+   desc = "POLITICS_YANKO_SAKAZOV_DESC"
+   picture = "Portrait_Bulgaria_Yanko_Sakazov.dds"
+   expire = "1960.1.1"
+   ideology = socialism
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

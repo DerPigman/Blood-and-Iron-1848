@@ -1,0 +1,42 @@
+# HANNOVER
+state = {
+   # META
+   id = 59
+   name = "STATE_59"
+   manpower = 2438286
+   state_category = large_city
+
+   # RESOURCES
+   resources = {
+      oil = 4
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = GER
+      controller = GER
+      add_core_of = GER
+
+      # VICTORY POINTS
+      victory_points = { 3326 5 }
+      victory_points = { 6377 10 }
+
+      # BUILDINGS
+      buildings = {
+         6325 = {
+            naval_base = 1
+         }
+         infrastructure = 7
+         arms_factory = 4
+         industrial_complex = 3
+         dockyard = 3
+         air_base = 6
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      374 526 3271 3326 3395 6218 6263 6298 6325 6349 6377 6513 9238 9264 9375 11402 11468 11493
+   }
+}

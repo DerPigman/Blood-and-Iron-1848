@@ -1,0 +1,35 @@
+# PELOPONNESE
+state = {
+   # META
+   id = 186
+   name = "STATE_186"
+   manpower = 945000
+   state_category = town
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = GRE
+      controller = GRE
+      add_core_of = GRE
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         11965 = {
+            naval_base = 1
+         }
+         infrastructure = 5
+         arms_factory = 1
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1173 4078 4178 4193 7096 7211 11965
+   }
+}

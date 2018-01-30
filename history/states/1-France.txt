@@ -1,0 +1,36 @@
+# CORSICA
+state = {
+   # META
+   id = 1
+   name = "STATE_1"
+   manpower = 322900
+   state_category = town
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+      victory_points = { 3838 1 }
+
+      # BUILDINGS
+      buildings = {
+         3838 = {
+            naval_base = 3
+         }
+         infrastructure = 4
+         industrial_complex = 1
+         air_base = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      3838 9851 11804
+   }
+}

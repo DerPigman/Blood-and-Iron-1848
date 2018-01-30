@@ -1,0 +1,30 @@
+# EL AGHEILA
+state = {
+   # META
+   id = 449
+   name = "STATE_449"
+   manpower = 40431
+   state_category = enclave
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ITA
+      controller = ITA
+      add_core_of = LBA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1041 1198 4047 4057 10046 10117 12088
+   }
+}

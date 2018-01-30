@@ -1,0 +1,33 @@
+# COCOS ISLANDS
+state = {
+   # META
+   id = 712
+   name = "STATE_712"
+   manpower = 42
+   state_category = tiny_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         13002 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      13002
+   }
+}

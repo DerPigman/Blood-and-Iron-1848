@@ -1,0 +1,110 @@
+####  COS - Costa Rica  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 316
+set_research_slots = 3
+
+# [1] META
+set_convoys = 10
+set_national_unity = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+}
+
+oob = "COS_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideologie = {
+         popularity = 30
+      }
+      liberalism_ideologie = {
+         popularity = 42
+      }
+      centrism_ideologie = {
+         popularity = 4
+      }
+      socialism_ideologie = {
+         popularity = 0
+      }
+      jacobinism_ideologie = {
+         popularity = 0
+      }
+      marxism_ideologie = {
+         popularity = 0
+      }
+      nationalism_ideologie = {
+         popularity = 24
+      }
+      authoritarianism_ideologie = {
+         popularity = 0
+      }
+      monarchism_ideologie = {
+         popularity = 0
+      }
+      oligarchism_ideologie = {
+         popularity = 0
+      }
+   }
+   ruling_party = liberalism_ideologie
+   last_election = 1909.12.7
+   election_frequency = 48
+   elections_allowed = yes
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Ricardo Jiménez Oreamuno"
+   desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
+   picture = "Portrait_Costa_Rica_Ricardo_Jimenez_Oreamuno.dds"
+   expire = "1960.1.1"
+   ideology = liberalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Cleto González Víquez"
+   desc = "POLITICS_CLETO_GONZALEZ_VIQUEZ_DESC"
+   picture = "Portrait_Costa_Rica_Cleto_Gonzalez_Viquez.dds"
+   expire = "1960.1.1"
+   ideology = conservatism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Rafael Yglesias Castro"
+   desc = "POLITICS_RAFAEL_YGLESIAS_CASTRO_DESC"
+   picture = "Portrait_Costa_Rica_Rafael_Yglesias_Castro.dds"
+   expire = "1960.1.1"
+   ideology = nationalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Julio Acosta García"
+   desc = "POLITICS_JULIO_ACOSTA_GARCIA_DESC"
+   picture = "Portrait_Costa_Rica_Julio_Acosta_Garcia.dds"
+   expire = "1960.1.1"
+   ideology = centrism
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

@@ -1,0 +1,30 @@
+# SALEKHARD
+state = {
+   # META
+   id = 579
+   name = "STATE_579"
+   manpower = 45484
+   state_category = wasteland
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1664 1684 3169 4669 7689 7738 8461 9142
+   }
+}

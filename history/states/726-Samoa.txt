@@ -1,0 +1,33 @@
+# SAMOA
+state = {
+   # META
+   id = 726
+   name = "STATE_726"
+   manpower = 123214
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = USA
+      controller = USA
+      add_core_of = USA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         7290 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      7290 13080
+   }
+}

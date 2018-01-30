@@ -1,0 +1,30 @@
+# WYOMING
+state = {
+   # META
+   id = 381
+   name = "STATE_381"
+   manpower = 225564
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = USA
+      controller = USA
+      add_core_of = USA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1815 4610 4723 4794 4820 7688 7814 7888 10640 10711 12561 12633 12651
+   }
+}

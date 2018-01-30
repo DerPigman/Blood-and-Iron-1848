@@ -1,0 +1,30 @@
+# AL HAJARA
+state = {
+   # META
+   id = 675
+   name = "STATE_675"
+   manpower = 122093
+   state_category = wasteland
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = IRQ
+      controller = IRQ
+      add_core_of = IRQ
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1631 4951 10744 12413 12879
+   }
+}

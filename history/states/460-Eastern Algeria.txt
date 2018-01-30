@@ -1,0 +1,30 @@
+# CONSTANTINE
+state = {
+   # META
+   id = 460
+   name = "STATE_460"
+   manpower = 2343837
+   state_category = town
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1058 1160 4046 7065 7081 7166 9976 10078 11953 12051 13077
+   }
+}

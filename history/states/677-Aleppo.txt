@@ -1,0 +1,31 @@
+# ALEPPO
+state = {
+   # META
+   id = 677
+   name = "STATE_677"
+   manpower = 1325594
+   state_category = town
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = SYR
+
+      # VICTORY POINTS
+      victory_points = { 12473 1 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1056 1072 1088 7140 7671 10087 12029 12473
+   }
+}

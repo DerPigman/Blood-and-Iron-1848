@@ -1,0 +1,41 @@
+# NORTHERN ENGLAND
+state = {
+   # META
+   id = 131
+   name = "STATE_131"
+   manpower = 2128860
+   state_category = city
+
+   # RESOURCES
+   resources = {
+      steel = 60
+      aluminium = 8
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+      victory_points = { 351 10 }
+
+      # BUILDINGS
+      buildings = {
+         351 = {
+            naval_base = 6
+         }
+         infrastructure = 6
+         industrial_complex = 2
+         dockyard = 5
+         air_base = 6
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      219 351 3311 6399 9285 11270 11299 11332
+   }
+}

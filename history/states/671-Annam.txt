@@ -1,0 +1,40 @@
+# TONKIN
+state = {
+   # META
+   id = 671
+   name = "STATE_671"
+   manpower = 11528000
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      chromium = 8
+      tungsten = 38
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = VIN
+
+      # VICTORY POINTS
+      victory_points = { 4075 1 }
+
+      # BUILDINGS
+      buildings = {
+         1185 = {
+            naval_base = 1
+         }
+         infrastructure = 4
+         industrial_complex = 1
+         air_base = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1073 1157 1185 1248 1302 4075 4119 4255 4379 4397 4529 7015 7093 7229 7280 7518 9948 9988 10016 10075 10103 10129 10137 10180 10309 11909 11936 12008 12048 12065 12075 12297 12319
+   }
+}

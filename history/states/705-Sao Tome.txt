@@ -1,0 +1,33 @@
+# SAO TOME
+state = {
+   # META
+   id = 705
+   name = "STATE_705"
+   manpower = 24725
+   state_category = tiny_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = POR
+      controller = POR
+      add_core_of = POR
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         13015 = {
+            naval_base = 1
+         }
+         infrastructure = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      13015
+   }
+}

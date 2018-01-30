@@ -1,0 +1,33 @@
+# LEEWARD ISLANDS
+state = {
+   # META
+   id = 308
+   name = "STATE_308"
+   manpower = 25678
+   state_category = tiny_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         4450 = {
+            naval_base = 1
+         }
+         infrastructure = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      4450 7123
+   }
+}

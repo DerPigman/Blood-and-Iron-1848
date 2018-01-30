@@ -1,0 +1,33 @@
+# KERGUELEN
+state = {
+   # META
+   id = 713
+   name = "STATE_713"
+   manpower = 96
+   state_category = tiny_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         2165 = {
+            naval_base = 1
+         }
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      2165
+   }
+}

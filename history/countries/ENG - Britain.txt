@@ -1,0 +1,162 @@
+####  ENG - Britain  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 126
+set_research_slots = 4
+
+# [1] META
+set_convoys = 800
+set_national_unity = 0.6
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+}
+
+oob = "ENG_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+   infantry_weapons1 = 1
+   tech_support = 1
+   tech_engineers = 1
+   tech_recon = 1
+   gw_artillery = 1
+   gwtank = 1
+   basic_light_tank = 1
+   early_fighter = 1
+   naval_bomber1 = 1
+   early_bomber = 1
+   early_destroyer = 1
+   early_light_cruiser = 1
+   transport = 1
+   trench_warfare = 1
+   fleet_in_being = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideologie = {
+         popularity = 41
+      }
+      liberalism_ideologie = {
+         popularity = 42
+      }
+      centrism_ideologie = {
+         popularity = 0
+      }
+      socialism_ideologie = {
+         popularity = 10
+      }
+      jacobinism_ideologie = {
+         popularity = 0
+      }
+      marxism_ideologie = {
+         popularity = 0
+      }
+      nationalism_ideologie = {
+         popularity = 7
+      }
+      authoritarianism_ideologie = {
+         popularity = 0
+      }
+      monarchism_ideologie = {
+         popularity = 0
+      }
+      oligarchism_ideologie = {
+         popularity = 0
+      }
+   }
+   ruling_party = conservatism_ideologie
+   last_election = 1910.1.15
+   election_frequency = 48
+   elections_allowed = yes
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Herbert Henry Asquith"
+   desc = "POLITICS_HERBERT_HENRY_ASQUITH_DESC"
+   picture = "Portrait_Britain_Herbert_Henry_Asquith.dds"
+   expire = "1960.1.1"
+   ideology = liberalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Benjamin Disraeli"
+   desc = "POLITICS_BENJAMIN_DISRAELI_DESC"
+   picture = "Portrait_Britain_Benjamin_Disraeli.dds"
+   expire = "1960.1.1"
+   ideology = conservatism
+   traits = {
+   }
+}
+# [6] AUTONOMY
+if = {
+   limit = {
+       has_dlc = "Together for Victory"
+   }
+   set_autonomy = {
+      target = BLZ
+      autonomous_state = liberalism_ideologie
+      freedom_level  = 0.35
+   }
+   set_autonomy = {
+      target = NFL
+      autonomous_state = autonomy_colony
+      freedom_level  = 0.35
+   }
+   else = {
+      puppet = BLZ
+      puppet = NFL
+   }
+}
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+create_corps_commander = {
+   name = "Thomas Victor Anderson"
+   picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
+   skill = 4
+   traits = {
+   }
+}
+create_field_marshal = {
+   name = "Charles Foulkes"
+   picture = "GFX_CAN_charles_foulkes"
+   skill = 4
+   traits = {
+   }
+}
+
+# [9] EQUIPMENT VARIANTS
+create_equipment_variant = {
+   name = "Sanguenay Class"
+   type = destroyer_1
+   upgrades = {
+      upgrade_1 = 2
+      upgrade_2 = 2
+      upgrade_3 = 2
+      upgrade_4 = 2
+   }
+   obsolete = no
+}
+create_equipment_variant = {
+   name = "Athabaskan Class"
+   type = destroyer_1
+   upgrades = {
+      upgrade_1 = 2
+      upgrade_2 = 2
+      upgrade_3 = 2
+      upgrade_4 = 2
+   }
+   obsolete = no
+}

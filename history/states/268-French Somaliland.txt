@@ -1,0 +1,34 @@
+# FRENCH SOMALILAND
+state = {
+   # META
+   id = 268
+   name = "STATE_268"
+   manpower = 85232
+   state_category = enclave
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         8124 = {
+            naval_base = 2
+         }
+         infrastructure = 3
+         air_base = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      4985 8124
+   }
+}

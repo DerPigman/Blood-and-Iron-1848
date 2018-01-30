@@ -1,0 +1,31 @@
+# OLTENIA
+state = {
+   # META
+   id = 81
+   name = "STATE_81"
+   manpower = 1519300
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ROM
+      controller = ROM
+      add_core_of = ROM
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 5
+         industrial_complex = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      637 3630 3645 6652 6667 11588 11605 11657
+   }
+}

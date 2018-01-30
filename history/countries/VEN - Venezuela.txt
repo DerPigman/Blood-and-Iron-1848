@@ -1,0 +1,85 @@
+####  VEN - Venezuela  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 307
+set_research_slots = 3
+
+# [1] META
+set_convoys = 10
+set_national_unity = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+}
+
+oob = "VEN_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+   gw_artillery = 1
+   early_fighter = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideologie = {
+         popularity = 0
+      }
+      liberalism_ideologie = {
+         popularity = 0
+      }
+      centrism_ideologie = {
+         popularity = 0
+      }
+      socialism_ideologie = {
+         popularity = 0
+      }
+      jacobinism_ideologie = {
+         popularity = 0
+      }
+      marxism_ideologie = {
+         popularity = 0
+      }
+      nationalism_ideologie = {
+         popularity = 0
+      }
+      authoritarianism_ideologie = {
+         popularity = 100
+      }
+      monarchism_ideologie = {
+         popularity = 0
+      }
+      oligarchism_ideologie = {
+         popularity = 0
+      }
+   }
+   ruling_party = authoritarianism_ideologie
+   last_election = 1910.12.19
+   election_frequency = 48
+   elections_allowed = no
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Juan Vicente Gómez"
+   desc = "POLITICS_JUAN_VICENTE_GOMEZ_DESC"
+   picture = "Portrait_Venezuela_Juan_Vicente_Gomez.dds"
+   expire = "1960.1.1"
+   ideology = military_dictatorship
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

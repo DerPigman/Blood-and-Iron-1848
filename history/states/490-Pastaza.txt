@@ -1,0 +1,32 @@
+# PASTAZA
+state = {
+   # META
+   id = 490
+   name = "STATE_490"
+   manpower = 70020
+   state_category = pastoral
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ECU
+      controller = ECU
+      add_core_of = PRU
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+         industrial_complex = 1
+         air_base = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      8149 10942
+   }
+}

@@ -1,0 +1,42 @@
+# PAS DE CALAIS
+state = {
+   # META
+   id = 29
+   name = "STATE_29"
+   manpower = 4556400
+   state_category = large_city
+
+   # RESOURCES
+   resources = {
+      steel = 112
+      aluminium = 22
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+      victory_points = { 575 5 }
+      victory_points = { 11483 10 }
+      victory_points = { 11548 15 }
+
+      # BUILDINGS
+      buildings = {
+         575 = {
+            naval_base = 6
+         }
+         infrastructure = 8
+         industrial_complex = 6
+         air_base = 10
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      454 575 3402 3447 3476 3536 6504 6585 9500 9561 11420 11483 11548 11549 11606
+   }
+}

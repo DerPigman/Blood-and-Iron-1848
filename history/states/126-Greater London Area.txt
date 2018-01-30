@@ -1,0 +1,40 @@
+# GREATER LONDON AREA
+state = {
+   # META
+   id = 126
+   name = "STATE_126"
+   manpower = 9824296
+   state_category = megalopolis
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+      victory_points = { 6103 50 }
+
+      # BUILDINGS
+      buildings = {
+         11374 = {
+            naval_base = 10
+         }
+         infrastructure = 9
+         arms_factory = 4
+         industrial_complex = 4
+         dockyard = 1
+         anti_air_building = 5
+         radar_station = 1
+         air_base = 10
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      6103 9239 11333 11374
+   }
+}

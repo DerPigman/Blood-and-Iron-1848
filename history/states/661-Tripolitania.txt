@@ -1,0 +1,30 @@
+# TRIPOLITANIA
+state = {
+   # META
+   id = 661
+   name = "STATE_661"
+   manpower = 17617
+   state_category = wasteland
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ITA
+      controller = ITA
+      add_core_of = LBA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1174 4051 4117 4176 7154 7194 10037 10067 11940 12009
+   }
+}

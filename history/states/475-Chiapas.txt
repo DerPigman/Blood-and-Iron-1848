@@ -1,0 +1,30 @@
+# CHIAPAS
+state = {
+   # META
+   id = 475
+   name = "STATE_475"
+   manpower = 805874
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = MEX
+      controller = MEX
+      add_core_of = MEX
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1900 12753 12867
+   }
+}

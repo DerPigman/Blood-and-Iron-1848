@@ -1,0 +1,31 @@
+# LUGA
+state = {
+   # META
+   id = 208
+   name = "STATE_208"
+   manpower = 341819
+   state_category = rural
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 5
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      104 126 181 3120 6139 6197 9097 9098 11032 11080 11139 11186
+   }
+}

@@ -1,0 +1,34 @@
+# ENGELS
+state = {
+   # META
+   id = 401
+   name = "STATE_401"
+   manpower = 927795
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      steel = 40
+      tungsten = 34
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      410 452 499 3490 3551 6339 6430 6473 6502 6574 6601 9337 9432 9447 9473 9577 11321 11421 11458 11460 11523
+   }
+}

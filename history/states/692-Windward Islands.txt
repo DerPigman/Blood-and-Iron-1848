@@ -1,0 +1,33 @@
+# WINDWARD ISLANDS
+state = {
+   # META
+   id = 692
+   name = "STATE_692"
+   manpower = 76485
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = ENG
+      controller = ENG
+      add_core_of = ENG
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         11350 = {
+            naval_base = 1
+         }
+         infrastructure = 4
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      379 11106 11350 13009
+   }
+}

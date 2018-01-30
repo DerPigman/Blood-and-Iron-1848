@@ -1,0 +1,33 @@
+# FRENCH INDIA
+state = {
+   # META
+   id = 320
+   name = "STATE_320"
+   manpower = 286410
+   state_category = enclave
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = FRA
+      controller = FRA
+      add_core_of = FRA
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         10149 = {
+            naval_base = 1
+         }
+         infrastructure = 5
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      10149
+   }
+}

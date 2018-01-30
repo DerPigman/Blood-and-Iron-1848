@@ -1,0 +1,39 @@
+# JUTLAND
+state = {
+   # META
+   id = 99
+   name = "STATE_99"
+   manpower = 1672235
+   state_category = town
+
+   # RESOURCES
+   resources = {
+      aluminium = 10
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = DEN
+      controller = DEN
+      add_core_of = DEN
+
+      # VICTORY POINTS
+      victory_points = { 6364 3 }
+
+      # BUILDINGS
+      buildings = {
+         394 = {
+            naval_base = 3
+         }
+         infrastructure = 8
+         industrial_complex = 3
+         air_base = 2
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      316 332 394 399 3206 3277 3341 6235 6364 11251
+   }
+}

@@ -1,0 +1,37 @@
+# WESTERN SLOVAKIA
+state = {
+   # META
+   id = 70
+   name = "STATE_70"
+   manpower = 1230500
+   state_category = city
+
+   # RESOURCES
+   resources = {
+      tungsten = 2
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = AUS
+      controller = AUS
+      add_core_of = SLO
+
+      # VICTORY POINTS
+      victory_points = { 9692 10 }
+
+      # BUILDINGS
+      buildings = {
+         infrastructure = 5
+         industrial_complex = 3
+         arms_factory = 2
+         air_base = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      541 3484 3537 9539 9692 11522 11539
+   }
+}

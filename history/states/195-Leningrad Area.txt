@@ -1,0 +1,39 @@
+# SAINT PETERSBURG
+state = {
+   # META
+   id = 195
+   name = "STATE_195"
+   manpower = 3750158
+   state_category = metropolis
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
+
+      # VICTORY POINTS
+      victory_points = { 3151 30 }
+
+      # BUILDINGS
+      buildings = {
+         3151 = {
+            naval_base = 10
+            coastal_bunker = 5
+         }
+         infrastructure = 7
+         arms_factory = 7
+         industrial_complex = 1
+         dockyard = 3
+         air_base = 10
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      79 149 3151 6174 11068
+   }
+}

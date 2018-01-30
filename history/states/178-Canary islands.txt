@@ -1,0 +1,33 @@
+# CANARY ISLANDS
+state = {
+   # META
+   id = 178
+   name = "STATE_178"
+   manpower = 561347
+   state_category = small_island
+
+   # RESOURCES
+
+   # HISTORY
+   history = {
+      # META
+      owner = SPR
+      controller = SPR
+      add_core_of = SPR
+
+      # VICTORY POINTS
+
+      # BUILDINGS
+      buildings = {
+         13071 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      13071
+   }
+}

@@ -1,0 +1,39 @@
+# YEMEN
+state = {
+   # META
+   id = 293
+   name = "STATE_293"
+   manpower = 2489500
+   state_category = rural
+
+   # RESOURCES
+   resources = {
+      oil = 1
+   }
+
+   # HISTORY
+   history = {
+      # META
+      owner = YEM
+      controller = YEM
+      add_core_of = YEM
+
+      # VICTORY POINTS
+      victory_points = { 10840 3 }
+
+      # BUILDINGS
+      buildings = {
+         10840 = {
+            naval_base = 1
+         }
+         infrastructure = 3
+         arms_factory = 1
+         industrial_complex = 1
+      }
+   }
+
+   # PROVINCES
+   provinces = {
+      1920 1973 4924 10752 10840
+   }
+}
