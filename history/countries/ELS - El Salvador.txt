@@ -11,10 +11,6 @@ set_national_unity = 0.5
 add_political_power = 0
 
 # [2] IDEAS
-add_timed_idea = { idea = ELS_military_rule days = 365 }
-add_ideas = {
-   ELS_military_rule
-}
 
 oob = "ELS_1910"
 
@@ -27,39 +23,39 @@ set_technology = {
 # [4] POLITICS
 set_politics = {
    parties = {
-      conservatism_ideologie = {
+      conservatism_ideology = {
          popularity = 9
       }
-      liberalism_ideologie = {
+      liberalism_ideology = {
          popularity = 8
       }
-      centrism_ideologie = {
+      centrism_ideology = {
          popularity = 53
       }
-      socialism_ideologie = {
+      socialism_ideology = {
          popularity = 30
       }
-      jacobinism_ideologie = {
+      jacobinism_ideology = {
          popularity = 0
       }
-      marxism_ideologie = {
+      marxism_ideology = {
          popularity = 0
       }
-      nationalism_ideologie = {
+      nationalism_ideology = {
          popularity = 0
       }
-      authoritarianism_ideologie = {
+      authoritarianism_ideology = {
          popularity = 0
       }
-      monarchism_ideologie = {
+      monarchism_ideology = {
          popularity = 0
       }
-      oligarchism_ideologie = {
+      oligarchism_ideology = {
          popularity = 0
       }
    }
-   ruling_party = authoritarianism_ideologie
-   last_election = 1907.1.12
+   ruling_party = authoritarianism_ideology
+   last_election = 1906.1.12
    election_frequency = 48
    elections_allowed = yes
 }

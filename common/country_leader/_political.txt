@@ -1,0 +1,92 @@
+leader_traits = {
+   conservatism_ideology_political_advisor = {
+      random = no
+      sprite = 13
+      conservatism_ideology_drift = 0.1
+
+      ai_will_do = {
+         factor = 0
+      }
+   }
+   liberalism_ideology_political_advisor = {
+      random = no
+      sprite = 13
+      liberalism_ideology_drift = 0.1
+
+      ai_will_do = {
+         factor = 0
+      }
+   }
+   centrism_ideology_political_advisor = {
+      random = no
+      sprite = 13
+      centrism_ideology_drift = 0.1
+
+      ai_will_do = {
+         factor = 0
+      }
+   }
+   socialism_ideology_political_advisor = {
+      random = no
+      sprite = 13
+      socialism_ideology_drift = 0.1
+
+      ai_will_do = {
+         factor = 0
+      }
+   }
+   jacobinism_ideology_political_advisor = {
+      random = no
+      sprite = 13
+      jacobinism_ideology_drift = 0.1
+
+      ai_will_do = {
+         factor = 0
+      }
+   }
+   marxism_ideology_political_advisor = {
+      random = no
+      sprite = 13
+      marxism_ideology_drift = 0.1
+
+      ai_will_do = {
+         factor = 0
+      }
+   }
+   nationalism_ideology_political_advisor = {
+      random = no
+      sprite = 13
+      nationalism_ideology_drift = 0.1
+
+      ai_will_do = {
+         factor = 0
+      }
+   }
+   authoritarianism_ideology_political_advisor = {
+      random = no
+      sprite = 13
+      authoritarianism_ideology_drift = 0.1
+
+      ai_will_do = {
+         factor = 0
+      }
+   }
+   monarchism_ideology_political_advisor = {
+      random = no
+      sprite = 13
+      monarchism_ideology_drift = 0.1
+
+      ai_will_do = {
+         factor = 0
+      }
+   }
+   oligarchism_ideology_political_advisor = {
+      random = no
+      sprite = 13
+      oligarchism_ideology_drift = 0.1
+
+      ai_will_do = {
+         factor = 0
+      }
+   }
+}

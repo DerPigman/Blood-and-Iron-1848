@@ -1,0 +1,506 @@
+ideas = {
+   country = {
+      conservatism_ideology_opposition_voicing_protests = {
+
+         picture = generic_intel_bonus
+
+         allowed = {
+            always = yes
+         }
+
+         allowed_civil_war = {
+            NOT = {
+               any_country = {
+                  original_tag = ROOT
+                  has_government = conservatism_ideology
+               }
+            }
+         }
+
+         removal_cost = -1
+
+         modifier = {
+			political_power_factor = -0.50
+            conservatism_ideology_drift = 0.05
+         }
+      }
+      liberalism_ideology_opposition_voicing_protests = {
+
+         picture = generic_intel_bonus
+
+         allowed = {
+            always = yes
+         }
+
+         allowed_civil_war = {
+            NOT = {
+               any_country = {
+                  original_tag = ROOT
+                  has_government = liberalism_ideology
+               }
+            }
+         }
+
+         removal_cost = -1
+
+         modifier = {
+			political_power_factor = -0.50
+            liberalism_ideology_drift = 0.05
+         }
+      }
+      centrism_ideology_opposition_voicing_protests = {
+
+         picture = generic_intel_bonus
+
+         allowed = {
+            always = yes
+         }
+
+         allowed_civil_war = {
+            NOT = {
+               any_country = {
+                  original_tag = ROOT
+                  has_government = centrism_ideology
+               }
+            }
+         }
+
+         removal_cost = -1
+
+         modifier = {
+			political_power_factor = -0.50
+            centrism_ideology_drift = 0.05
+         }
+      }
+      socialism_ideology_opposition_voicing_protests = {
+
+         picture = generic_intel_bonus
+
+         allowed = {
+            always = yes
+         }
+
+         allowed_civil_war = {
+            NOT = {
+               any_country = {
+                  original_tag = ROOT
+                  has_government = socialism_ideology
+               }
+            }
+         }
+
+         removal_cost = -1
+
+         modifier = {
+			political_power_factor = -0.50
+            socialism_ideology_drift = 0.05
+         }
+      }
+      jacobinism_ideology_partisans_recruiting = {
+
+         picture = generic_intel_bonus
+
+         allowed = {
+            always = yes
+         }
+
+         allowed_civil_war = {
+            NOT = {
+               any_country = {
+                  original_tag = ROOT
+                  has_government = jacobinism_ideology
+               }
+            }
+         }
+
+         removal_cost = -1
+
+         modifier = {
+            conscription = -0.002
+            jacobinism_ideology_drift = 0.05
+         }
+      }
+      marxism_ideology_partisans_recruiting = {
+
+         picture = generic_intel_bonus
+
+         allowed = {
+            always = yes
+         }
+
+         allowed_civil_war = {
+            NOT = {
+               any_country = {
+                  original_tag = ROOT
+                  has_government = marxism_ideology
+               }
+            }
+         }
+
+         removal_cost = -1
+
+         modifier = {
+            conscription = -0.2
+            marxism_ideology_drift = 0.05
+         }
+      }
+      nationalism_ideology_opposition_voicing_protests = {
+
+         picture = generic_intel_bonus
+
+         allowed = {
+            always = yes
+         }
+
+         allowed_civil_war = {
+            NOT = {
+               any_country = {
+                  original_tag = ROOT
+                  has_government = nationalism_ideology
+               }
+            }
+         }
+
+         removal_cost = -1
+
+         modifier = {
+			political_power_factor = -0.50
+            nationalism_ideology_drift = 0.05
+         }
+      }
+      authoritarianism_ideology_assault_divisions = {
+
+         picture = generic_intel_bonus
+
+         allowed = {
+            always = yes
+         }
+
+         allowed_civil_war = {
+            NOT = {
+               any_country = {
+                  original_tag = ROOT
+                  has_government = authoritarianism_ideology
+               }
+            }
+         }
+
+         removal_cost = -1
+
+         modifier = {
+			conscription = -0.02
+            authoritarianism_ideology_drift = 0.05
+			unity_factor = 0.05
+         }
+      }
+
+      oligarchism_ideology_opposition_voicing_protests = {
+
+         picture = generic_intel_bonus
+
+         allowed = {
+            always = yes
+         }
+
+         allowed_civil_war = {
+            NOT = {
+               any_country = {
+                  original_tag = ROOT
+                  has_government = oligarchism_ideology
+               }
+            }
+         }
+
+         removal_cost = -1
+
+         modifier = {
+			political_power_factor = -0.50
+            oligarchism_ideology_drift = 0.05
+         }
+      }
+
+   }
+
+   political_advisor = {
+      generic_conservatism_ideology_political_advisor = {
+         allowed = {
+            NOT = {
+               has_available_idea_with_traits = { idea = conservatism_ideology_political_advisor limit = 1 }
+            }
+         }
+
+         available = {
+            always = yes
+         }
+
+         traits = { conservatism_ideology_political_advisor }
+
+         on_add = {
+            country_event = political.BaI.1
+         }
+
+         do_effect = {
+            NOT = {
+               has_government = conservatism_ideology
+            }
+         }
+
+         ai_will_do = {
+            factor = 0
+         }
+      }
+
+      generic_liberalism_ideology_political_advisor = {
+         allowed = {
+            NOT = {
+               has_available_idea_with_traits = { idea = liberalism_ideology_political_advisor limit = 1 }
+            }
+         }
+
+         available = {
+            always = yes
+         }
+
+         traits = { liberalism_ideology_political_advisor }
+
+         on_add = {
+            country_event = political.BaI.9
+         }
+
+         do_effect = {
+            NOT = {
+               has_government = liberalism_ideology
+            }
+         }
+
+         ai_will_do = {
+            factor = 0
+         }
+      }
+
+      generic_centrism_ideology_political_advisor = {
+         allowed = {
+            NOT = {
+               has_available_idea_with_traits = { idea = centrism_ideology_political_advisor limit = 1 }
+            }
+         }
+
+         available = {
+            always = yes
+         }
+
+         traits = { centrism_ideology_political_advisor }
+
+         on_add = {
+            country_event = political.BaI.17
+         }
+
+         do_effect = {
+            NOT = {
+               has_government = centrism_ideology
+            }
+         }
+
+         ai_will_do = {
+            factor = 0
+         }
+      }
+
+      generic_socialism_ideology_political_advisor = {
+         allowed = {
+            NOT = {
+               has_available_idea_with_traits = { idea = socialism_ideology_political_advisor limit = 1 }
+            }
+         }
+
+         available = {
+            always = yes
+         }
+
+         traits = { socialism_ideology_political_advisor }
+
+         on_add = {
+            country_event = political.BaI.25
+         }
+
+         do_effect = {
+            NOT = {
+               has_government = socialism_ideology
+            }
+         }
+
+         ai_will_do = {
+            factor = 0
+         }
+      }
+
+      generic_jacobinism_ideology_political_advisor = {
+         allowed = {
+            NOT = {
+               has_available_idea_with_traits = { idea = jacobinism_ideology_political_advisor limit = 1 }
+            }
+         }
+
+         available = {
+            always = yes
+         }
+
+         traits = { jacobinism_ideology_political_advisor }
+
+         on_add = {
+            country_event = political.BaI.33
+         }
+
+         do_effect = {
+            NOT = {
+               has_government = jacobinism_ideology
+            }
+         }
+
+         ai_will_do = {
+            factor = 0
+         }
+      }
+
+      generic_marxism_ideology_political_advisor = {
+         allowed = {
+            NOT = {
+               has_available_idea_with_traits = { idea = marxism_ideology_political_advisor limit = 1 }
+            }
+         }
+
+         available = {
+            always = yes
+         }
+
+         traits = { marxism_ideology_political_advisor }
+
+         on_add = {
+            country_event = political.BaI.42
+         }
+
+         do_effect = {
+            NOT = {
+               has_government = marxism_ideology
+            }
+         }
+
+         ai_will_do = {
+            factor = 0
+         }
+      }
+
+      generic_nationalism_ideology_political_advisor = {
+         allowed = {
+            NOT = {
+               has_available_idea_with_traits = { idea = nationalism_ideology_political_advisor limit = 1 }
+            }
+         }
+
+         available = {
+            always = yes
+         }
+
+         traits = { nationalism_ideology_political_advisor }
+
+         on_add = {
+            country_event = political.BaI.51
+         }
+
+         do_effect = {
+            NOT = {
+               has_government = nationalism_ideology
+            }
+         }
+
+         ai_will_do = {
+            factor = 0
+         }
+      }
+
+      generic_authoritarianism_ideology_political_advisor = {
+         allowed = {
+            NOT = {
+               has_available_idea_with_traits = { idea = authoritarianism_ideology_political_advisor limit = 1 }
+            }
+         }
+
+         available = {
+            always = yes
+         }
+
+         traits = { authoritarianism_ideology_political_advisor }
+
+         on_add = {
+            country_event = political.BaI.59
+         }
+
+         do_effect = {
+            NOT = {
+               has_government = authoritarianism_ideology
+            }
+         }
+
+         ai_will_do = {
+            factor = 0
+         }
+      }
+
+      generic_monarchism_ideology_political_advisor = {
+         allowed = {
+            NOT = {
+               has_available_idea_with_traits = { idea = monarchism_ideology_political_advisor limit = 1 }
+            }
+         }
+
+         available = {
+            always = yes
+         }
+
+         traits = { monarchism_ideology_political_advisor }
+
+         on_add = {
+            country_event = #Add Event Here
+         }
+
+         do_effect = {
+            NOT = {
+               has_government = monarchism_ideology
+            }
+         }
+
+         ai_will_do = {
+            factor = 0
+         }
+      }
+
+      generic_oligarchism_ideology_political_advisor = {
+         allowed = {
+            NOT = {
+               has_available_idea_with_traits = { idea = oligarchism_ideology_political_advisor limit = 1 }
+            }
+         }
+
+         available = {
+            always = yes
+         }
+
+         traits = { oligarchism_ideology_political_advisor }
+
+         on_add = {
+            country_event = political.BaI.68
+         }
+
+         do_effect = {
+            NOT = {
+               has_government = oligarchism_ideology
+            }
+         }
+
+         ai_will_do = {
+            factor = 0
+         }
+      }
+
+   }
+}

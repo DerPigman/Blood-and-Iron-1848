@@ -16,9 +16,9 @@ country_event = {
 	option = {
 		name = soviet.BaI.1.a
 		complete_national_focus = SOV_strengthen_the_tsar
-		add_ideas = {
-			SOV_god_save_the_tsar_1
-		}
+		#add_ideas = {
+		#	SOV_god_save_the_tsar_1
+		#}
 	}
 	
 	option = {
@@ -59,6 +59,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
+		complete_national_focus = SOV_second_bloody_sunday
 		name = soviet.BaI.3.a
 		add_manpower = -5000
 	}	

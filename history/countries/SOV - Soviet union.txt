@@ -13,7 +13,6 @@ add_political_power = 0
 # [2] IDEAS
 add_ideas = {
    SOV_duma_of_public_anger
-   SOV_socialist_revolutionaries
 }
 
 oob = "SOV_1910"
@@ -51,38 +50,38 @@ set_technology = {
 # [4] POLITICS
 set_politics = {
    parties = {
-      conservatism_ideologie = {
+      conservatism_ideology = {
          popularity = 6
       }
-      liberalism_ideologie = {
+      liberalism_ideology = {
          popularity = 42
       }
-      centrism_ideologie = {
+      centrism_ideology = {
          popularity = 17
       }
-      socialism_ideologie = {
+      socialism_ideology = {
          popularity = 27
       }
-      jacobinism_ideologie = {
+      jacobinism_ideology = {
          popularity = 0
       }
-      marxism_ideologie = {
+      marxism_ideology = {
          popularity = 8
       }
-      nationalism_ideologie = {
+      nationalism_ideology = {
          popularity = 0
       }
-      authoritarianism_ideologie = {
+      authoritarianism_ideology = {
          popularity = 0
       }
-      monarchism_ideologie = {
+      monarchism_ideology = {
          popularity = 0
       }
-      oligarchism_ideologie = {
+      oligarchism_ideology = {
          popularity = 0
       }
    }
-   ruling_party = monarchism_ideologie
+   ruling_party = monarchism_ideology
    last_election = 1906.4.26
    election_frequency = 48
    elections_allowed = no

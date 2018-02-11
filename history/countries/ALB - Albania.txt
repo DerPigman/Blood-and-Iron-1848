@@ -1,0 +1,86 @@
+####  ALB - Albania  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 44
+set_research_slots = 3
+
+# [1] META
+set_convoys = 5
+set_national_unity = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+   
+}
+
+oob = "ALB_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+   tech_support = 1
+   tech_recon = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideology = {
+         popularity = 0
+      }
+      liberalism_ideology = {
+         popularity = 0
+      }
+      centrism_ideology = {
+         popularity = 0
+      }
+      socialism_ideology = {
+         popularity = 0
+      }
+      jacobinism_ideology = {
+         popularity = 0
+      }
+      marxism_ideology = {
+         popularity = 0
+      }
+      nationalism_ideology = {
+         popularity = 0
+      }
+      authoritarianism_ideology = {
+         popularity = 0
+      }
+      monarchism_ideology = {
+         popularity = 100
+      }
+      oligarchism_ideology = {
+         popularity = 0
+      }
+   }
+   ruling_party = monarchism_ideology
+   last_election = 1910.1.1
+   election_frequency = 48
+   elections_allowed = no
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "William of Wied"
+   desc = "POLITICS_WILLIAM_OF_WIED_DESC"
+   picture = "Portrait_Albania_William_of_Wied.dds"
+   expire = "1960.1.1"
+   ideology = absolute
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

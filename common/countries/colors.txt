@@ -110,9 +110,21 @@ SWE = {
    color = rgb { 36 132 247 }
    color_ui = rgb { 47 172 255 }
 }
+NOR = {
+   color = rgb { 111 71 71 }
+   color_ui = rgb { 144 92 92 }
+}
 LIT = {
    color = rgb { 219 219 119 }
    color_ui = rgb { 255 255 155 }
+}
+GRE = {
+   color = rgb { 93 181 227 }
+   color_ui = rgb { 121 235 255 }
+}
+ALB = {
+   color = rgb { 149 45 102 }
+   color_ui = rgb { 194 59 133 }
 }
 AUS = {
    color = rgb { 194 198 215 }

@@ -1,0 +1,147 @@
+####  NOR - Norway  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 110
+set_research_slots = 3
+
+# [1] META
+set_convoys = 80
+set_national_unity = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+   conservatism_ideology
+}
+
+oob = "NOR_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+   infantry_weapons1 = 1
+   gw_artillery = 1
+   tech_recon = 1
+   tech_support = 1
+   tech_engineers = 1
+   gwtank = 1
+   basic_light_tank = 1
+   CAS1 = 1
+   early_fighter = 1
+   naval_bomber1 = 1
+   cv_naval_bomber1 = 1
+   early_bomber = 1
+   early_submarine = 1
+   early_destroyer = 1
+   basic_destroyer = 1
+   early_light_cruiser = 1
+   early_heavy_cruiser = 1
+   transport = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideology = {
+         popularity = 28
+      }
+      liberalism_ideology = {
+         popularity = 15
+      }
+      centrism_ideology = {
+         popularity = 31
+      }
+      socialism_ideology = {
+         popularity = 22
+      }
+      jacobinism_ideology = {
+         popularity = 0
+      }
+      marxism_ideology = {
+         popularity = 4
+      }
+      nationalism_ideology = {
+         popularity = 0
+      }
+      authoritarianism_ideology = {
+         popularity = 0
+      }
+      monarchism_ideology = {
+         popularity = 0
+      }
+      oligarchism_ideology = {
+         popularity = 0
+      }
+   }
+   ruling_party = monarchism_ideology
+   last_election = 1909.10.25
+   election_frequency = 36
+   elections_allowed = no
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Haakon VII"
+   desc = "POLITICS_HAAKON_VII_DESC"
+   picture = "Portrait_Norway_Haakon_VII.dds"
+   expire = "1960.1.1"
+   ideology = constitutional
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Gunnar Knudsen"
+   desc = "POLITICS_GUNNAR_KNUDSEN_DESC"
+   picture = "Portrait_Norway_Gunnar_Knudsen.dds"
+   expire = "1960.1.1"
+   ideology = centrism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Fredrik Stang"
+   desc = "POLITICS_FREDRIK_STANG_DESC"
+   picture = "Portrait_Norway_Fredrik_Stang.dds"
+   expire = "1960.1.1"
+   ideology = conservatism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Oscar Nissen"
+   desc = "POLITICS_OSCAR_NISSEN_DESC"
+   picture = "Portrait_Norway_Oscar_Nissen.dds"
+   expire = "1960.1.1"
+   ideology = socialism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Johan Castberg"
+   desc = "POLITICS_JOHAN_CASTBERG_DESC"
+   picture = "Portrait_Norway_Johan_Castberg.dds"
+   expire = "1960.1.1"
+   ideology = marxism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Abraham Berge"
+   desc = "POLITICS_ABRAHAM_BERGE_DESC"
+   picture = "Portrait_Norway_Abraham_Berge.dds"
+   expire = "1960.1.1"
+   ideology = liberalism
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

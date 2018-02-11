@@ -11,15 +11,14 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				always = yes
 			}
 
 			removal_cost = -1
 			
 			modifier = {
-				justify_war_goal_time = -0.05
-				send_volunteers_tension = -0.05
-				generate_wargoal_tension = -0.05
+				opinion_gain_monthly_factor  = 0.05
+				trade_opinion_factor = 0.05
 			}
 		}
 		
@@ -32,14 +31,57 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-				has_government = fascism
+				always = yes
 			}
 
 			removal_cost = -1
 			
-			modifier = {
-				opinion_gain_monthly_factor  = 0.05
-				trade_opinion_factor = 0.05
+			modifier = {	
+				justify_war_goal_time = -0.05
+				send_volunteers_tension = -0.05
+				generate_wargoal_tension = -0.05
+			}
+		}
+		
+		constitutional_monarchy = {
+		
+			picture = generic_constitutional_guarantees
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+			}
+			
+			traits = {
+				ignore_political_events_democratic
+			}
+		}
+		
+		elections_abandoned = {
+		
+			picture = FRA_matignon_agreements
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {	
+				political_power_factor = -0.25
+				unity_factor = -0.10
 			}
 		}
 	}

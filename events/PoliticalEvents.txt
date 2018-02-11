@@ -1,1 +1,4263 @@
-﻿
+###########################
+# Political Events
+###########################
+
+add_namespace = political.BaI
+
+###########################
+# Conservatism Events
+###########################
+
+# Move Towards Conservatism
+country_event = {
+  id = political.BaI.1
+  title = political.BaI.1.t
+  desc = political.BaI.1.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+	}
+
+	# Seek government support
+	option = {
+		name = political.BaI.1.a
+		custom_effect_tooltip = political.BaI.1.a.tt
+		clr_country_flag = conservatism_ideology_popular_movement
+		clr_country_flag = conservatism_ideology_opposition_formed
+		set_country_flag = conservatism_ideology_political_movement
+	}
+
+	# Seek popular support
+	option = {
+		name = political.BaI.1.b
+		custom_effect_tooltip = political.BaI.1.b.tt
+		clr_country_flag = conservatism_ideology_political_movement
+		clr_country_flag = conservatism_ideology_government_support
+		set_country_flag = conservatism_ideology_popular_movement
+	}
+}
+
+# [Ruling Party] Debates Democracy
+country_event = {
+	id = political.BaI.2
+	title = political.BaI.2.t
+	desc = political.BaI.2.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = conservatism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		NOT = { has_country_flag = conservatism_ideology_government_support }
+	}
+
+	mean_time_to_happen = {
+		days = 400
+		modifier = {
+			factor = 0.5
+			has_country_flag = conservatism_ideology_political_movement
+		}
+		modifier = {
+			factor = 0.5
+			conservatism_ideology > 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.2.a
+		custom_effect_tooltip = political.BaI.2.tt
+		clr_country_flag = conservatism_ideology_political_movement
+		set_country_flag = conservatism_ideology_government_support
+	}
+}
+
+# Conservatism Opposition Forming
+country_event = {
+  id = political.BaI.3
+  title = political.BaI.3.t
+  desc = political.BaI.3.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = conservatism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		NOT = { has_country_flag = conservatism_ideology_opposition_formed }
+	}
+
+	mean_time_to_happen = {
+		days = 300
+		modifier = {
+			factor = 0.5
+			has_country_flag = conservatism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.3.a
+		add_popularity = {
+			ideology = conservatism_ideology
+			popularity = 0.1
+		}
+		add_national_unity = -0.02
+		set_country_flag = conservatism_ideology_opposition_formed
+	}
+}
+
+# Public Call for Elections
+country_event = {
+	id = political.BaI.4
+	title = political.BaI.4.t
+	desc = political.BaI.4.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = conservatism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		has_country_flag = conservatism_ideology_opposition_formed
+		NOT = { has_idea = conservatism_ideology_opposition_voicing_protests }
+	}
+
+	mean_time_to_happen = {
+		days = 150
+	}
+
+	option = {
+		name = political.BaI.4.a
+	}
+
+	option = {
+		name = political.BaI.4.b
+		add_political_power = -20
+		add_ideas = conservatism_ideology_opposition_voicing_protests
+	}
+}
+
+country_event = {
+	id = political.BaI.5
+	title = political.BaI.5.t
+	desc = political.BaI.5.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = conservatism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		conservatism_ideology > 0.5
+		has_country_flag = conservatism_ideology_government_support
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 200
+	}
+
+	option = {
+		name = political.BaI.5.a
+    if = {
+			limit = {
+        OR = {
+          	has_government = authoritarianism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = {
+        OR = {
+          	has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = conservatism_ideology
+			elections_allowed = yes
+		}
+		hold_election = ROOT
+		remove_ideas = conservatism_ideology_revolutionaries
+	}
+	option = {
+		name = political.BaI.5.b
+	}
+}
+
+### > 50% support
+country_event = {
+	id = political.BaI.6
+	title = political.BaI.6.t
+	desc = political.BaI.6.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+		NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		conservatism_ideology > 0.5
+		NOT = {
+			OR = {
+					has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+			}	
+		}
+		NOT = { has_idea = conservatism_ideology_revolutionaries }
+		NOT = { has_idea = reign_of_terror }
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = political.BaI.6.a
+		add_political_power = -100
+		add_popularity = {
+			ideology = conservatism_ideology
+			popularity = -0.10
+		}
+		add_timed_idea = {
+			idea = conservatism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.6.b
+		add_timed_idea = {
+			idea = conservatism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.6.c
+    if = {
+			limit = {
+        OR = {
+          	has_government = authoritarianism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = {
+        OR = {
+          	has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = conservatism_ideology
+			elections_allowed = yes
+		}
+		add_national_unity = -0.05
+	}
+}
+
+### Revolution
+country_event = {
+	id = political.BaI.7
+	title = political.BaI.7.t
+	desc = political.BaI.7.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		conservatism_ideology > 0.7
+		has_idea = conservatism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = conservatism_ideology_revolutionaries }
+	}
+
+	option = {
+		name = political.BaI.7.a
+		start_civil_war = {
+			ideology = conservatism_ideology
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.7.b
+		if = {
+   limit = {
+      has_government = liberalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = conservatism_ideology
+      ideology = liberalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = centrism_ideology
+   }
+   start_civil_war = {
+      ruling_party = conservatism_ideology
+      ideology = centrism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = socialism_ideology
+   }
+   start_civil_war = {
+      ruling_party = conservatism_ideology
+      ideology = socialism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = jacobinism_ideology
+   }
+   start_civil_war = {
+      ruling_party = conservatism_ideology
+      ideology = jacobinism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = marxism_ideology
+   }
+   start_civil_war = {
+      ruling_party = conservatism_ideology
+      ideology = marxism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = nationalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = conservatism_ideology
+      ideology = nationalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = authoritarianism_ideology
+   }
+   start_civil_war = {
+      ruling_party = conservatism_ideology
+      ideology = authoritarianism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = monarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = conservatism_ideology
+      ideology = monarchism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = oligarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = conservatism_ideology
+      ideology = oligarchism_ideology
+      size = 0.6
+   }
+}
+
+	}
+}
+
+### Suppressed
+country_event = {
+	id = political.BaI.8
+	title = political.BaI.8.t
+	desc = political.BaI.8.d
+	picture = GFX_report_event_europe_funeral
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		conservatism_ideology < 0.3
+		has_idea = conservatism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.BaI.8.a
+		remove_ideas = conservatism_ideology_revolutionaries
+	}
+}
+###########################
+# Liberalism Events
+###########################
+
+# Move Towards Liberalism
+country_event = {
+  id = political.BaI.9
+  title = political.BaI.9.t
+  desc = political.BaI.9.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+	}
+
+	# Seek government support
+	option = {
+		name = political.BaI.9.a
+		custom_effect_tooltip = political.BaI.9.a.tt
+		clr_country_flag = liberalism_ideology_popular_movement
+		clr_country_flag = liberalism_ideology_opposition_formed
+		set_country_flag = liberalism_ideology_political_movement
+	}
+
+	# Seek popular support
+	option = {
+		name = political.BaI.9.b
+		custom_effect_tooltip = political.BaI.9.b.tt
+		clr_country_flag = liberalism_ideology_political_movement
+		clr_country_flag = liberalism_ideology_government_support
+		set_country_flag = liberalism_ideology_popular_movement
+	}
+}
+
+# [Ruling Party] Debates Democracy
+country_event = {
+	id = political.BaI.10
+	title = political.BaI.10.t
+	desc = political.BaI.10.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = liberalism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		NOT = { has_country_flag = liberalism_ideology_government_support }
+	}
+
+	mean_time_to_happen = {
+		days = 400
+		modifier = {
+			factor = 0.5
+			has_country_flag = liberalism_ideology_political_movement
+		}
+		modifier = {
+			factor = 0.5
+			liberalism_ideology > 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.10.a
+		custom_effect_tooltip = political.BaI.10.tt
+		clr_country_flag = liberalism_ideology_political_movement
+		set_country_flag = liberalism_ideology_government_support
+	}
+}
+
+# Liberalism Opposition Forming
+country_event = {
+  id = political.BaI.11
+  title = political.BaI.11.t
+  desc = political.BaI.11.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = liberalism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		NOT = { has_country_flag = liberalism_ideology_opposition_formed }
+	}
+
+	mean_time_to_happen = {
+		days = 300
+		modifier = {
+			factor = 0.5
+			has_country_flag = liberalism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.11.a
+		add_popularity = {
+			ideology = liberalism_ideology
+			popularity = 0.1
+		}
+		add_national_unity = -0.02
+		set_country_flag = liberalism_ideology_opposition_formed
+	}
+}
+
+# Public Call for Elections
+country_event = {
+	id = political.BaI.12
+	title = political.BaI.12.t
+	desc = political.BaI.12.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = liberalism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		has_country_flag = liberalism_ideology_opposition_formed
+		NOT = { has_idea = liberalism_ideology_opposition_voicing_protests }
+	}
+
+	mean_time_to_happen = {
+		days = 150
+	}
+
+	option = {
+		name = political.BaI.12.a
+	}
+
+	option = {
+		name = political.BaI.12.b
+		add_political_power = -20
+		add_ideas = liberalism_ideology_opposition_voicing_protests
+	}
+}
+
+country_event = {
+	id = political.BaI.13
+	title = political.BaI.13.t
+	desc = political.BaI.13.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = liberalism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		liberalism_ideology > 0.5
+		has_country_flag = liberalism_ideology_government_support
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 200
+	}
+
+	option = {
+		name = political.BaI.13.a
+    if = {
+			limit = {
+        OR = {
+          	has_government = authoritarianism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = {
+        OR = {
+          	has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = liberalism_ideology
+			elections_allowed = yes
+		}
+		hold_election = ROOT
+		remove_ideas = liberalism_ideology_revolutionaries
+	}
+	option = {
+		name = political.BaI.13.b
+	}
+}
+
+### > 50% support
+country_event = {
+	id = political.BaI.14
+	title = political.BaI.14.t
+	desc = political.BaI.14.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+		NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		liberalism_ideology > 0.5
+		NOT = {
+			OR = {
+					has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+			}	
+		}
+		NOT = { has_idea = liberalism_ideology_revolutionaries }
+		NOT = { has_idea = reign_of_terror }
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = political.BaI.14.a
+		add_political_power = -100
+		add_popularity = {
+			ideology = liberalism_ideology
+			popularity = -0.10
+		}
+		add_timed_idea = {
+			idea = liberalism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.14.b
+		add_timed_idea = {
+			idea = liberalism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.14.c
+    if = {
+			limit = {
+        OR = {
+          	has_government = authoritarianism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = {
+        OR = {
+          	has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = liberalism_ideology
+			elections_allowed = yes
+		}
+		add_national_unity = -0.05
+	}
+}
+
+### Revolution
+country_event = {
+	id = political.BaI.15
+	title = political.BaI.15.t
+	desc = political.BaI.15.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		liberalism_ideology > 0.7
+		has_idea = liberalism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = liberalism_ideology_revolutionaries }
+	}
+
+	option = {
+		name = political.BaI.15.a
+		start_civil_war = {
+			ideology = liberalism_ideology
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.15.b
+		if = {
+   limit = {
+      has_government = conservatism_ideology
+   }
+   start_civil_war = {
+      ruling_party = liberalism_ideology
+      ideology = conservatism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = centrism_ideology
+   }
+   start_civil_war = {
+      ruling_party = liberalism_ideology
+      ideology = centrism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = socialism_ideology
+   }
+   start_civil_war = {
+      ruling_party = liberalism_ideology
+      ideology = socialism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = jacobinism_ideology
+   }
+   start_civil_war = {
+      ruling_party = liberalism_ideology
+      ideology = jacobinism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = marxism_ideology
+   }
+   start_civil_war = {
+      ruling_party = liberalism_ideology
+      ideology = marxism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = nationalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = liberalism_ideology
+      ideology = nationalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = authoritarianism_ideology
+   }
+   start_civil_war = {
+      ruling_party = liberalism_ideology
+      ideology = authoritarianism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = monarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = liberalism_ideology
+      ideology = monarchism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = oligarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = liberalism_ideology
+      ideology = oligarchism_ideology
+      size = 0.6
+   }
+}
+
+	}
+}
+
+### Suppressed
+country_event = {
+	id = political.BaI.16
+	title = political.BaI.16.t
+	desc = political.BaI.16.d
+	picture = GFX_report_event_europe_funeral
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		liberalism_ideology < 0.3
+		has_idea = liberalism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.BaI.16.a
+		remove_ideas = liberalism_ideology_revolutionaries
+	}
+}
+###########################
+# Centrism Events
+###########################
+
+# Move Towards Centrism
+country_event = {
+  id = political.BaI.17
+  title = political.BaI.17.t
+  desc = political.BaI.17.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+	}
+
+	# Seek government support
+	option = {
+		name = political.BaI.17.a
+		custom_effect_tooltip = political.BaI.17.a.tt
+		clr_country_flag = centrism_ideology_popular_movement
+		clr_country_flag = centrism_ideology_opposition_formed
+		set_country_flag = centrism_ideology_political_movement
+	}
+
+	# Seek popular support
+	option = {
+		name = political.BaI.17.b
+		custom_effect_tooltip = political.BaI.17.b.tt
+		clr_country_flag = centrism_ideology_political_movement
+		clr_country_flag = centrism_ideology_government_support
+		set_country_flag = centrism_ideology_popular_movement
+	}
+}
+
+# [Ruling Party] Debates Democracy
+country_event = {
+	id = political.BaI.18
+	title = political.BaI.18.t
+	desc = political.BaI.18.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = centrism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		NOT = { has_country_flag = centrism_ideology_government_support }
+	}
+
+	mean_time_to_happen = {
+		days = 400
+		modifier = {
+			factor = 0.5
+			has_country_flag = centrism_ideology_political_movement
+		}
+		modifier = {
+			factor = 0.5
+			centrism_ideology > 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.18.a
+		custom_effect_tooltip = political.BaI.18.tt
+		clr_country_flag = centrism_ideology_political_movement
+		set_country_flag = centrism_ideology_government_support
+	}
+}
+
+# Centrism Opposition Forming
+country_event = {
+  id = political.BaI.19
+  title = political.BaI.19.t
+  desc = political.BaI.19.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = centrism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		NOT = { has_country_flag = centrism_ideology_opposition_formed }
+	}
+
+	mean_time_to_happen = {
+		days = 300
+		modifier = {
+			factor = 0.5
+			has_country_flag = centrism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.19.a
+		add_popularity = {
+			ideology = centrism_ideology
+			popularity = 0.1
+		}
+		add_national_unity = -0.02
+		set_country_flag = centrism_ideology_opposition_formed
+	}
+}
+
+# Public Call for Elections
+country_event = {
+	id = political.BaI.20
+	title = political.BaI.20.t
+	desc = political.BaI.20.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = centrism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		has_country_flag = centrism_ideology_opposition_formed
+		NOT = { has_idea = centrism_ideology_opposition_voicing_protests }
+	}
+
+	mean_time_to_happen = {
+		days = 150
+	}
+
+	option = {
+		name = political.BaI.20.a
+	}
+
+	option = {
+		name = political.BaI.20.b
+		add_political_power = -20
+		add_ideas = centrism_ideology_opposition_voicing_protests
+	}
+}
+
+country_event = {
+	id = political.BaI.21
+	title = political.BaI.21.t
+	desc = political.BaI.21.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = centrism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		centrism_ideology > 0.5
+		has_country_flag = centrism_ideology_government_support
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 200
+	}
+
+	option = {
+		name = political.BaI.21.a
+    if = {
+			limit = {
+        OR = {
+          	has_government = authoritarianism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = {
+        OR = {
+          	has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = centrism_ideology
+			elections_allowed = yes
+		}
+		hold_election = ROOT
+		remove_ideas = centrism_ideology_revolutionaries
+	}
+	option = {
+		name = political.BaI.21.b
+	}
+}
+
+### > 50% support
+country_event = {
+	id = political.BaI.22
+	title = political.BaI.22.t
+	desc = political.BaI.22.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+		NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		centrism_ideology > 0.5
+		NOT = {
+			OR = {
+					has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+			}	
+		}
+		NOT = { has_idea = centrism_ideology_revolutionaries }
+		NOT = { has_idea = reign_of_terror }
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = political.BaI.22.a
+		add_political_power = -100
+		add_popularity = {
+			ideology = centrism_ideology
+			popularity = -0.10
+		}
+		add_timed_idea = {
+			idea = centrism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.22.b
+		add_timed_idea = {
+			idea = centrism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.22.c
+    if = {
+			limit = {
+        OR = {
+          	has_government = authoritarianism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = {
+        OR = {
+          	has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = centrism_ideology
+			elections_allowed = yes
+		}
+		add_national_unity = -0.05
+	}
+}
+
+### Revolution
+country_event = {
+	id = political.BaI.23
+	title = political.BaI.23.t
+	desc = political.BaI.23.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		centrism_ideology > 0.7
+		has_idea = centrism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = centrism_ideology_revolutionaries }
+	}
+
+	option = {
+		name = political.BaI.23.a
+		start_civil_war = {
+			ideology = centrism_ideology
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.23.b
+		if = {
+   limit = {
+      has_government = conservatism_ideology
+   }
+   start_civil_war = {
+      ruling_party = centrism_ideology
+      ideology = conservatism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = liberalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = centrism_ideology
+      ideology = liberalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = socialism_ideology
+   }
+   start_civil_war = {
+      ruling_party = centrism_ideology
+      ideology = socialism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = jacobinism_ideology
+   }
+   start_civil_war = {
+      ruling_party = centrism_ideology
+      ideology = jacobinism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = marxism_ideology
+   }
+   start_civil_war = {
+      ruling_party = centrism_ideology
+      ideology = marxism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = nationalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = centrism_ideology
+      ideology = nationalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = authoritarianism_ideology
+   }
+   start_civil_war = {
+      ruling_party = centrism_ideology
+      ideology = authoritarianism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = monarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = centrism_ideology
+      ideology = monarchism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = oligarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = centrism_ideology
+      ideology = oligarchism_ideology
+      size = 0.6
+   }
+}
+
+	}
+}
+
+### Suppressed
+country_event = {
+	id = political.BaI.24
+	title = political.BaI.24.t
+	desc = political.BaI.24.d
+	picture = GFX_report_event_europe_funeral
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		centrism_ideology < 0.3
+		has_idea = centrism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.BaI.24.a
+		remove_ideas = centrism_ideology_revolutionaries
+	}
+}
+###########################
+# Socialism Events
+###########################
+
+# Move Towards Socialism
+country_event = {
+  id = political.BaI.25
+  title = political.BaI.25.t
+  desc = political.BaI.25.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+	}
+
+	# Seek government support
+	option = {
+		name = political.BaI.25.a
+		custom_effect_tooltip = political.BaI.25.a.tt
+		clr_country_flag = socialism_ideology_popular_movement
+		clr_country_flag = socialism_ideology_opposition_formed
+		set_country_flag = socialism_ideology_political_movement
+	}
+
+	# Seek popular support
+	option = {
+		name = political.BaI.25.b
+		custom_effect_tooltip = political.BaI.25.b.tt
+		clr_country_flag = socialism_ideology_political_movement
+		clr_country_flag = socialism_ideology_government_support
+		set_country_flag = socialism_ideology_popular_movement
+	}
+}
+
+# [Ruling Party] Debates Democracy
+country_event = {
+	id = political.BaI.26
+	title = political.BaI.26.t
+	desc = political.BaI.26.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = socialism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		NOT = { has_country_flag = socialism_ideology_government_support }
+	}
+
+	mean_time_to_happen = {
+		days = 400
+		modifier = {
+			factor = 0.5
+			has_country_flag = socialism_ideology_political_movement
+		}
+		modifier = {
+			factor = 0.5
+			socialism_ideology > 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.26.a
+		custom_effect_tooltip = political.BaI.26.tt
+		clr_country_flag = socialism_ideology_political_movement
+		set_country_flag = socialism_ideology_government_support
+	}
+}
+
+# Socialism Opposition Forming
+country_event = {
+  id = political.BaI.27
+  title = political.BaI.27.t
+  desc = political.BaI.27.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = socialism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		NOT = { has_country_flag = socialism_ideology_opposition_formed }
+	}
+
+	mean_time_to_happen = {
+		days = 300
+		modifier = {
+			factor = 0.5
+			has_country_flag = socialism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.27.a
+		add_popularity = {
+			ideology = socialism_ideology
+			popularity = 0.1
+		}
+		add_national_unity = -0.02
+		set_country_flag = socialism_ideology_opposition_formed
+	}
+}
+
+# Public Call for Elections
+country_event = {
+	id = political.BaI.28
+	title = political.BaI.28.t
+	desc = political.BaI.28.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = socialism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		has_country_flag = socialism_ideology_opposition_formed
+		NOT = { has_idea = socialism_ideology_opposition_voicing_protests }
+	}
+
+	mean_time_to_happen = {
+		days = 150
+	}
+
+	option = {
+		name = political.BaI.28.a
+	}
+
+	option = {
+		name = political.BaI.28.b
+		add_political_power = -20
+		add_ideas = socialism_ideology_opposition_voicing_protests
+	}
+}
+
+country_event = {
+	id = political.BaI.29
+	title = political.BaI.29.t
+	desc = political.BaI.29.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = socialism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		socialism_ideology > 0.5
+		has_country_flag = socialism_ideology_government_support
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 200
+	}
+
+	option = {
+		name = political.BaI.29.a
+    if = {
+			limit = {
+        OR = {
+          	has_government = authoritarianism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = {
+        OR = {
+          	has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = socialism_ideology
+			elections_allowed = yes
+		}
+		hold_election = ROOT
+		remove_ideas = socialism_ideology_revolutionaries
+	}
+	option = {
+		name = political.BaI.29.b
+	}
+}
+
+### > 50% support
+country_event = {
+	id = political.BaI.30
+	title = political.BaI.30.t
+	desc = political.BaI.30.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+		NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		socialism_ideology > 0.5
+		NOT = {
+			OR = {
+					has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+			}	
+		}
+		NOT = { has_idea = socialism_ideology_revolutionaries }
+		NOT = { has_idea = reign_of_terror }
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = political.BaI.30.a
+		add_political_power = -100
+		add_popularity = {
+			ideology = socialism_ideology
+			popularity = -0.10
+		}
+		add_timed_idea = {
+			idea = socialism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.30.b
+		add_timed_idea = {
+			idea = socialism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.30.c
+    if = {
+			limit = {
+        OR = {
+          	has_government = authoritarianism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = {
+        OR = {
+          	has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = socialism_ideology
+			elections_allowed = yes
+		}
+		add_national_unity = -0.05
+	}
+}
+
+### Revolution
+country_event = {
+	id = political.BaI.31
+	title = political.BaI.31.t
+	desc = political.BaI.31.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		socialism_ideology > 0.7
+		has_idea = socialism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = socialism_ideology_revolutionaries }
+	}
+
+	option = {
+		name = political.BaI.31.a
+		start_civil_war = {
+			ideology = socialism_ideology
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.31.b
+		if = {
+   limit = {
+      has_government = conservatism_ideology
+   }
+   start_civil_war = {
+      ruling_party = socialism_ideology
+      ideology = conservatism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = liberalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = socialism_ideology
+      ideology = liberalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = centrism_ideology
+   }
+   start_civil_war = {
+      ruling_party = socialism_ideology
+      ideology = centrism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = jacobinism_ideology
+   }
+   start_civil_war = {
+      ruling_party = socialism_ideology
+      ideology = jacobinism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = marxism_ideology
+   }
+   start_civil_war = {
+      ruling_party = socialism_ideology
+      ideology = marxism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = nationalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = socialism_ideology
+      ideology = nationalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = authoritarianism_ideology
+   }
+   start_civil_war = {
+      ruling_party = socialism_ideology
+      ideology = authoritarianism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = monarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = socialism_ideology
+      ideology = monarchism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = oligarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = socialism_ideology
+      ideology = oligarchism_ideology
+      size = 0.6
+   }
+}
+
+	}
+}
+
+### Suppressed
+country_event = {
+	id = political.BaI.32
+	title = political.BaI.32.t
+	desc = political.BaI.32.d
+	picture = GFX_report_event_europe_funeral
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		socialism_ideology < 0.3
+		has_idea = socialism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.BaI.32.a
+		remove_ideas = socialism_ideology_revolutionaries
+	}
+}
+###########################
+# Jacobinism Events
+###########################
+
+# Jacobinism on the Rise
+country_event = {
+	id = political.BaI.33
+	title = political.BaI.33.t
+	desc = political.BaI.33.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		NOT = { has_government = jacobinism_ideology }
+	}
+
+	# Seek government support
+	option = {
+		name = political.BaI.33.a
+		custom_effect_tooltip = political.BaI.33.a.tt
+		clr_country_flag = jacobinism_ideology_popular_movement
+		set_country_flag = jacobinism_ideology_political_movement
+	}
+
+	# Seek popular support
+	option = {
+		name = political.BaI.33.b
+		custom_effect_tooltip = political.BaI.33.b.tt
+		clr_country_flag = jacobinism_ideology_political_movement
+		clr_country_flag = jacobinism_ideology_government_support
+		set_country_flag = jacobinism_ideology_popular_movement
+	}
+}
+
+# Jacobinism Sympathies in Government
+country_event = {
+	id = political.BaI.34
+	title = political.BaI.34.t
+	desc = political.BaI.34.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = jacobinism_ideology_political_advisor
+		NOT = { has_government = jacobinism_ideology }
+		NOT = { has_country_flag = jacobinism_ideology_government_support }
+	}
+
+	mean_time_to_happen = {
+		days = 500
+		modifier = {
+			factor = 0.5
+			has_country_flag = jacobinism_ideology_political_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.34.a
+		custom_effect_tooltip = political.BaI.34.a.tt
+		clr_country_flag = jacobinism_ideology_political_movement
+		set_country_flag = jacobinism_ideology_government_support
+	}
+}
+
+# Jacobinism Execute Coup
+country_event = {
+	id = political.BaI.35
+	title = political.BaI.35.t
+	desc = political.BaI.35.d
+	picture = GFX_report_event_gathering_protest
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = jacobinism_ideology_political_advisor
+		NOT = { has_government = jacobinism_ideology }
+		has_country_flag = jacobinism_ideology_government_support
+		jacobinism_ideology > 0.4
+		is_major = no
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 100
+		modifier = {
+			factor = 0.5
+			jacobinism_ideology > 0.5
+		}
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = jacobinism_ideology_revolutionaries }
+	}
+
+	option = {
+		name = political.BaI.35.a
+		set_politics = {
+			ruling_party = jacobinism_ideology
+			elections_allowed = no
+		}
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+	}
+}
+
+# Class Conflicts Divide [Root.GetName]
+country_event = {
+	id = political.BaI.36
+	title = political.BaI.36.t
+	desc = political.BaI.36.d
+	picture = GFX_report_event_gathering_protest
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = jacobinism_ideology_political_advisor
+		NOT = { has_government = jacobinism_ideology }
+		jacobinism_ideology > 0.2
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = jacobinism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.36.a
+		add_popularity = {
+			ideology = jacobinism_ideology
+			popularity = 0.15
+		}
+		add_national_unity = -0.02
+	}
+}
+
+# Soldiers Desert to Jacobinism Partisans
+country_event = {
+	id = political.BaI.37
+	title = political.BaI.37.t
+	desc = political.BaI.37.d
+	picture = GFX_report_event_desertion_poster
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = jacobinism_ideology_political_advisor
+		NOT = { has_government = jacobinism_ideology }
+		jacobinism_ideology > 0.3
+		NOT = { has_idea = jacobinism_ideology_partisans_recruiting }
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = jacobinism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.37.a
+		add_popularity = {
+			ideology = jacobinism_ideology
+			popularity = 0.15
+		}
+		add_ideas = jacobinism_ideology_partisans_recruiting
+	}
+}
+
+# The [Month] Revolution
+country_event = {
+	id = political.BaI.38
+	title = political.BaI.38.t
+	desc = political.BaI.38.d
+	picture = GFX_report_event_gathering_protest
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = jacobinism_ideology_political_advisor
+		NOT = { has_government = jacobinism_ideology }
+		jacobinism_ideology > 0.4
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.75
+			has_country_flag = jacobinism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.38.a
+		if = {
+   limit = {
+      has_government = conservatism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = conservatism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = liberalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = liberalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = centrism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = centrism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = socialism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = socialism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = marxism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = marxism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = nationalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = nationalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = authoritarianism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = authoritarianism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = monarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = monarchism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = oligarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = oligarchism_ideology
+      size = 0.6
+   }
+}
+
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+		remove_ideas = jacobinism_ideology_revolutionaries
+	}
+	option = {
+		name = political.BaI.38.b
+	}
+}
+
+### > 50% support
+country_event = {
+	id = political.BaI.39
+	title = political.BaI.39.t
+	desc = political.BaI.39.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		jacobinism_ideology > 0.5
+		NOT = { has_government = jacobinism_ideology }
+		NOT = { has_idea = jacobinism_ideology_revolutionaries }
+		NOT = { has_idea = reign_of_terror }
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = political.BaI.39.a
+		add_political_power = -100
+		add_popularity = {
+			ideology = jacobinism_ideology
+			popularity = -0.10
+		}
+		add_timed_idea = {
+			idea = jacobinism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.39.b
+		add_timed_idea = {
+			idea = jacobinism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.39.c
+		set_politics = {
+			ruling_party = jacobinism_ideology
+			elections_allowed = no
+		}
+		add_national_unity = -0.05
+	}
+}
+
+### Revolution
+country_event = {
+	id = political.BaI.40
+	title = political.BaI.40.t
+	desc = political.BaI.40.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		jacobinism_ideology > 0.7
+		has_idea = jacobinism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = jacobinism_ideology_revolutionaries }
+	}
+
+	option = {
+		name = political.BaI.40.a
+		start_civil_war = {
+			ideology = jacobinism_ideology
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.40.b
+		if = {
+   limit = {
+      has_government = conservatism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = conservatism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = liberalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = liberalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = centrism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = centrism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = socialism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = socialism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = marxism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = marxism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = nationalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = nationalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = authoritarianism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = authoritarianism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = monarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = monarchism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = oligarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = jacobinism_ideology
+      ideology = oligarchism_ideology
+      size = 0.6
+   }
+}
+
+	}
+}
+
+### Suppressed
+country_event = {
+	id = political.BaI.41
+	title = political.BaI.41.t
+	desc = political.BaI.41.d
+	picture = GFX_report_event_stalin_propaganda
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		jacobinism_ideology < 0.3
+		has_idea = jacobinism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.BaI.41.a
+		remove_ideas = jacobinism_ideology_revolutionaries
+	}
+}
+###########################
+# Marxism Events
+###########################
+
+# Marxism on the Rise
+country_event = {
+	id = political.BaI.42
+	title = political.BaI.42.t
+	desc = political.BaI.42.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		NOT = { has_government = marxism_ideology }
+	}
+
+	# Seek government support
+	option = {
+		name = political.BaI.42.a
+		custom_effect_tooltip = political.BaI.42.a.tt
+		clr_country_flag = marxism_ideology_popular_movement
+		set_country_flag = marxism_ideology_political_movement
+	}
+
+	# Seek popular support
+	option = {
+		name = political.BaI.42.b
+		custom_effect_tooltip = political.BaI.42.b.tt
+		clr_country_flag = marxism_ideology_political_movement
+		clr_country_flag = marxism_ideology_government_support
+		set_country_flag = marxism_ideology_popular_movement
+	}
+}
+
+# Marxism Sympathies in Government
+country_event = {
+	id = political.BaI.43
+	title = political.BaI.43.t
+	desc = political.BaI.43.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = marxism_ideology_political_advisor
+		NOT = { has_government = marxism_ideology }
+		NOT = { has_country_flag = marxism_ideology_government_support }
+	}
+
+	mean_time_to_happen = {
+		days = 500
+		modifier = {
+			factor = 0.5
+			has_country_flag = marxism_ideology_political_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.43.a
+		custom_effect_tooltip = political.BaI.43.a.tt
+		clr_country_flag = marxism_ideology_political_movement
+		set_country_flag = marxism_ideology_government_support
+	}
+}
+
+# Marxism Execute Coup
+country_event = {
+	id = political.BaI.44
+	title = political.BaI.44.t
+	desc = political.BaI.44.d
+	picture = GFX_report_event_gathering_protest
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = marxism_ideology_political_advisor
+		NOT = { has_government = marxism_ideology }
+		has_country_flag = marxism_ideology_government_support
+		marxism_ideology > 0.4
+		is_major = no
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 100
+		modifier = {
+			factor = 0.5
+			marxism_ideology > 0.5
+		}
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = marxism_ideology_revolutionaries }
+	}
+
+	option = {
+		name = political.BaI.44.a
+		set_politics = {
+			ruling_party = marxism_ideology
+			elections_allowed = no
+		}
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+	}
+}
+
+# Class Conflicts Divide [Root.GetName]
+country_event = {
+	id = political.BaI.45
+	title = political.BaI.45.t
+	desc = political.BaI.45.d
+	picture = GFX_report_event_gathering_protest
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = marxism_ideology_political_advisor
+		NOT = { has_government = marxism_ideology }
+		marxism_ideology > 0.2
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = marxism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.45.a
+		add_popularity = {
+			ideology = marxism_ideology
+			popularity = 0.15
+		}
+		add_national_unity = -0.02
+	}
+}
+
+# Soldiers Desert to Marxism Partisans
+country_event = {
+	id = political.BaI.46
+	title = political.BaI.46.t
+	desc = political.BaI.46.d
+	picture = GFX_report_event_desertion_poster
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = marxism_ideology_political_advisor
+		NOT = { has_government = marxism_ideology }
+		marxism_ideology > 0.3
+		NOT = { has_idea = marxism_ideology_partisans_recruiting }
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = marxism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.46.a
+		add_popularity = {
+			ideology = marxism_ideology
+			popularity = 0.15
+		}
+		add_ideas = marxism_ideology_partisans_recruiting
+	}
+}
+
+# The [Month] Revolution
+country_event = {
+	id = political.BaI.47
+	title = political.BaI.47.t
+	desc = political.BaI.47.d
+	picture = GFX_report_event_gathering_protest
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = marxism_ideology_political_advisor
+		NOT = { has_government = marxism_ideology }
+		marxism_ideology > 0.4
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.75
+			has_country_flag = marxism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.47.a
+		if = {
+   limit = {
+      has_government = conservatism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = conservatism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = liberalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = liberalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = centrism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = centrism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = socialism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = socialism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = jacobinism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = jacobinism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = nationalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = nationalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = authoritarianism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = authoritarianism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = monarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = monarchism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = oligarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = oligarchism_ideology
+      size = 0.6
+   }
+}
+
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+		remove_ideas = marxism_ideology_revolutionaries
+	}
+	option = {
+		name = political.BaI.47.b
+	}
+}
+
+### > 50% support
+country_event = {
+	id = political.BaI.48
+	title = political.BaI.48.t
+	desc = political.BaI.48.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		marxism_ideology > 0.5
+		NOT = { has_government = marxism_ideology }
+		NOT = { has_idea = marxism_ideology_revolutionaries }
+		NOT = { has_idea = reign_of_terror }
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = political.BaI.48.a
+		add_political_power = -100
+		add_popularity = {
+			ideology = marxism_ideology
+			popularity = -0.10
+		}
+		add_timed_idea = {
+			idea = marxism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.48.b
+		add_timed_idea = {
+			idea = marxism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.48.c
+		set_politics = {
+			ruling_party = marxism_ideology
+			elections_allowed = no
+		}
+		add_national_unity = -0.05
+	}
+}
+
+### Revolution
+country_event = {
+	id = political.BaI.49
+	title = political.BaI.49.t
+	desc = political.BaI.49.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		marxism_ideology > 0.7
+		has_idea = marxism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = marxism_ideology_revolutionaries }
+	}
+
+	option = {
+		name = political.BaI.49.a
+		start_civil_war = {
+			ideology = marxism_ideology
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.49.b
+		if = {
+   limit = {
+      has_government = conservatism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = conservatism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = liberalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = liberalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = centrism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = centrism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = socialism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = socialism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = jacobinism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = jacobinism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = nationalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = nationalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = authoritarianism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = authoritarianism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = monarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = monarchism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = oligarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = marxism_ideology
+      ideology = oligarchism_ideology
+      size = 0.6
+   }
+}
+
+	}
+}
+
+### Suppressed
+country_event = {
+	id = political.BaI.50
+	title = political.BaI.50.t
+	desc = political.BaI.50.d
+	picture = GFX_report_event_stalin_propaganda
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		marxism_ideology < 0.3
+		has_idea = marxism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.BaI.50.a
+		remove_ideas = marxism_ideology_revolutionaries
+	}
+}
+###########################
+# Nationalism Events
+###########################
+
+# Move Towards Nationalism
+country_event = {
+  id = political.BaI.51
+  title = political.BaI.51.t
+  desc = political.BaI.51.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+	}
+
+	# Seek government support
+	option = {
+		name = political.BaI.51.a
+		custom_effect_tooltip = political.BaI.51.a.tt
+		clr_country_flag = nationalism_ideology_popular_movement
+		clr_country_flag = nationalism_ideology_opposition_formed
+		set_country_flag = nationalism_ideology_political_movement
+	}
+
+	# Seek popular support
+	option = {
+		name = political.BaI.51.b
+		custom_effect_tooltip = political.BaI.51.b.tt
+		clr_country_flag = nationalism_ideology_political_movement
+		clr_country_flag = nationalism_ideology_government_support
+		set_country_flag = nationalism_ideology_popular_movement
+	}
+}
+
+# [Ruling Party] Debates Democracy
+country_event = {
+	id = political.BaI.52
+	title = political.BaI.52.t
+	desc = political.BaI.52.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = nationalism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		NOT = { has_country_flag = nationalism_ideology_government_support }
+	}
+
+	mean_time_to_happen = {
+		days = 400
+		modifier = {
+			factor = 0.5
+			has_country_flag = nationalism_ideology_political_movement
+		}
+		modifier = {
+			factor = 0.5
+			nationalism_ideology > 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.52.a
+		custom_effect_tooltip = political.BaI.52.tt
+		clr_country_flag = nationalism_ideology_political_movement
+		set_country_flag = nationalism_ideology_government_support
+	}
+}
+
+# Nationalism Opposition Forming
+country_event = {
+  id = political.BaI.53
+  title = political.BaI.53.t
+  desc = political.BaI.53.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = nationalism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		NOT = { has_country_flag = nationalism_ideology_opposition_formed }
+	}
+
+	mean_time_to_happen = {
+		days = 300
+		modifier = {
+			factor = 0.5
+			has_country_flag = nationalism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.53.a
+		add_popularity = {
+			ideology = nationalism_ideology
+			popularity = 0.1
+		}
+		add_national_unity = -0.02
+		set_country_flag = nationalism_ideology_opposition_formed
+	}
+}
+
+# Public Call for Elections
+country_event = {
+	id = political.BaI.54
+	title = political.BaI.54.t
+	desc = political.BaI.54.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = nationalism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		has_country_flag = nationalism_ideology_opposition_formed
+		NOT = { has_idea = nationalism_ideology_opposition_voicing_protests }
+	}
+
+	mean_time_to_happen = {
+		days = 150
+	}
+
+	option = {
+		name = political.BaI.54.a
+	}
+
+	option = {
+		name = political.BaI.54.b
+		add_political_power = -20
+		add_ideas = nationalism_ideology_opposition_voicing_protests
+	}
+}
+
+country_event = {
+	id = political.BaI.55
+	title = political.BaI.55.t
+	desc = political.BaI.55.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = nationalism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		nationalism_ideology > 0.5
+		has_country_flag = nationalism_ideology_government_support
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 200
+	}
+
+	option = {
+		name = political.BaI.55.a
+    if = {
+			limit = {
+        OR = {
+          	has_government = authoritarianism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = {
+        OR = {
+          	has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = nationalism_ideology
+			elections_allowed = yes
+		}
+		hold_election = ROOT
+		remove_ideas = nationalism_ideology_revolutionaries
+	}
+	option = {
+		name = political.BaI.55.b
+	}
+}
+
+### > 50% support
+country_event = {
+	id = political.BaI.56
+	title = political.BaI.56.t
+	desc = political.BaI.56.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+		NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		nationalism_ideology > 0.5
+		NOT = {
+			OR = {
+					has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+			}	
+		}
+		NOT = { has_idea = nationalism_ideology_revolutionaries }
+		NOT = { has_idea = reign_of_terror }
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = political.BaI.56.a
+		add_political_power = -100
+		add_popularity = {
+			ideology = nationalism_ideology
+			popularity = -0.10
+		}
+		add_timed_idea = {
+			idea = nationalism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.56.b
+		add_timed_idea = {
+			idea = nationalism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.56.c
+    if = {
+			limit = {
+        OR = {
+          	has_government = authoritarianism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = {
+        OR = {
+          	has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = nationalism_ideology
+			elections_allowed = yes
+		}
+		add_national_unity = -0.05
+	}
+}
+
+### Revolution
+country_event = {
+	id = political.BaI.57
+	title = political.BaI.57.t
+	desc = political.BaI.57.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		nationalism_ideology > 0.7
+		has_idea = nationalism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = nationalism_ideology_revolutionaries }
+	}
+
+	option = {
+		name = political.BaI.57.a
+		start_civil_war = {
+			ideology = nationalism_ideology
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.57.b
+		if = {
+   limit = {
+      has_government = conservatism_ideology
+   }
+   start_civil_war = {
+      ruling_party = nationalism_ideology
+      ideology = conservatism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = liberalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = nationalism_ideology
+      ideology = liberalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = centrism_ideology
+   }
+   start_civil_war = {
+      ruling_party = nationalism_ideology
+      ideology = centrism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = socialism_ideology
+   }
+   start_civil_war = {
+      ruling_party = nationalism_ideology
+      ideology = socialism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = jacobinism_ideology
+   }
+   start_civil_war = {
+      ruling_party = nationalism_ideology
+      ideology = jacobinism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = marxism_ideology
+   }
+   start_civil_war = {
+      ruling_party = nationalism_ideology
+      ideology = marxism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = authoritarianism_ideology
+   }
+   start_civil_war = {
+      ruling_party = nationalism_ideology
+      ideology = authoritarianism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = monarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = nationalism_ideology
+      ideology = monarchism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = oligarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = nationalism_ideology
+      ideology = oligarchism_ideology
+      size = 0.6
+   }
+}
+
+	}
+}
+
+### Suppressed
+country_event = {
+	id = political.BaI.58
+	title = political.BaI.58.t
+	desc = political.BaI.58.d
+	picture = GFX_report_event_europe_funeral
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		nationalism_ideology < 0.3
+		has_idea = nationalism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.BaI.58.a
+		remove_ideas = nationalism_ideology_revolutionaries
+	}
+}
+###########################
+# Authoritarianism Events
+###########################
+
+# Authoritarianism on the Rise
+country_event = {
+	id = political.BaI.59
+	title = political.BaI.59.t
+	desc = political.BaI.59.d
+	picture = GFX_report_event_fascist_gathering
+
+	is_triggered_only = yes
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		NOT = { has_government = authoritarianism_ideology }
+	}
+
+	# Seek government support
+	option = {
+		name = political.BaI.59.a
+		custom_effect_tooltip = political.BaI.59.a.tt
+		clr_country_flag = authoritarianism_ideology_popular_movement
+		set_country_flag = authoritarianism_ideology_political_movement
+	}
+
+	# Seek popular support
+	option = {
+		name = political.BaI.59.b
+		custom_effect_tooltip = political.BaI.59.b.tt
+		clr_country_flag = authoritarianism_ideology_political_movement
+		clr_country_flag = authoritarianism_ideology_government_support
+		set_country_flag = authoritarianism_ideology_popular_movement
+	}
+}
+
+# Authoritarianism Sympathies in the Military
+country_event = {
+	id = political.BaI.60
+	title = political.BaI.60.t
+	desc = political.BaI.60.d
+	picture = GFX_report_event_fascist_gathering
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = authoritarianism_ideology_political_advisor
+		NOT = { has_government = authoritarianism_ideology }
+		NOT = { has_country_flag = authoritarianism_ideology_government_support }
+	}
+
+	mean_time_to_happen = {
+		days = 500
+		modifier = {
+			factor = 0.5
+			has_country_flag = authoritarianism_ideology_political_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.60.a
+		custom_effect_tooltip = political.BaI.60.a.tt
+		clr_country_flag = authoritarianism_ideology_political_movement
+		set_country_flag = authoritarianism_ideology_government_support
+	}
+}
+
+# Authoritarianism Coup d'état
+country_event = {
+	id = political.BaI.61
+	title = political.BaI.61.t
+	desc = political.BaI.61.d
+	picture = GFX_report_event_fascist_gathering
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = authoritarianism_ideology_political_advisor
+		NOT = { has_government = authoritarianism_ideology }
+		has_country_flag = authoritarianism_ideology_government_support
+		authoritarianism_ideology > 0.3
+		is_major = no
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 100
+		modifier = {
+			factor = 0.5
+			authoritarianism_ideology > 0.4
+		}
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = authoritarianism_ideology_revolutionaries }
+	}
+
+	option = {
+		name = political.BaI.61.a
+		set_politics = {
+			ruling_party = authoritarianism_ideology
+			elections_allowed = no
+		}
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+	}
+}
+
+# Civil War for Authoritarianism
+country_event = {
+	id = political.BaI.62
+	title = political.BaI.62.t
+	desc = political.BaI.62.d
+	picture = GFX_report_event_fascist_gathering
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = authoritarianism_ideology_political_advisor
+		NOT = { has_government = authoritarianism_ideology }
+		authoritarianism_ideology > 0.25
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.75
+			has_country_flag = authoritarianism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.62.a
+		if = {
+   limit = {
+      has_government = conservatism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = conservatism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = liberalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = liberalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = centrism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = centrism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = socialism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = socialism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = jacobinism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = jacobinism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = marxism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = marxism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = nationalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = nationalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = monarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = monarchism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = oligarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = oligarchism_ideology
+      size = 0.6
+   }
+}
+
+		remove_ideas = authoritarianism_ideology_revolutionaries
+		add_timed_idea = { idea = reign_of_terror days = 730 }
+	}
+	option = {
+		name = political.BaI.62.b
+	}
+}
+
+# Authoritarianism Assault Divisions Form
+country_event = {
+	id = political.BaI.63
+	title = political.BaI.63.t
+	desc = political.BaI.63.d
+	picture = GFX_report_event_fascist_militia
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = authoritarianism_ideology_political_advisor
+		NOT = { has_government = authoritarianism_ideology }
+		authoritarianism_ideology > 0.3
+		NOT = { has_idea = authoritarianism_ideology_assault_divisions }
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = authoritarianism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.63.a
+		add_popularity = {
+			ideology = authoritarianism_ideology
+			popularity = 0.05
+		}
+		add_ideas = authoritarianism_ideology_assault_divisions
+	}
+}
+
+# The Threat of Revolutionaries
+country_event = {
+	id = political.BaI.64
+	title = political.BaI.64.t
+	desc = political.BaI.64.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		has_idea_with_trait = authoritarianism_ideology_political_advisor
+		NOT = { has_government = authoritarianism_ideology }
+		authoritarianism_ideology > 0.25
+		any_neighbor_country = {
+			OR = {
+					has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 365
+		modifier = {
+			factor = 0.5
+			has_country_flag = authoritarianism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.64.a
+		add_popularity = {
+			ideology = authoritarianism_ideology
+			popularity = 0.2
+		}
+	}
+}
+
+### > 50% support
+country_event = {
+	id = political.BaI.65
+	title = political.BaI.65.t
+	desc = political.BaI.65.d
+	picture = GFX_report_event_fascist_gathering
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		authoritarianism_ideology > 0.5
+		NOT = { has_government = authoritarianism_ideology }
+		NOT = { has_idea = authoritarianism_ideology_revolutionaries }
+		NOT = { has_idea = reign_of_terror }
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = political.BaI.65.a
+		add_political_power = -100
+		add_popularity = {
+			ideology = authoritarianism_ideology
+			popularity = -0.10
+		}
+		add_timed_idea = {
+			idea = authoritarianism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.65.b
+		add_timed_idea = {
+			idea = authoritarianism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.65.c
+		set_politics = {
+			ruling_party = authoritarianism_ideology
+			elections_allowed = no
+		}
+		add_national_unity = -0.05
+	}
+}
+
+### Revolution
+country_event = {
+	id = political.BaI.66
+	title = political.BaI.66.t
+	desc = political.BaI.66.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		authoritarianism_ideology > 0.7
+		has_idea = authoritarianism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = authoritarianism_ideology_revolutionaries }
+	}
+
+	option = {
+		name = political.BaI.66.a
+		start_civil_war = {
+			ideology = authoritarianism_ideology
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.66.b
+		if = {
+   limit = {
+      has_government = conservatism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = conservatism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = liberalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = liberalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = centrism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = centrism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = socialism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = socialism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = jacobinism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = jacobinism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = marxism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = marxism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = nationalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = nationalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = monarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = monarchism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = oligarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = authoritarianism_ideology
+      ideology = oligarchism_ideology
+      size = 0.6
+   }
+}
+
+	}
+}
+
+### Suppressed
+country_event = {
+	id = political.BaI.67
+	title = political.BaI.67.t
+	desc = political.BaI.67.d
+	picture = GFX_report_event_fascists_posing
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events }
+		authoritarianism_ideology < 0.3
+		has_idea = authoritarianism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.BaI.67.a
+		remove_ideas = authoritarianism_ideology_revolutionaries
+	}
+}
+###########################
+# Oligarchism Events
+###########################
+
+# Move Towards Oligarchism
+country_event = {
+  id = political.BaI.68
+  title = political.BaI.68.t
+  desc = political.BaI.68.d
+	picture = GFX_report_event_journalists_speech
+
+	is_triggered_only = yes
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+	}
+
+	# Seek government support
+	option = {
+		name = political.BaI.68.a
+		custom_effect_tooltip = political.BaI.68.a.tt
+		clr_country_flag = oligarchism_ideology_popular_movement
+		clr_country_flag = oligarchism_ideology_opposition_formed
+		set_country_flag = oligarchism_ideology_political_movement
+	}
+
+	# Seek popular support
+	option = {
+		name = political.BaI.68.b
+		custom_effect_tooltip = political.BaI.68.b.tt
+		clr_country_flag = oligarchism_ideology_political_movement
+		clr_country_flag = oligarchism_ideology_government_support
+		set_country_flag = oligarchism_ideology_popular_movement
+	}
+}
+
+# [Ruling Party] Debates Democracy
+country_event = {
+	id = political.BaI.69
+	title = political.BaI.69.t
+	desc = political.BaI.69.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = oligarchism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		NOT = { has_country_flag = oligarchism_ideology_government_support }
+	}
+
+	mean_time_to_happen = {
+		days = 400
+		modifier = {
+			factor = 0.5
+			has_country_flag = oligarchism_ideology_political_movement
+		}
+		modifier = {
+			factor = 0.5
+			oligarchism_ideology > 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.69.a
+		custom_effect_tooltip = political.BaI.69.tt
+		clr_country_flag = oligarchism_ideology_political_movement
+		set_country_flag = oligarchism_ideology_government_support
+	}
+}
+
+# Oligarchism Opposition Forming
+country_event = {
+  id = political.BaI.70
+  title = political.BaI.70.t
+  desc = political.BaI.70.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = oligarchism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		NOT = { has_country_flag = oligarchism_ideology_opposition_formed }
+	}
+
+	mean_time_to_happen = {
+		days = 300
+		modifier = {
+			factor = 0.5
+			has_country_flag = oligarchism_ideology_popular_movement
+		}
+	}
+
+	option = {
+		name = political.BaI.70.a
+		add_popularity = {
+			ideology = oligarchism_ideology
+			popularity = 0.1
+		}
+		add_national_unity = -0.02
+		set_country_flag = oligarchism_ideology_opposition_formed
+	}
+}
+
+# Public Call for Elections
+country_event = {
+	id = political.BaI.71
+	title = political.BaI.71.t
+	desc = political.BaI.71.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = oligarchism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		has_country_flag = oligarchism_ideology_opposition_formed
+		NOT = { has_idea = oligarchism_ideology_opposition_voicing_protests }
+	}
+
+	mean_time_to_happen = {
+		days = 150
+	}
+
+	option = {
+		name = political.BaI.71.a
+	}
+
+	option = {
+		name = political.BaI.71.b
+		add_political_power = -20
+		add_ideas = oligarchism_ideology_opposition_voicing_protests
+	}
+}
+
+country_event = {
+	id = political.BaI.72
+	title = political.BaI.72.t
+	desc = political.BaI.72.d
+	picture = GFX_report_event_election_vote
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		has_idea_with_trait = oligarchism_ideology_reformer
+    NOT = {
+      OR = {
+        	has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+      }
+    }
+		oligarchism_ideology > 0.5
+		has_country_flag = oligarchism_ideology_government_support
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 200
+	}
+
+	option = {
+		name = political.BaI.72.a
+    if = {
+			limit = {
+        OR = {
+          	has_government = authoritarianism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = {
+        OR = {
+          	has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = oligarchism_ideology
+			elections_allowed = yes
+		}
+		hold_election = ROOT
+		remove_ideas = oligarchism_ideology_revolutionaries
+	}
+	option = {
+		name = political.BaI.72.b
+	}
+}
+
+### > 50% support
+country_event = {
+	id = political.BaI.73
+	title = political.BaI.73.t
+	desc = political.BaI.73.d
+	picture = GFX_report_event_journalists_speech
+
+	trigger = {
+		NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		oligarchism_ideology > 0.5
+		NOT = {
+			OR = {
+					has_government = conservatism_ideology
+	has_government = liberalism_ideology
+	has_government = centrism_ideology
+	has_government = socialism_ideology
+	has_government = nationalism_ideology
+	has_government = oligarchism_ideology
+
+			}	
+		}
+		NOT = { has_idea = oligarchism_ideology_revolutionaries }
+		NOT = { has_idea = reign_of_terror }
+		is_puppet = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = political.BaI.73.a
+		add_political_power = -100
+		add_popularity = {
+			ideology = oligarchism_ideology
+			popularity = -0.10
+		}
+		add_timed_idea = {
+			idea = oligarchism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.73.b
+		add_timed_idea = {
+			idea = oligarchism_ideology_revolutionaries
+			days = 365
+		}
+	}
+
+	option = {
+		name = political.BaI.73.c
+    if = {
+			limit = {
+        OR = {
+          	has_government = authoritarianism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = fascism_defeated days = 730 }
+		}
+		if = {
+			limit = {
+        OR = {
+          	has_government = jacobinism_ideology
+	has_government = marxism_ideology
+
+        }
+      }
+			add_timed_idea = { idea = communism_defeated days = 730 }
+		}
+		set_politics = {
+			ruling_party = oligarchism_ideology
+			elections_allowed = yes
+		}
+		add_national_unity = -0.05
+	}
+}
+
+### Revolution
+country_event = {
+	id = political.BaI.74
+	title = political.BaI.74.t
+	desc = political.BaI.74.d
+	picture = GFX_report_event_worker_protests
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		oligarchism_ideology > 0.7
+		has_idea = oligarchism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	immediate = {
+		hidden_effect = { remove_ideas = oligarchism_ideology_revolutionaries }
+	}
+
+	option = {
+		name = political.BaI.74.a
+		start_civil_war = {
+			ideology = oligarchism_ideology
+			size = 0.5
+		}
+	}
+
+	option = {
+		name = political.BaI.74.b
+		if = {
+   limit = {
+      has_government = conservatism_ideology
+   }
+   start_civil_war = {
+      ruling_party = oligarchism_ideology
+      ideology = conservatism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = liberalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = oligarchism_ideology
+      ideology = liberalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = centrism_ideology
+   }
+   start_civil_war = {
+      ruling_party = oligarchism_ideology
+      ideology = centrism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = socialism_ideology
+   }
+   start_civil_war = {
+      ruling_party = oligarchism_ideology
+      ideology = socialism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = jacobinism_ideology
+   }
+   start_civil_war = {
+      ruling_party = oligarchism_ideology
+      ideology = jacobinism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = marxism_ideology
+   }
+   start_civil_war = {
+      ruling_party = oligarchism_ideology
+      ideology = marxism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = nationalism_ideology
+   }
+   start_civil_war = {
+      ruling_party = oligarchism_ideology
+      ideology = nationalism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = authoritarianism_ideology
+   }
+   start_civil_war = {
+      ruling_party = oligarchism_ideology
+      ideology = authoritarianism_ideology
+      size = 0.6
+   }
+}
+if = {
+   limit = {
+      has_government = monarchism_ideology
+   }
+   start_civil_war = {
+      ruling_party = oligarchism_ideology
+      ideology = monarchism_ideology
+      size = 0.6
+   }
+}
+
+	}
+}
+
+### Suppressed
+country_event = {
+	id = political.BaI.75
+	title = political.BaI.75.t
+	desc = political.BaI.75.d
+	picture = GFX_report_event_europe_funeral
+
+	trigger = {
+  NOT = { has_idea_with_trait = ignore_political_events } NOT = { has_idea_with_trait = ignore_political_events_democratic }
+		oligarchism_ideology < 0.3
+		has_idea = oligarchism_ideology_revolutionaries
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	option = {
+		name = political.BaI.75.a
+		remove_ideas = oligarchism_ideology_revolutionaries
+	}
+}

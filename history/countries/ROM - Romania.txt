@@ -12,6 +12,7 @@ add_political_power = 0
 
 # [2] IDEAS
 add_ideas = {
+   constitutional_monarchy
 }
 
 oob = "ROM_1910"
@@ -34,38 +35,38 @@ set_technology = {
 # [4] POLITICS
 set_politics = {
    parties = {
-      conservatism_ideologie = {
+      conservatism_ideology = {
          popularity = 60
       }
-      liberalism_ideologie = {
+      liberalism_ideology = {
          popularity = 19
       }
-      centrism_ideologie = {
+      centrism_ideology = {
          popularity = 16
       }
-      socialism_ideologie = {
+      socialism_ideology = {
          popularity = 3
       }
-      jacobinism_ideologie = {
+      jacobinism_ideology = {
          popularity = 0
       }
-      marxism_ideologie = {
+      marxism_ideology = {
          popularity = 0
       }
-      nationalism_ideologie = {
+      nationalism_ideology = {
          popularity = 2
       }
-      authoritarianism_ideologie = {
+      authoritarianism_ideology = {
          popularity = 0
       }
-      monarchism_ideologie = {
+      monarchism_ideology = {
          popularity = 0
       }
-      oligarchism_ideologie = {
+      oligarchism_ideology = {
          popularity = 0
       }
    }
-   ruling_party = monarchism_ideologie
+   ruling_party = monarchism_ideology
    last_election = 1907.3.1
    election_frequency = 48
    elections_allowed = no

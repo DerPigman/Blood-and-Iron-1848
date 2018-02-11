@@ -103,6 +103,8 @@ ideas = {
 				army_org_Factor = 0.05
 				planning_speed = 0.10
 			}
+			
+			traits = { ignore_political_events }
 		}
 		
 		GUA_regime_of_cabrera = {

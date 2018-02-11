@@ -1,0 +1,13 @@
+﻿l_english:
+ ignore_political_events:0 "Ignore Political Events: §YAll§W"
+ ignore_political_events_democratic:0 "Ignore Political Events: §YDemocratic§W"
+ conservatism_ideology_political_advisor:0 "Conservative Reformer"
+ liberalism_ideology_political_advisor:0 "Liberal Reformer"
+ centrism_ideology_political_advisor:0 "Centrist Reformer"
+ socialism_ideology_political_advisor:0 "Socialist Reformer"
+ nationalism_ideology_political_advisor:0 "Nationalist Reformer"
+ jacobinism_ideology_political_advisor:0 "Jacobinist Revolutionary"
+ marxism_ideology_political_advisor:0 "Marxist Revolutionary"
+ authoritarianism_ideology_political_advisor:0 "Authoritarian Demagogue"
+ monarchism_ideology_political_advisor:0 "Monarchist Supporter"
+ oligarchism_ideology_political_advisor:0 "Oligarchic Supporter"

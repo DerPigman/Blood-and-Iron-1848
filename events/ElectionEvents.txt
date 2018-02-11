@@ -1,0 +1,612 @@
+###########################
+# Election Events
+###########################
+
+add_namespace = election
+
+# Election
+country_event = {
+   id = election.1
+   title = election.1.t
+   desc = election.1.d
+   picture = GFX_report_event_election
+
+   is_triggered_only = yes
+
+   trigger = {
+      OR = {
+         NOT = { has_idea_with_trait = ignore_political_events }
+         AND = {
+            OR = {
+               has_government = conservatism_ideology
+               has_government = liberalism_ideology
+               has_government = centrism_ideology
+               has_government = socialism_ideology
+               has_government = nationalism_ideology
+               has_government = oligarchism_ideology
+            }
+            NOT = { has_idea_with_trait = ignore_political_events_democratic }
+         }
+      }
+   }
+   
+   immediate = {
+      hidden_effect = {
+         clr_country_flag = elections_same_ruling_party
+      }
+   }
+
+   
+   option = { # Conservatism
+      name = election.1.a
+      ai_chance = {
+         factor = 2
+         modifier = {
+            factor = 2
+            conservatism_ideology > 0.3
+         }
+         modifier = {
+            factor = 2
+            conservatism_ideology > 0.4
+         }
+         modifier = {
+            factor = 2
+            conservatism_ideology > 0.5
+         }
+         modifier = {
+            factor = 2
+            conservatism_ideology > 0.6
+         }
+         modifier = {
+            factor = 2
+            conservatism_ideology > 0.7
+         }
+         modifier = {
+            factor = 2
+            conservatism_ideology > 0.8
+         }
+         modifier = {
+            factor = 2
+            conservatism_ideology > 0.9
+         }
+      }
+      trigger = {
+         conservatism_ideology > 0.19
+      }
+      if = {
+         limit = { has_government = conservatism_ideology }
+         set_country_flag = elections_same_ruling_party
+         add_political_power = 50
+      }
+      set_politics = {
+         ruling_party = conservatism_ideology
+         elections_allowed = yes
+      }
+      hidden_effect = {
+         country_event = { days = 30 id = election.2 }
+      }
+
+   }
+
+   option = { # Liberalism
+      name = election.1.b
+      ai_chance = {
+         factor = 2
+         modifier = {
+            factor = 2
+            liberalism_ideology > 0.3
+         }
+         modifier = {
+            factor = 2
+            liberalism_ideology > 0.4
+         }
+         modifier = {
+            factor = 2
+            liberalism_ideology > 0.5
+         }
+         modifier = {
+            factor = 2
+            liberalism_ideology > 0.6
+         }
+         modifier = {
+            factor = 2
+            liberalism_ideology > 0.7
+         }
+         modifier = {
+            factor = 2
+            liberalism_ideology > 0.8
+         }
+         modifier = {
+            factor = 2
+            liberalism_ideology > 0.9
+         }
+      }
+      trigger = {
+         liberalism_ideology > 0.19
+      }
+      if = {
+         limit = { has_government = liberalism_ideology }
+         set_country_flag = elections_same_ruling_party
+         add_political_power = 50
+      }
+      set_politics = {
+         ruling_party = liberalism_ideology
+         elections_allowed = yes
+      }
+      hidden_effect = {
+         country_event = { days = 30 id = election.2 }
+      }
+
+   }
+
+   option = { # Centrism
+      name = election.1.c
+      ai_chance = {
+         factor = 2
+         modifier = {
+            factor = 2
+            centrism_ideology > 0.3
+         }
+         modifier = {
+            factor = 2
+            centrism_ideology > 0.4
+         }
+         modifier = {
+            factor = 2
+            centrism_ideology > 0.5
+         }
+         modifier = {
+            factor = 2
+            centrism_ideology > 0.6
+         }
+         modifier = {
+            factor = 2
+            centrism_ideology > 0.7
+         }
+         modifier = {
+            factor = 2
+            centrism_ideology > 0.8
+         }
+         modifier = {
+            factor = 2
+            centrism_ideology > 0.9
+         }
+      }
+      trigger = {
+         centrism_ideology > 0.19
+      }
+      if = {
+         limit = { has_government = centrism_ideology }
+         set_country_flag = elections_same_ruling_party
+         add_political_power = 50
+      }
+      set_politics = {
+         ruling_party = centrism_ideology
+         elections_allowed = yes
+      }
+      hidden_effect = {
+         country_event = { days = 30 id = election.2 }
+      }
+
+   }
+
+   option = { # Socialism
+      name = election.1.d
+      ai_chance = {
+         factor = 2
+         modifier = {
+            factor = 2
+            socialism_ideology > 0.3
+         }
+         modifier = {
+            factor = 2
+            socialism_ideology > 0.4
+         }
+         modifier = {
+            factor = 2
+            socialism_ideology > 0.5
+         }
+         modifier = {
+            factor = 2
+            socialism_ideology > 0.6
+         }
+         modifier = {
+            factor = 2
+            socialism_ideology > 0.7
+         }
+         modifier = {
+            factor = 2
+            socialism_ideology > 0.8
+         }
+         modifier = {
+            factor = 2
+            socialism_ideology > 0.9
+         }
+      }
+      trigger = {
+         socialism_ideology > 0.19
+      }
+      if = {
+         limit = { has_government = socialism_ideology }
+         set_country_flag = elections_same_ruling_party
+         add_political_power = 50
+      }
+      set_politics = {
+         ruling_party = socialism_ideology
+         elections_allowed = yes
+      }
+      hidden_effect = {
+         country_event = { days = 30 id = election.2 }
+      }
+
+   }
+
+   option = { # Jacobinism
+      name = election.1.e
+      ai_chance = {
+         factor = 2
+         modifier = {
+            factor = 2
+            jacobinism_ideology > 0.3
+         }
+         modifier = {
+            factor = 2
+            jacobinism_ideology > 0.4
+         }
+         modifier = {
+            factor = 2
+            jacobinism_ideology > 0.5
+         }
+         modifier = {
+            factor = 2
+            jacobinism_ideology > 0.6
+         }
+         modifier = {
+            factor = 2
+            jacobinism_ideology > 0.7
+         }
+         modifier = {
+            factor = 2
+            jacobinism_ideology > 0.8
+         }
+         modifier = {
+            factor = 2
+            jacobinism_ideology > 0.9
+         }
+      }
+      trigger = {
+         jacobinism_ideology > 0.19
+      }
+      if = {
+         limit = { has_government = jacobinism_ideology }
+         set_country_flag = elections_same_ruling_party
+         add_political_power = 50
+      }
+      set_politics = {
+         ruling_party = jacobinism_ideology
+         elections_allowed = yes
+      }
+      hidden_effect = {
+         country_event = { days = 30 id = election.2 }
+      }
+
+   }
+
+   option = { # Marxism
+      name = election.1.f
+      ai_chance = {
+         factor = 2
+         modifier = {
+            factor = 2
+            marxism_ideology > 0.3
+         }
+         modifier = {
+            factor = 2
+            marxism_ideology > 0.4
+         }
+         modifier = {
+            factor = 2
+            marxism_ideology > 0.5
+         }
+         modifier = {
+            factor = 2
+            marxism_ideology > 0.6
+         }
+         modifier = {
+            factor = 2
+            marxism_ideology > 0.7
+         }
+         modifier = {
+            factor = 2
+            marxism_ideology > 0.8
+         }
+         modifier = {
+            factor = 2
+            marxism_ideology > 0.9
+         }
+      }
+      trigger = {
+         marxism_ideology > 0.19
+      }
+      if = {
+         limit = { has_government = marxism_ideology }
+         set_country_flag = elections_same_ruling_party
+         add_political_power = 50
+      }
+      set_politics = {
+         ruling_party = marxism_ideology
+         elections_allowed = yes
+      }
+      hidden_effect = {
+         country_event = { days = 30 id = election.2 }
+      }
+
+   }
+
+   option = { # Nationalism
+      name = election.1.g
+      ai_chance = {
+         factor = 2
+         modifier = {
+            factor = 2
+            nationalism_ideology > 0.3
+         }
+         modifier = {
+            factor = 2
+            nationalism_ideology > 0.4
+         }
+         modifier = {
+            factor = 2
+            nationalism_ideology > 0.5
+         }
+         modifier = {
+            factor = 2
+            nationalism_ideology > 0.6
+         }
+         modifier = {
+            factor = 2
+            nationalism_ideology > 0.7
+         }
+         modifier = {
+            factor = 2
+            nationalism_ideology > 0.8
+         }
+         modifier = {
+            factor = 2
+            nationalism_ideology > 0.9
+         }
+      }
+      trigger = {
+         nationalism_ideology > 0.19
+      }
+      if = {
+         limit = { has_government = nationalism_ideology }
+         set_country_flag = elections_same_ruling_party
+         add_political_power = 50
+      }
+      set_politics = {
+         ruling_party = nationalism_ideology
+         elections_allowed = yes
+      }
+      hidden_effect = {
+         country_event = { days = 30 id = election.2 }
+      }
+
+   }
+
+   option = { # Authoritarianism
+      name = election.1.h
+      ai_chance = {
+         factor = 2
+         modifier = {
+            factor = 2
+            authoritarianism_ideology > 0.3
+         }
+         modifier = {
+            factor = 2
+            authoritarianism_ideology > 0.4
+         }
+         modifier = {
+            factor = 2
+            authoritarianism_ideology > 0.5
+         }
+         modifier = {
+            factor = 2
+            authoritarianism_ideology > 0.6
+         }
+         modifier = {
+            factor = 2
+            authoritarianism_ideology > 0.7
+         }
+         modifier = {
+            factor = 2
+            authoritarianism_ideology > 0.8
+         }
+         modifier = {
+            factor = 2
+            authoritarianism_ideology > 0.9
+         }
+      }
+      trigger = {
+         authoritarianism_ideology > 0.19
+      }
+      if = {
+         limit = { has_government = authoritarianism_ideology }
+         set_country_flag = elections_same_ruling_party
+         add_political_power = 50
+      }
+      set_politics = {
+         ruling_party = authoritarianism_ideology
+         elections_allowed = yes
+      }
+      hidden_effect = {
+         country_event = { days = 30 id = election.2 }
+      }
+
+   }
+
+   option = { # Monarchism
+      name = election.1.i
+      ai_chance = {
+         factor = 2
+         modifier = {
+            factor = 2
+            monarchism_ideology > 0.3
+         }
+         modifier = {
+            factor = 2
+            monarchism_ideology > 0.4
+         }
+         modifier = {
+            factor = 2
+            monarchism_ideology > 0.5
+         }
+         modifier = {
+            factor = 2
+            monarchism_ideology > 0.6
+         }
+         modifier = {
+            factor = 2
+            monarchism_ideology > 0.7
+         }
+         modifier = {
+            factor = 2
+            monarchism_ideology > 0.8
+         }
+         modifier = {
+            factor = 2
+            monarchism_ideology > 0.9
+         }
+      }
+      trigger = {
+         monarchism_ideology > 0.19
+      }
+      if = {
+         limit = { has_government = monarchism_ideology }
+         set_country_flag = elections_same_ruling_party
+         add_political_power = 50
+      }
+      set_politics = {
+         ruling_party = monarchism_ideology
+         elections_allowed = yes
+      }
+      hidden_effect = {
+         country_event = { days = 30 id = election.2 }
+      }
+
+   }
+
+   option = { # Oligarchism
+      name = election.1.j
+      ai_chance = {
+         factor = 2
+         modifier = {
+            factor = 2
+            oligarchism_ideology > 0.3
+         }
+         modifier = {
+            factor = 2
+            oligarchism_ideology > 0.4
+         }
+         modifier = {
+            factor = 2
+            oligarchism_ideology > 0.5
+         }
+         modifier = {
+            factor = 2
+            oligarchism_ideology > 0.6
+         }
+         modifier = {
+            factor = 2
+            oligarchism_ideology > 0.7
+         }
+         modifier = {
+            factor = 2
+            oligarchism_ideology > 0.8
+         }
+         modifier = {
+            factor = 2
+            oligarchism_ideology > 0.9
+         }
+      }
+      trigger = {
+         oligarchism_ideology > 0.19
+      }
+      if = {
+         limit = { has_government = oligarchism_ideology }
+         set_country_flag = elections_same_ruling_party
+         add_political_power = 50
+      }
+      set_politics = {
+         ruling_party = oligarchism_ideology
+         elections_allowed = yes
+      }
+      hidden_effect = {
+         country_event = { days = 30 id = election.2 }
+      }
+
+   }
+
+}
+
+country_event = {
+   id = election.2
+   title = election.2.t
+   desc = election.2.d
+   picture = GFX_report_event_election
+
+   is_triggered_only = yes
+
+   trigger = {
+      NOT = {
+         OR = {
+			has_country_flag = elections_same_ruling_party
+            has_government = conservatism_ideology
+            has_government = liberalism_ideology
+            has_government = centrism_ideology
+            has_government = socialism_ideology
+            has_government = nationalism_ideology
+            has_government = oligarchism_ideology
+         }
+      }
+   }
+
+   option = { # Keep Elections
+      name = election.2.a
+	  add_political_power = 50
+   }
+   
+   option = { # Abandon Elections
+      name = election.2.a
+      if = {
+         limit = { has_government = jacobinism_ideology }
+         set_politics = {
+            ruling_party = jacobinism_ideology
+            elections_allowed = no
+         }
+      }
+      if = {
+         limit = { has_government = marxism_ideology }
+         set_politics = {
+            ruling_party = marxism_ideology
+            elections_allowed = no
+         }
+      }
+      if = {
+         limit = { has_government = authoritarianism_ideology }
+         set_politics = {
+            ruling_party = authoritarianism_ideology
+            elections_allowed = no
+         }
+      }
+      if = {
+         limit = { has_government = monarchism_ideology }
+         set_politics = {
+            ruling_party = monarchism_ideology
+            elections_allowed = no
+         }
+      }
+	  add_political_power = -50
+      add_timed_idea = { idea = elections_abandoned days = 730 }
+   }
+}

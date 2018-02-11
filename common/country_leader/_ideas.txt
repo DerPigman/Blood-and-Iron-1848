@@ -1,0 +1,17 @@
+leader_traits = {
+	ignore_political_events = {
+		random = no
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	ignore_political_events_democratic = {
+		random = no
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

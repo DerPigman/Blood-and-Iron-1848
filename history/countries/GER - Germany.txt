@@ -59,38 +59,38 @@ set_technology = {
 # [4] POLITICS
 set_politics = {
    parties = {
-      conservatism_ideologie = {
+      conservatism_ideology = {
          popularity = 19
       }
-      liberalism_ideologie = {
+      liberalism_ideology = {
          popularity = 16
       }
-      centrism_ideologie = {
+      centrism_ideology = {
          popularity = 29
       }
-      socialism_ideologie = {
+      socialism_ideology = {
          popularity = 14
       }
-      jacobinism_ideologie = {
+      jacobinism_ideology = {
          popularity = 0
       }
-      marxism_ideologie = {
+      marxism_ideology = {
          popularity = 0
       }
-      nationalism_ideologie = {
+      nationalism_ideology = {
          popularity = 9
       }
-      authoritarianism_ideologie = {
+      authoritarianism_ideology = {
          popularity = 3
       }
-      monarchism_ideologie = {
+      monarchism_ideology = {
          popularity = 0
       }
-      oligarchism_ideologie = {
+      oligarchism_ideology = {
          popularity = 0
       }
    }
-   ruling_party = centrism_ideologie
+   ruling_party = centrism_ideology
    last_election = 1907.1.25
    election_frequency = 48
    elections_allowed = no
