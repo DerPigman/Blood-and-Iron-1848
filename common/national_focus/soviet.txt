@@ -547,7 +547,11 @@ focus_tree = {
 		y = 0
 		
 		available = {
-			always = no
+			NOT = { has_government = monarchism_ideology }
+		}
+		
+		bypass = {
+			NOT = { has_government = monarchism_ideology }
 		}
 		
 		ai_will_do = {

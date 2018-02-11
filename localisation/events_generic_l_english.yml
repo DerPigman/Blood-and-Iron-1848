@@ -1,0 +1,9 @@
+﻿l_english:
+ election.1.t:0 "Elections in [Root.GetNameDef]"
+ election.1.d:0 "The weeks before today's elections were restless, full of debates, rallys and absurd election promises. But now, the people of [Root.GetNameDef] fill the streets on their way to the polling booths. Even if a part of the population is still counting on the re-election of [Root.GetLeader], the opposition's candidates should not be underestimated."
+ election.1.c:0 "The §YCentrist Party§W shall lead this country."
+ election.1.p:0 "The §YSocialist Party§W shall lead this country."
+ election.2.t:0 "Democracy at Risk?"
+ election.2.d:0 "After the unexpected election of the [Root.GetRulingParty], many rumours arose about the abolition of democratic elections. The opposition calls on current President [Root.GetLeader] to maintain the elections despite the authoritarian tendencies of his party."
+ election.2.a:0 "Yes! The voice of the people must be heard!"
+ election.2.b:0 "Why elections if we're gonna get elected anyway?"
