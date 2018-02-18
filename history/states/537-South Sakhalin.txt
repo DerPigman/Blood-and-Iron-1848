@@ -14,10 +14,9 @@ state = {
    # HISTORY
    history = {
       # META
-      owner = JAP
-      controller = JAP
-      add_core_of = JAP
-      add_claim_by = SOV
+      owner = SOV
+      controller = SOV
+      add_core_of = SOV
 
       # VICTORY POINTS
       victory_points = { 12446 1 }

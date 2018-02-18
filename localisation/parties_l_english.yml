@@ -1,6 +1,6 @@
 ﻿l_english:
 ####  CONSERVATISM  ####
-conservatism_ideology:0 "Conservatism"
+conservatism_ideology:0 "Conservative Party"
 conservatism_ideology_noun:0 "Conservatism"
 conservatism_ideology_desc:0 "Conservativ Democracy"
 conservatism:0 "Conservatism"
@@ -14,7 +14,7 @@ liberalism_desc:0 "With a long philosophical tradition of valuing personal liber
 ####  CENTRISM  ####
 centrism_ideology:0 "Centrism"
 centrism_ideology_noun:0 "Centrism"
-centrism_ideology_desc:0 "Centric Democracy"
+centrism_ideology_desc:0 "Centrists Democracy"
 centrism:0 "Centrism"
 centrism_desc:0 "Centrism is a form of government which wants to achieve common sense solutions that appropriately address current and future needs, that support the public trust and serve the common good with consideration of risk and capacity in context of these needs."
 ####  SOCIALISM  ####
@@ -38,13 +38,13 @@ marxism_desc:0 "Encompassing a broad spectrum of economic and historical views, 
 ####  NATIONALISM  ####
 nationalism_ideology:0 "Nationalism"
 nationalism_ideology_noun:0 "Nationalism"
-nationalism_ideology_desc:0 "Nazi Regime"
+nationalism_ideology_desc:0 "Nationalist Democracy"
 nationalism:0 "Nationalism"
 nationalism_desc:0 "Rooted in extreme nationalism, mixed with socialist tendencies, National Socialism is driven by ideas of own militaristic supremacy and hegemony. It promotes aggressive expansionism, revanchism and a totalitarian state where the people are united under a strong leader with absolute power and a corporatist economy.\nWhile promoting rapid industrialisation, collectivisation and labour rights, espousing racial politics and violent, populist rhetoric, National Socialism is often vehemently opposed."
 ####  AUTHORITARIANISM  ####
 authoritarianism_ideology:0 "Authoritarianism"
 authoritarianism_ideology_noun:0 "Authoritarianism"
-authoritarianism_ideology_desc:0 "Regime"
+authoritarianism_ideology_desc:0 "Authoritarian Regime"
 authoritarianism:0 "Authoritarianism"
 authoritarianism_desc:0 "Encompassing and attracting a variety of ultra-nationalist movements, fascism typically venerates devotion to the state and uniting the people under a strong leader, forcible oppressing any opposition, emphasises militaristic values and the total control of industry and commerce. Fascists regard the creation of a totalitarian state as necessary to prepare for any armed conflict and to respond to economic difficulties.\nIt is the leader’s duty to forge nationally unity and maintain a stable and orderly society."
 military_dictatorship:0 "Military Dictatorship"
@@ -253,6 +253,29 @@ SOV_marxism_ideology_party_long:0 "Russian Social Democratic Labour Party (RSDRP
 SOV_marxism_ideology_party:0 "Rossiyskaya Sotsial-Demokraticheskaya Rabochaya Partiya"
 SOV_monarchism_ideology_party_long:0 "House of Romanov"
 SOV_monarchism_ideology_party:0 "Dom Románovy"
+####  QIN - Qing Empire  ####
+QIN_monarchism_ideology_party_long:0 "House of Aisin Gioro"
+QIN_monarchism_ideology_party:0 "Aisin Gioro de Fángzi"
+QIN_oligarchism_ideology_party_long:0 "Imperial Cabinet"
+QIN_oligarchism_ideology_party:0 "Huángshì Nèigé"
+####  MON - Mongolia  ####
+MON_monarchism_ideology_party_long:0 "Jebtsundamba Khutuktu"
+MON_monarchism_ideology_party:0 "Jawzan Damba Khutagt"
+MON_marxism_ideology_party_long:0 "Mongolian People's Party (MAN)"
+MON_marxism_ideology_party:0 "Mongol Ardīn Nam"
+####  CHI - China  ####
+CHI_nationalism_ideology_party_long:0 "Nationalist Party of China"
+CHI_nationalism_ideology_party:0 "Zhōngguó Guómíndang"
+CHI_conservatism_ideology_party_long:0 "Republican Party of China"
+CHI_conservatism_ideology_party:0 "Zhōngguó Gònghédang"
+CHI_centrism_ideology_party_long:0 "Unity Party of China"
+CHI_centrism_ideology_party:0 "Zhōngguó Tuánjié Dang"
+CHI_liberalism_ideology_party_long:0 "Democratic Party of China"
+CHI_liberalism_ideology_party:0 "Zhōngguó Mínzhǔdang"
+CHI_authoritarianism_ideology_party_long:0 "Beiyang Army"
+CHI_authoritarianism_ideology_party:0 "Běiyáng Jūnduì"
+CHI_monarchism_ideology_party_long:0 "House of Shikai"
+CHI_monarchism_ideology_party:0 "Shikai de Fángzi"
 ####  HUN - Hungary  ####
 HUN_jacobinism_ideology_party_long:0 "Party of Independence and '48 (F48P)"
 HUN_jacobinism_ideology_party:0 "Függetlenségi és 48-as Párt"

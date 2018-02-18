@@ -14,7 +14,7 @@ state = {
       owner = POR
       controller = POR
       add_core_of = CHI
-      add_core_of = PRC
+      add_core_of = QIN
 
       # VICTORY POINTS
       victory_points = { 4189 1 }

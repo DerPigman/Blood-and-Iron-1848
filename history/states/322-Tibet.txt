@@ -14,9 +14,10 @@ state = {
    # HISTORY
    history = {
       # META
-      owner = TIB
-      controller = TIB
+      owner = QIN
+      controller = QIN
       add_core_of = TIB
+      add_core_of = QIN
 
       # VICTORY POINTS
       victory_points = { 5033 5 }
@@ -31,6 +32,6 @@ state = {
 
    # PROVINCES
    provinces = {
-      1961 1991 2010 2014 2093 2098 4900 4994 5011 5033 5094 7926 8029 8068 8121 10755 10802 10918 12784 12801 12807
+      1961 1991 2010 2014 2093 2098 4407 4900 4994 5011 5018 5033 5080 5094 5102 7926 8029 8041 8059 8068 8121 10741 10755 10802 10856 10918 12784 12801 12807
    }
 }

@@ -14,4 +14,12 @@ leader_traits = {
 			factor = 0
 		}
 	}
+	
+	total_political_instability = {
+		random = no
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

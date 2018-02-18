@@ -11,6 +11,9 @@ set_national_unity = 0.5
 add_political_power = 0
 
 # [2] IDEAS
+add_timed_idea = { idea = ELS_military_rule days = 365 }
+add_ideas = {
+}
 
 oob = "ELS_1910"
 
@@ -55,7 +58,7 @@ set_politics = {
       }
    }
    ruling_party = authoritarianism_ideology
-   last_election = 1906.1.12
+   last_election = 1907.1.12
    election_frequency = 48
    elections_allowed = yes
 }

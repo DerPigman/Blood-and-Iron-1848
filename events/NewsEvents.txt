@@ -1,0 +1,36 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = news
+
+# Chinese Civil War
+news_event = {
+	id = news.1
+	title = news.1.t
+	desc = news.1.d
+	picture = GFX_news_event_001
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { 
+			set_global_flag = flag_chinese_civil_war
+		}
+	}
+	
+	option = {
+		name = news.1.a
+		trigger = {
+			is_major = yes
+		}
+	}
+	option = {
+		name = news.1.b
+		trigger = {
+			NOT = { is_major = yes }
+		}
+	}
+}

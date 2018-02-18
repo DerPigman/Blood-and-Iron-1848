@@ -1,9 +1,12 @@
 ﻿l_english:
  SOV_imperial_duma_1:0 "First Meeting of the Imperial Duma"
  SOV_imperial_duma_2:0 "Second Meeting of the Imperial Duma"
+ SOV_imperial_duma_3:0 "Third Meeting of the Imperial Duma"
  SOV_strengthen_the_tsar:0 "Strengthen the Tsar"
  SOV_work_out_a_compromise:0 "Work out a Compromise"
  SOV_reform_the_constitution:0 "Reform the Constitution"
+ SOV_the_slavic_brotherhood:0 "The Slavic Brotherhood"
+ SOV_the_patriotic_song:0 "Patrioticheskaya Pesnya"
  SOV_purge_the_deputies:0 "Purge the Deputies"
  SOV_purge_the_deputies_tt:0 "Some of your §YPolitical Advisors§W will be replaced.\n"
  SOV_abolish_the_duma:0 "Abolish the Duma"

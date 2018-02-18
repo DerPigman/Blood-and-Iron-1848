@@ -15,11 +15,10 @@ state = {
    # HISTORY
    history = {
       # META
-      owner = PRC
-      controller = PRC
-      add_core_of = PRC
+      owner = QIN
+      controller = QIN
+      add_core_of = QIN
       add_core_of = CHI
-      add_core_of = PRC
 
       # VICTORY POINTS
       victory_points = { 7418 1 }

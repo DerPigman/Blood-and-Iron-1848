@@ -33,6 +33,11 @@ spriteTypes = {
 	}
 	
 	SpriteType = {
+		name = "GFX_idea_emperor_puyi"
+		texturefile = "gfx/interface/ideas/idea_emperor_puyi.dds"
+	}
+	
+	SpriteType = {
 		name = "GFX_idea_traits_strip"
 		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
 		noOfFrames = 14		

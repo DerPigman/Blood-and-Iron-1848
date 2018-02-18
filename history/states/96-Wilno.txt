@@ -11,11 +11,13 @@ state = {
    # HISTORY
    history = {
       # META
-      owner = SOV
-      controller = SOV
+      owner = LIT
+      controller = LIT
+      add_core_of = SOV
       add_core_of = BLR
 
       # VICTORY POINTS
+      victory_points = { 3320 1 }
 
       # BUILDINGS
       buildings = {
@@ -27,6 +29,6 @@ state = {
 
    # PROVINCES
    provinces = {
-      233 277 406 9341 358
+      3320 3366 6340 6413 9274 9295 11342 11391
    }
 }

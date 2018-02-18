@@ -86,6 +86,18 @@ SOV = {
    color = rgb { 50 100 50 }
    color_ui = rgb { 40 90 40 }
 }
+QIN = {
+   color = rgb { 30 56 80 }
+   color_ui = rgb { 30 56 80 }
+}
+MON = {
+   color = rgb { 108 140 42 }
+   color_ui = rgb { 209 247 133 }
+}
+CHI = {
+   color = rgb { 255 244 190 }
+   color_ui = rgb { 255 244 190 }
+}
 HUN = {
    color = rgb { 249 126 98 }
    color_ui = rgb { 255 164 127 }

@@ -4,7 +4,7 @@
 
 add_namespace = soviet.BaI
 
-# Meeting of the Imperial Duma
+# First Meeting of the Imperial Duma
 country_event = {
 	id = soviet.BaI.1
 	title = soviet.BaI.1.t
@@ -15,24 +15,16 @@ country_event = {
 	
 	option = {
 		name = soviet.BaI.1.a
-		complete_national_focus = SOV_strengthen_the_tsar
-		#add_ideas = {
-		#	SOV_god_save_the_tsar_1
-		#}
-	}
-	
-	option = {
-		name = soviet.BaI.1.b
-		complete_national_focus = SOV_reform_the_constitution
+		set_country_flag = SOV_flag_strengthen_the_tsar
 	}
 	
 	option = {
 		name = soviet.BaI.1.c
-		complete_national_focus = SOV_work_out_a_compromise
+		set_country_flag = SOV_flag_work_out_a_compromise
 	}
 }
 
-# Meeting of the Imperial Duma
+# Second Meeting of the Imperial Duma (Good)
 country_event = {
 	id = soviet.BaI.2
 	title = soviet.BaI.2.t
@@ -49,7 +41,8 @@ country_event = {
 	}
 }
 
-# Second Bloody Sunday
+
+# Second Meeting of the Imperial Duma (Bad)
 country_event = {
 	id = soviet.BaI.3
 	title = soviet.BaI.3.t
@@ -59,11 +52,28 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		complete_national_focus = SOV_second_bloody_sunday
 		name = soviet.BaI.3.a
-		add_manpower = -5000
 	}	
 	option = {
 		name = soviet.BaI.3.b
 	}
 }
+
+# Second Bloody Sunday
+#country_event = {
+#	id = soviet.BaI.3
+#	title = soviet.BaI.3.t
+#	desc = soviet.BaI.3.d
+#	picture = GFX_report_event_soviet_german_soldier_handshake
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		complete_national_focus = SOV_second_bloody_sunday
+#		name = soviet.BaI.3.a
+#		add_manpower = -5000
+#	}	
+#	option = {
+#		name = soviet.BaI.3.b
+#	}
+#}

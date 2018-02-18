@@ -1,4 +1,5 @@
 ﻿l_english:
+ total_political_instability:0 "§RStrikes§W, §RProtests§W and §RArmed Revolts§W may occur."
  ignore_political_events:0 "Ignore Political Events: §YAll§W"
  ignore_political_events_democratic:0 "Ignore Political Events: §YDemocratic§W"
  conservatism_ideology_political_advisor:0 "Conservative Reformer"

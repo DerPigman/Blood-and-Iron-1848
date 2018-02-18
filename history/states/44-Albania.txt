@@ -18,6 +18,7 @@ state = {
       owner = ALB
       controller = ALB
       add_core_of = ALB
+      add_claim_by = ITA
 
       # VICTORY POINTS
       victory_points = { 9914 5 }

@@ -168,6 +168,12 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				unity_weekly = -0.001
+				marxism_ideology_drift = 0.02
+			}
+			
+			traits = {
+				total_political_instability
 			}
 		}
 		

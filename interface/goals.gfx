@@ -3,6 +3,11 @@ spriteTypes = {
 	### blood and iron
 	
 	SpriteType = {
+	name = "GFX_focus_chinese_civil_war"
+	texturefile = "gfx/interface/goals/focus_chinese_civil_war.dds"			
+	}
+	
+	SpriteType = {
 	name = "GFX_focus_ITA_unified_italy"
 	texturefile = "gfx/interface/goals/focus_ITA_unified_italy.dds"			
 	}

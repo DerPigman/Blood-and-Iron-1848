@@ -14,11 +14,11 @@ state = {
    # HISTORY
    history = {
       # META
-      owner = CHI
-      controller = CHI
+      owner = QIN
+      controller = QIN
       add_core_of = CHI
-      add_core_of = TIB
-      add_core_of = PRC
+      add_core_of = YUN
+      add_core_of = QIN
 
       # VICTORY POINTS
 
@@ -31,6 +31,6 @@ state = {
 
    # PROVINCES
    provinces = {
-      1918 1999 2067 4407 4999 5018 5080 5102 7294 7988 8041 8059 8104 10726 10741 10841 10856 12724 12837
+      1918 1999 2067 4999 7294 7988 8104 10726 10841 12724 12837
    }
 }

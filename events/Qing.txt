@@ -1,0 +1,77 @@
+﻿###########################
+# Qing Events
+###########################
+
+add_namespace = qing.BaI
+
+# Republic of China Civil War
+country_event = {
+	id = qing.BaI.1
+	title = qing.BaI.1.t
+	desc = qing.BaI.1.d
+	picture = GFX_report_event_soviet_german_soldier_handshake
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { 
+			CHI = { 
+				transfer_state = 597
+				transfer_state = 614
+				transfer_state = 598
+				transfer_state = 613
+				transfer_state = 607
+				transfer_state = 606
+				transfer_state = 596
+				declare_war_on = { target = QIN type = annex_everything }
+			}
+		}
+	}
+	
+	option = {
+		name = qing.BaI.1.a
+	}
+	
+	option = {
+		name = qing.BaI.1.b
+		CHI = {
+			change_tag_from = QIN
+		}
+	}
+}
+
+# Mongolia Independence
+country_event = {
+	id = qing.BaI.2
+	title = qing.BaI.2.t
+	desc = qing.BaI.2.d
+	picture = GFX_report_event_soviet_german_soldier_handshake
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = { 
+			MON = { 
+				transfer_state = 330
+				transfer_state = 329
+				transfer_state = 612
+			}
+		}
+	}
+	
+	option = {
+		name = qing.BaI.2.a
+	}
+	
+	option = {
+		name = qing.BaI.2.b
+		declare_war_on = { target = MON type = annex_everything }
+	}
+	
+	option = {
+		name = qing.BaI.2.c
+		MON = {
+			change_tag_from = QIN
+		}
+	}
+}

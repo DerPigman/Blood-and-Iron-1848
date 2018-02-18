@@ -133,5 +133,31 @@ ideas = {
 				unity_factor = -0.10
 			}
 		}
+		
+		QIN_underaged_emperor_puyi = {
+		
+			picture = emperor_puyi
+			
+			allowed = {
+				original_tag = QIN
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					any_other_country = {
+						original_tag = QIN
+						NOT = {
+							tag = ROOT
+						}
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				unity_factor = -0.10
+			}
+		}
 	}
 }
