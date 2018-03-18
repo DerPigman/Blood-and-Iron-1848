@@ -1,0 +1,35 @@
+ideologies = {
+   revolutionary_socialism_ideology = {
+
+      types = {
+         revolutionary_socialism = {}
+      }
+
+      dynamic_faction_names = {
+         "FACTION_NAME_COMMUNIST_1"
+         "FACTION_NAME_COMMUNIST_2"
+         "FACTION_NAME_COMMUNIST_3"
+         "FACTION_NAME_COMMUNIST_4"
+         "FACTION_NAME_COMMUNIST_5"
+      }
+
+      color = { 200 0 0 }
+
+      war_impact_on_world_tension = 0.75
+      faction_impact_on_world_tension = 0.5
+
+      rules = {
+         can_force_government = no
+         can_send_volunteers = yes
+         can_puppet = yes
+      }
+
+      modifiers = {
+         puppet_cost_factor = -0.3
+      }
+
+      ai_communist = yes
+      faction_modifiers = {}
+
+   }
+}

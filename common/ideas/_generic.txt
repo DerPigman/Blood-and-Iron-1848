@@ -2,25 +2,6 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
-		diplomatic_efforts = {
-		
-			picture = generic_pp_unity_bonus
-			
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				opinion_gain_monthly_factor  = 0.05
-				trade_opinion_factor = 0.05
-			}
-		}
 		
 		expansionist_efforts = {
 		
@@ -45,7 +26,7 @@ ideas = {
 		
 		constitutional_monarchy = {
 		
-			picture = generic_constitutional_guarantees
+			picture = rule_of_oligarchs
 			
 			allowed = {
 				always = no

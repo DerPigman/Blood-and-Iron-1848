@@ -17,7 +17,7 @@ state = {
       # META
       owner = POL
       controller = POL
-      add_core_of = SOV
+      add_core_of = RUS
 
       # VICTORY POINTS
       victory_points = { 9427 10 }

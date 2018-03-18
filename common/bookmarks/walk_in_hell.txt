@@ -6,12 +6,12 @@ bookmarks = {
 		picture = "GFX_select_date_1880"
 		default_country = "USA"
 	
-		SOV = {
+		RUS = {
 			history = SOV_STALEMATE_AND_REBELLION
 			ideology = monarchism_ideologie
 			ideas = {
-				SOV_duma_of_public_anger
-				SOV_socialist_revolutionaries
+				RUS_duma_of_public_anger
+				RUS_socialist_revolutionaries
 			}
 			focuses = {
 

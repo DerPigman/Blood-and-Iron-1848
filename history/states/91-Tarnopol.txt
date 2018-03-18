@@ -11,8 +11,8 @@ state = {
    # HISTORY
    history = {
       # META
-      owner = SOV
-      controller = SOV
+      owner = RUS
+      controller = RUS
       add_core_of = UKR
 
       # VICTORY POINTS

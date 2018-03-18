@@ -7,7 +7,8 @@ set_research_slots = 3
 
 # [1] META
 set_convoys = 10
-set_national_unity = 0.5
+set_stability = 0.5
+set_war_support = 0.5
 add_political_power = 0
 
 # [2] IDEAS
@@ -27,16 +28,19 @@ set_politics = {
       conservatism_ideology = {
          popularity = 30
       }
-      liberalism_ideology = {
+      market_liberalism_ideology = {
          popularity = 42
+      }
+      social_liberalism_ideology = {
+         popularity = 0
       }
       centrism_ideology = {
          popularity = 4
       }
-      socialism_ideology = {
+      reformist_socialism_ideology = {
          popularity = 0
       }
-      jacobinism_ideology = {
+      revolutionary_socialism_ideology = {
          popularity = 0
       }
       marxism_ideology = {
@@ -55,7 +59,7 @@ set_politics = {
          popularity = 0
       }
    }
-   ruling_party = liberalism_ideology
+   ruling_party = market_liberalism_ideology
    last_election = 1909.12.7
    election_frequency = 48
    elections_allowed = yes
@@ -66,7 +70,7 @@ create_country_leader = {
    desc = "POLITICS_RICARDO_JIMENEZ_OREAMUNO_DESC"
    picture = "Portrait_Costa_Rica_Ricardo_Jimenez_Oreamuno.dds"
    expire = "1960.1.1"
-   ideology = liberalism
+   ideology = market_liberalism
    traits = {
    }
 }

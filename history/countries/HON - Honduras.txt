@@ -7,7 +7,8 @@ set_research_slots = 3
 
 # [1] META
 set_convoys = 10
-set_national_unity = 0.5
+set_stability = 0.5
+set_war_support = 0.5
 add_political_power = 0
 
 # [2] IDEAS
@@ -28,16 +29,19 @@ set_politics = {
       conservatism_ideology = {
          popularity = 43
       }
-      liberalism_ideology = {
+      market_liberalism_ideology = {
          popularity = 57
+      }
+      social_liberalism_ideology = {
+         popularity = 0
       }
       centrism_ideology = {
          popularity = 0
       }
-      socialism_ideology = {
+      reformist_socialism_ideology = {
          popularity = 0
       }
-      jacobinism_ideology = {
+      revolutionary_socialism_ideology = {
          popularity = 0
       }
       marxism_ideology = {
@@ -56,7 +60,7 @@ set_politics = {
          popularity = 0
       }
    }
-   ruling_party = liberalism_ideology
+   ruling_party = market_liberalism_ideology
    last_election = 1908.11.2
    election_frequency = 48
    elections_allowed = yes
@@ -67,7 +71,7 @@ create_country_leader = {
    desc = "POLITICS_MIGUEL_R_DAVILA_DESC"
    picture = "Portrait_Honduras_Miguel_R_Davila.dds"
    expire = "1960.1.1"
-   ideology = liberalism
+   ideology = market_liberalism
    traits = {
    }
 }

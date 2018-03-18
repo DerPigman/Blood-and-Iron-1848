@@ -7,7 +7,8 @@ set_research_slots = 3
 
 # [1] META
 set_convoys = 5
-set_national_unity = 0.5
+set_stability = 0.5
+set_war_support = 0.5
 add_political_power = 0
 
 # [2] IDEAS
@@ -35,16 +36,19 @@ set_politics = {
       conservatism_ideology = {
          popularity = 0
       }
-      liberalism_ideology = {
+      market_liberalism_ideology = {
          popularity = 66
+      }
+      social_liberalism_ideology = {
+         popularity = 0
       }
       centrism_ideology = {
          popularity = 31
       }
-      socialism_ideology = {
+      reformist_socialism_ideology = {
          popularity = 0
       }
-      jacobinism_ideology = {
+      revolutionary_socialism_ideology = {
          popularity = 0
       }
       marxism_ideology = {
@@ -63,7 +67,7 @@ set_politics = {
          popularity = 0
       }
    }
-   ruling_party = liberalism_ideology
+   ruling_party = market_liberalism_ideology
    last_election = 1908.9.24
    election_frequency = 48
    elections_allowed = yes
@@ -74,7 +78,7 @@ create_country_leader = {
    desc = "POLITICS_AUGUSTO_B_LEGUIA_DESC"
    picture = "Portrait_Peru_Augusto_B_Leguia.dds"
    expire = "1960.1.1"
-   ideology = liberalism
+   ideology = market_liberalism
    traits = {
    }
 }

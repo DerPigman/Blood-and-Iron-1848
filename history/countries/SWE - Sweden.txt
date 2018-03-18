@@ -7,7 +7,8 @@ set_research_slots = 3
 
 # [1] META
 set_convoys = 25
-set_national_unity = 0.5
+set_stability = 0.5
+set_war_support = 0.5
 add_political_power = 0
 
 # [2] IDEAS
@@ -46,16 +47,19 @@ set_politics = {
       conservatism_ideology = {
          popularity = 30
       }
-      liberalism_ideology = {
+      market_liberalism_ideology = {
          popularity = 39
+      }
+      social_liberalism_ideology = {
+         popularity = 0
       }
       centrism_ideology = {
          popularity = 0
       }
-      socialism_ideology = {
+      reformist_socialism_ideology = {
          popularity = 28
       }
-      jacobinism_ideology = {
+      revolutionary_socialism_ideology = {
          popularity = 0
       }
       marxism_ideology = {
@@ -112,7 +116,7 @@ create_country_leader = {
    desc = "POLITICS_OSCAR_NISSEN_DESC"
    picture = "Portrait_Sweden_Oscar_Nissen.dds"
    expire = "1960.1.1"
-   ideology = socialism
+   ideology = reformist_liberalism
    traits = {
    }
 }
@@ -130,7 +134,7 @@ create_country_leader = {
    desc = "POLITICS_ABRAHAM_BERGE_DESC"
    picture = "Portrait_Sweden_Abraham_Berge.dds"
    expire = "1960.1.1"
-   ideology = liberalism
+   ideology = market_liberalism
    traits = {
    }
 }

@@ -1,0 +1,45 @@
+ideologies = {
+   social_liberalism_ideology = {
+
+      types = {
+         social_liberalism = {}
+      }
+
+      dynamic_faction_names = {
+         "FACTION_NAME_DEMOCRATIC_1"
+         "FACTION_NAME_DEMOCRATIC_2"
+         "FACTION_NAME_DEMOCRATIC_3"
+         "FACTION_NAME_DEMOCRATIC_4"
+         "FACTION_NAME_DEMOCRATIC_5"
+      }
+
+      color = { 255 195 0 }
+
+      war_impact_on_world_tension = -1
+      faction_impact_on_world_tension = -0.1
+
+      rules = {
+         can_declare_war_on_same_ideology = no
+         can_force_government = no
+         can_send_volunteers = yes
+         can_puppet = no
+         can_lower_tension = yes
+         can_only_justify_war_on_threat_country = yes
+         can_guarantee_other_ideologies = yes
+      }
+
+      modifiers = {
+         generate_wargoal_tension = 1.00
+         join_faction_tension = 0.80
+         lend_lease_tension  = 0.50
+         send_volunteers_tension = 0.50
+         guarantee_tension = 0.25
+         take_states_cost_factor = 0.25
+         annex_cost_factor = 0.5
+      }
+
+      ai_democratic = yes
+      faction_modifiers = {	faction_trade_opinion_factor = 0.50 }
+
+   }
+}

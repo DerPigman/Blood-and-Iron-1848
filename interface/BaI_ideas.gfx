@@ -1,0 +1,87 @@
+spriteTypes = {	
+
+	### Custom
+	
+	spriteType = {
+		name = "GFX_idea_rule_of_oligarchs"
+		texturefile = "gfx/interface/ideas/idea_rule_of_oligarchs.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_king_edward_vii"
+		texturefile = "gfx/interface/ideas/idea_king_edward_vii.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_idea_regime_of_cabrera"
+		texturefile = "gfx/interface/ideas/idea_regime_of_cabrera.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_our_great_loss"
+		texturefile = "gfx/interface/ideas/idea_our_great_loss.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_emperor_wilhelm_ii"
+		texturefile = "gfx/interface/ideas/idea_emperor_wilhelm_ii.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_duma_of_public_anger"
+		texturefile = "gfx/interface/ideas/idea_duma_of_public_anger.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_emperor_puyi"
+		texturefile = "gfx/interface/ideas/idea_emperor_puyi.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_traits_strip"
+		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
+		noOfFrames = 14		
+	}
+	
+	### LAWS AND GOVERNMENT
+	
+	spriteType = {
+		name = "GFX_idea_expansionist_focus"
+		texturefile = "gfx/interface/ideas/laws/idea_expansionist_focus.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_neutral_foreign_policy"
+		texturefile = "gfx/interface/ideas/laws/idea_neutral_foreign_policy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_diplomatic_efforts"
+		texturefile = "gfx/interface/ideas/laws/idea_diplomatic_efforts.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_world_revolution"
+		texturefile = "gfx/interface/ideas/laws/idea_world_revolution.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_striving_for_recognition"
+		texturefile = "gfx/interface/ideas/laws/idea_striving_for_recognition.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_global_policeman"
+		texturefile = "gfx/interface/ideas/laws/idea_global_policeman.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_diplomatic_isolation"
+		texturefile = "gfx/interface/ideas/laws/idea_diplomatic_isolation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_extensive_colonialism"
+		texturefile = "gfx/interface/ideas/laws/idea_extensive_colonialism.dds"
+	}
+	

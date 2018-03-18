@@ -82,7 +82,7 @@ POL = {
    color = rgb { 197 92 106 }
    color_ui = rgb { 255 120 138 }
 }
-SOV = {
+RUS = {
    color = rgb { 50 100 50 }
    color_ui = rgb { 40 90 40 }
 }

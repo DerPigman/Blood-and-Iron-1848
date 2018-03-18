@@ -12,12 +12,12 @@ focus_tree = {
 	
 	default = no
 	
-	#############################
-	#	Political Efforts 1		#
-	#############################
+	#################################################
+	#	First Meeting of the Imperial Duma 			#
+	#################################################
 
 	focus = {
-		id = SOV_imperial_duma_1
+		id = SOV_first_meeting_of_the_imperial_duma
 		icon = GFX_focus_SOV_imperial_duma
 		
 		cost = 5
@@ -36,6 +36,23 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = SOV_take_massive_loans
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = SOV_first_meeting_of_the_imperial_duma }
+		
+		cost = 5
+		
+		x = 8
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+	}
+	
 	#############################
 	#	Strenghten the Tsar		#
 	#############################
@@ -43,12 +60,12 @@ focus_tree = {
 	focus = {
 		id = SOV_strengthen_the_tsar
 		icon = GFX_focus_SOV_strengthen_the_tsar
-		prerequisite = { focus = SOV_imperial_duma_1 }
+		prerequisite = { focus = SOV_first_meeting_of_the_imperial_duma }
 		#mutually_exclusive = { focus = SOV_work_out_a_compromise }
 		
-		cost = 0
+		cost = 2
 		
-		x = 9
+		x = 10
 		y = 1
 		
 		available = {
@@ -81,7 +98,7 @@ focus_tree = {
 		
 		cost = 10
 		
-		x = 10
+		x = 12
 		y = 2
 		
 		available = {
@@ -98,15 +115,14 @@ focus_tree = {
 		}
 	}
 	
-	
 	focus = {
-		id = SOV_construct_prison_camps_in_siberia
+		id = SOV_imperial_industry_plan
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = SOV_reinforce_the_okhrana }
 		
 		cost = 10
 		
-		x = 10
+		x = 12
 		y = 3
 		
 		available = {
@@ -119,16 +135,62 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = { SOV_secret_police }
+		}
+	}
+	
+	
+	focus = {
+		id = SOV_construct_prison_camps_in_siberia
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_imperial_industry_plan }
+		
+		cost = 10
+		
+		x = 14
+		y = 4
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
 		}
 	}
 	
 	focus = {
-		id = SOV_purge_the_deputies
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = SOV_imperial_duma_2 }
+		id = SOV_seek_foreign_investors
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = SOV_imperial_industry_plan }
 		
-		cost = 20
+		cost = 10
+		
+		x = 11
+		y = 4
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_german_sponsorship
+		icon = GFX_focus_improve_relation_german_republic
+		prerequisite = { focus = SOV_seek_foreign_investors }
+		
+		cost = 10
 		
 		x = 10
 		y = 5
@@ -143,12 +205,100 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			custom_effect_tooltip = SOV_purge_the_deputies_tt
-			set_country_flag = SOV_purge_the_deputies
-			swap_ideas = { remove_idea = SOV_duma_of_public_anger add_idea = SOV_duma_of_public_anger_purged }
-			hidden_effect = {
-				country_event = { id =soviet.BaI.3 days = 120 random = 120 }
-			}
+		}
+	}
+	
+	focus = {
+		id = SOV_french_sponsorship
+		icon = GFX_focus_improve_relation_france
+		prerequisite = { focus = SOV_seek_foreign_investors }
+		
+		cost = 10
+		
+		x = 12
+		y = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_strengthen_defense_industry
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = SOV_german_sponsorship }
+		prerequisite = { focus = SOV_french_sponsorship }
+		
+		cost = 10
+		
+		x = 11
+		y = 6
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_continue_the_imperial_transsiberian_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = SOV_construct_prison_camps_in_siberia }
+		
+		cost = 10
+		
+		x = 14
+		y = 6
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_first_steps_to_catch_up_with_the_west
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = SOV_strengthen_defense_industry }
+		prerequisite = { focus = SOV_continue_the_imperial_transsiberian_railway }
+		
+		cost = 11
+		
+		x = 11
+		y = 7
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
 		}
 	}
 	
@@ -203,6 +353,53 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = SOV_strengthen_the_church
+		icon = GFX_focus_generic_orthodox_cross
+		prerequisite = { focus = SOV_jesus_christ_conquers }
+		
+		cost = 10
+		
+		x = 8
+		y = 4
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+			
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_slavic_superiority
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = SOV_strengthen_the_church }
+		
+		cost = 10
+		
+		x = 8
+		y = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+			
+		completion_reward = {
+		}
+	}
+	
+	
 	#############################
 	#	Work out a Compormise	#
 	#############################
@@ -210,13 +407,12 @@ focus_tree = {
 	focus = {
 		id = SOV_work_out_a_compromise
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = SOV_imperial_duma_1 }
-		#mutually_exclusive = { focus = SOV_reform_the_constitution }
+		prerequisite = { focus = SOV_first_meeting_of_the_imperial_duma }
 		#mutually_exclusive = { focus = SOV_strengthen_the_tsar }
 		
 		cost = 10
 		
-		x = 7
+		x = 6
 		y = 1
 		
 		available = {
@@ -234,13 +430,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_compromise_1
-		icon = GFX_goal_generic_forceful_treaty
+		id = SOV_deadlock
+		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = SOV_work_out_a_compromise }
 		
 		cost = 10
 		
-		x = 6
+		x = 5
 		y = 2
 		
 		available = {
@@ -258,13 +454,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_compromise_2
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = SOV_compromise_1 }
+		id = SOV_question_of_the_autocracy
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		prerequisite = { focus = SOV_deadlock }
 		
 		cost = 10
 		
-		x = 6
+		x = 5
 		y = 3
 		
 		available = {
@@ -282,9 +478,107 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_compromise_3
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = SOV_imperial_duma_2 }
+		id = SOV_force_abdication
+		icon = GFX_focus_rom_abdicate
+		prerequisite = { focus = SOV_question_of_the_autocracy }
+		mutually_exclusive = { focus = SOV_handle_the_tsar }
+		
+		cost = 10
+		
+		x = 4
+		y = 4
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_proclaim_the_russian_republic
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = SOV_force_abdication }
+		
+		cost = 10
+		
+		x = 4
+		y = 5
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_public_elections
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = SOV_proclaim_the_russian_republic }
+		
+		cost = 10
+		
+		x = 4
+		y = 6
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_handle_the_tsar
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = SOV_question_of_the_autocracy }
+		mutually_exclusive = { focus = SOV_force_abdication }
+		
+		cost = 10
+		
+		x = 6
+		y = 4
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_strengthen_the_duma
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = SOV_handle_the_tsar }
 		
 		cost = 10
 		
@@ -305,20 +599,213 @@ focus_tree = {
 		}
 	}
 	
-	#############################
-	#	Political Efforts 2		#
-	#############################
+	focus = {
+		id = SOV_limited_elections
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = SOV_strengthen_the_duma }
+		
+		cost = 10
+		
+		x = 6
+		y = 6
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_the_tsar_has_abdicated
+		icon = GFX_focus_rom_abdicate
+		
+		cost = 10
+		
+		x = 2
+		y = 5
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_revolution
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = SOV_the_tsar_has_abdicated }
+		
+		cost = 10
+		
+		x = 2
+		y = 6
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_establish_the_constitutional_assembly
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_limited_elections
+						 focus = SOV_public_elections
+						 focus = SOV_revolution }
+		
+		cost = 10
+		
+		x = 5
+		y = 7
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_first_steps_to_end_corruption
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		prerequisite = { focus = SOV_work_out_a_compromise }
+		
+		cost = 10
+		
+		x = 1
+		y = 2
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_first_steps_to_wealth
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = SOV_first_steps_to_end_corruption }
+		
+		cost = 10
+		
+		x = 2
+		y = 3
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_expand_the_imperial_universities
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = SOV_first_steps_to_end_corruption }
+		
+		cost = 10
+		
+		x = 0
+		y = 3
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_continue_the_transsiberian_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = SOV_first_steps_to_wealth }
+		prerequisite = { focus = SOV_expand_the_imperial_universities }
+		
+		cost = 10
+		
+		x = 1
+		y = 4
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	#################################################
+	#	Second Meeting of the Imperial Duma 		#
+	#################################################
 
 	focus = {
-		id = SOV_imperial_duma_2
+		id = SOV_second_meeting_of_the_imperial_duma
 		icon = GFX_focus_SOV_imperial_duma
-		prerequisite = { focus = SOV_construct_prison_camps_in_siberia
-						 focus = SOV_compromise_2 }
+		prerequisite = { focus = SOV_first_steps_to_catch_up_with_the_west
+						 focus = SOV_establish_the_constitutional_assembly } 
 		
 		cost = 5
 		
 		x = 8
-		y = 4
+		y = 8
 		
 		ai_will_do = {
 			factor = 1
@@ -330,6 +817,85 @@ focus_tree = {
 			country_event = soviet.BaI.1
 		}
 	}
+	
+	focus = {
+		id = SOV_deadlock_in_the_constitutional_assembly
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_second_meeting_of_the_imperial_duma  }
+		prerequisite = { focus = SOV_establish_the_constitutional_assembly  }
+		
+		cost = 10
+		
+		x = 5
+		y = 9
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_the_tsar_steps_in
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = SOV_deadlock_in_the_constitutional_assembly  }
+		
+		cost = 10
+		
+		x = 9
+		y = 10
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_purge_the_deputies
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = SOV_second_meeting_of_the_imperial_duma
+						 focus = SOV_the_tsar_steps_in }
+		
+		cost = 20
+		
+		x = 11
+		y = 11
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = SOV_purge_the_deputies_tt
+			set_country_flag = SOV_purge_the_deputies
+			swap_ideas = { remove_idea = SOV_duma_of_public_anger add_idea = SOV_duma_of_public_anger_purged }
+			hidden_effect = {
+				country_event = { id =soviet.BaI.3 days = 120 random = 120 }
+			}
+		}
+	}
 
 	focus = {
 		id = SOV_the_slavic_brotherhood
@@ -338,8 +904,8 @@ focus_tree = {
 		
 		cost = 10
 		
-		x = 8
-		y = 5
+		x = 4
+		y = 11
 		
 		ai_will_do = {
 			factor = 1
@@ -359,8 +925,8 @@ focus_tree = {
 		
 		cost = 10
 		
-		x = 8
-		y = 6
+		x = 4
+		y = 11
 		
 		ai_will_do = {
 			factor = 1
@@ -373,175 +939,37 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = SOV_the_great_moscow_protest
-		icon = GFX_goal_generic_alliance
-		
-		cost = 10
-		
-		x = 12
-		y = 1
-		
-		available = {
-			always = no
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			effect_tooltip = {
-				add_national_unity = -0.1
-				add_manpower = -5000
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_second_bloody_sunday
-		icon = GFX_goal_generic_alliance
-		
-		cost = 10
-		
-		x = 12
-		y = 4
-		
-		available = {
-			always = no
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			effect_tooltip = {
-				add_national_unity = -0.1
-				add_manpower = -5000
-			}
-		}
-	}
-	
-	focus = {
-		id = SOV_promote_the_responsable_guards
-		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = SOV_second_bloody_sunday }
-		
-		cost = 10
-		
-		x = 12
-		y = 5
-		
-		available = {
-			always = no
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			effect_tooltip = {
-				add_national_unity = -0.1
-				add_manpower = -5000
-			}
-		}
-	}
-	
-	
 	#############################
-	#	End of the Duma 		#
+	#	Industrial Efforts		#
 	#############################
 	
 	focus = {
-		id = SOV_abolish_the_duma
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		prerequisite = { focus = SOV_purge_the_deputies }
+		id = SOV_the_industrial_problem
+		icon = GFX_goal_generic_production2
 		
 		cost = 10
 		
-		x = 9
-		y = 7
-		
-		available = {
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			hidden_effect = {
-				set_political_party = { ideology = conservatism_ideology popularity = 0 banned = yes}
-				set_political_party = { ideology = liberalism_ideology popularity = 0 banned = yes}
-				set_political_party = { ideology = centrism_ideology popularity = 0 banned = yes}
-				set_political_party = { ideology = socialism_ideology popularity = 0 banned = yes}
-				set_political_party = { ideology = jacobinism_ideology popularity = 0 banned = yes}
-				set_political_party = { ideology = marxism_ideology popularity = 0 banned = yes}
-				set_political_party = { ideology = nationalism_ideology popularity = 0 banned = yes}
-				set_political_party = { ideology = authoritarianism_ideology popularity = 0 banned = yes}
-				set_political_party = { ideology = oligarchism_ideology popularity = 0 banned = yes}
-				set_political_party = { ideology = monarchism_ideology popularity = 100 }
-			}
-			custom_effect_tooltip = SOV_abolish_the_duma_tt
-			#set_country_leader_ideology = monarchism_ideology
-			remove_ideas = { SOV_duma_of_public_anger }
-			swap_ideas = { remove_idea = SOV_god_save_the_tsar_1 add_idea = SOV_god_save_the_tsar_2 }
-		}
-	}
-	
-	
-	focus = {
-		id = SOV_imperial_duma_3
-		icon = GFX_focus_SOV_imperial_duma
-		prerequisite = { focus = SOV_compromise_3 }
-		
-		cost = 5
-		
-		x = 7
-		y = 7
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			country_event = soviet.BaI.1
-		}
-	}
-	
-	
-	#############################
-	#	The Revolution			#
-	#############################
-
-	focus = {
-		id = SOV_successful_revolution
-		icon = GFX_goal_generic_demand_territory
-		
-		cost = 5
-		
-		x = 2
+		x = 20
 		y = 0
 		
-		available = {
-			NOT = { has_government = monarchism_ideology }
+		ai_will_do = {
+			factor = 1
 		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_the_urbanisation_problem
+		icon = GFX_goal_generic_construction
 		
-		bypass = {
-			NOT = { has_government = monarchism_ideology }
-		}
+		cost = 10
+		
+		x = 22
+		y = 0
 		
 		ai_will_do = {
 			factor = 1
@@ -554,33 +982,14 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_storm_the_winter_palace
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = SOV_successful_revolution }
+		id = SOV_vast_industrialisation_programm
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_the_industrial_problem }
+		prerequisite = { focus = SOV_take_massive_loans }
 		
-		cost = 5
+		cost = 10
 		
-		x = 1
-		y = 1
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = SOV_establish_the_russian_sfsr
-		icon = GFX_focus_generic_soviet_politics
-		prerequisite = { focus = SOV_storm_the_winter_palace }
-		
-		cost = 5
-		
-		x = 0
+		x = 17
 		y = 2
 		
 		ai_will_do = {
@@ -594,53 +1003,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_protect_the_winter_palace
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = SOV_successful_revolution }
+		id = SOV_construction_effort_I
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SOV_vast_industrialisation_programm }
 		
-		cost = 5
+		cost = 10
 		
-		x = 3
-		y = 1
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = SOV_democratic_1
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = SOV_protect_the_winter_palace }
-		
-		cost = 5
-		
-		x = 4
-		y = 2
-		
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-		}
-	}
-	
-	focus = {
-		id = SOV_democratic_2
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = SOV_democratic_1 }
-		
-		cost = 5
-		
-		x = 4
+		x = 16
 		y = 3
 		
 		ai_will_do = {
@@ -654,13 +1023,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_democratic_3
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = SOV_democratic_2 }
+		id = SOV_construction_effort_II
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SOV_construction_effort_I }
 		
-		cost = 5
+		cost = 10
 		
-		x = 4
+		x = 16
 		y = 4
 		
 		ai_will_do = {
@@ -674,13 +1043,13 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_democratic_4
-		icon = GFX_goal_support_democracy
-		prerequisite = { focus = SOV_democratic_3 }
+		id = SOV_construction_effort_III
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = SOV_construction_effort_II }
 		
-		cost = 5
+		cost = 10
 		
-		x = 4
+		x = 16
 		y = 5
 		
 		ai_will_do = {
@@ -694,78 +1063,779 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_execute_the_tsar
-		icon = GFX_focus_SOV_strengthen_the_tsar
-		prerequisite = { focus = SOV_storm_the_winter_palace
-						 focus = SOV_protect_the_winter_palace }
+		id = SOV_armament_effort_I
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = SOV_vast_industrialisation_programm }
 		
-		cost = 0
+		cost = 10
 		
-		x = 2
-		y = 2
-		
-		available = {
-			always = no
-		}
+		x = 18
+		y = 3
 		
 		ai_will_do = {
 			factor = 1
 		}
 
 		available_if_capitulated = yes
-			
+
 		completion_reward = {
-			effect_tooltip = {
-				add_ideas = {
-					SOV_god_save_the_tsar_1
-				}
-			}
 		}
-	}	
+	}
+	
+	focus = {
+		id = SOV_armament_effort_II
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = SOV_armament_effort_I }
+		
+		cost = 10
+		
+		x = 18
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_armament_effort_III
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = SOV_armament_effort_II }
+		
+		cost = 10
+		
+		x = 18
+		y = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_the_resource_problem
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_armament_effort_III }
+		prerequisite = { focus = SOV_construction_effort_III }
+		
+		cost = 10
+		
+		x = 17
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_the_oil_problem
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = SOV_the_resource_problem }
+		
+		cost = 10
+		
+		x = 18
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_oil_effort_I
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = SOV_the_oil_problem }
+		
+		cost = 10
+		
+		x = 18
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_the_steel_problem
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = SOV_the_resource_problem }
+		
+		cost = 10
+		
+		x = 16
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_steel_effort_I
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = SOV_the_steel_problem }
+		
+		cost = 10
+		
+		x = 16
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = SOV_the_innovation_problem
+		icon = GFX_focus_research
+		prerequisite = { focus = SOV_steel_effort_I }
+		prerequisite = { focus = SOV_oil_effort_I }
+		
+		cost = 10
+		
+		x = 17
+		y = 9
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_invite_foreign_advisers
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = SOV_the_industrial_problem }
+		prerequisite = { focus = SOV_the_urbanisation_problem }
+		
+		cost = 10
+		
+		x = 21
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_oligarchic_industry
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_invite_foreign_advisers }
+		
+		cost = 10
+		
+		x = 20
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_state_founded_industry_programs
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_invite_foreign_advisers }
+		
+		cost = 10
+		
+		x = 22
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_state_concessions
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_oligarchic_industry 
+						 focus = SOV_state_founded_industry_programs }
+		
+		cost = 10
+		
+		x = 21
+		y = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_fund_the_banks
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_state_concessions }
+		
+		cost = 10
+		
+		x = 21
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_strengthen_the_central_bank
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_fund_the_banks }
+		
+		cost = 10
+		
+		x = 21
+		y = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_stabilise_the_rubel
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_strengthen_the_central_bank }
+		
+		cost = 10
+		
+		x = 21
+		y = 6
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_tax_reform
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_stabilise_the_rubel }
+		
+		cost = 10
+		
+		x = 21
+		y = 7
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_vast_urbanisation_program
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_the_urbanisation_problem }
+		
+		cost = 10
+		
+		x = 25
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_infastructure_effort_I
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_vast_urbanisation_program }
+		
+		cost = 10
+		
+		x = 24
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_infastructure_effort_II
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_infastructure_effort_I }
+		
+		cost = 10
+		
+		x = 24
+		y = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_infastructure_effort_III
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_infastructure_effort_II }
+		
+		cost = 10
+		
+		x = 24
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_compromise_with_the_landlords
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_vast_urbanisation_program }
+		
+		cost = 10
+		
+		x = 26
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_great_relocation_to_the_cities
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_compromise_with_the_landlords }
+		
+		cost = 10
+		
+		x = 26
+		y = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_the_railway_problem
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = SOV_great_relocation_to_the_cities }
+		prerequisite = { focus = SOV_infastructure_effort_III }
+		
+		cost = 10
+		
+		x = 25
+		y = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
 	
 	#############################
-	#	Reform the Constitution	#
+	#	Army Efforts			#
 	#############################
 	
-	#focus = {
-	#	id = SOV_reform_the_constitution
-	#	icon = GFX_goal_generic_neutrality_focus
-	#	prerequisite = { focus = SOV_political_efforts }
-	#	mutually_exclusive = { focus = SOV_work_out_a_compromise }
-	#	mutually_exclusive = { focus = SOV_strengthen_the_tsar }
-	#	
-	#	cost = 10
-	#	
-	#	x = 1
-	#	y = 1
-	#	
-	#	available = {
-	#		always = no
-	#	}
-	#	
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-#
-	#	available_if_capitulated = yes
-#
-	#	completion_reward = {
-	#	}
-	#}
+	focus = {
+		id = SOV_armed_peace
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = SOV_the_railway_problem }
+		prerequisite = { focus = SOV_tax_reform }
+		
+		cost = 10
+		
+		x = 23
+		y = 8
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_war_economy
+		icon = GFX_goal_generic_military_deal
+		
+		cost = 10
+		
+		x = 21
+		y = 8
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+			has_war = yes
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_new_army_schools
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = SOV_war_economy 
+						 focus = SOV_armed_peace }
+		
+		cost = 10
+		
+		x = 22
+		y = 9
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_equipment_effort_I
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = SOV_new_army_schools }
+		
+		cost = 10
+		
+		x = 20
+		y = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_equipment_effort_II
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = SOV_equipment_effort_I }
+		
+		cost = 10
+		
+		x = 20
+		y = 11
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_doctrine_effort_I
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = SOV_new_army_schools }
+		
+		cost = 10
+		
+		x = 22
+		y = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_doctrine_effort_II
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = SOV_doctrine_effort_I }
+		
+		cost = 10
+		
+		x = 22
+		y = 11
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_motorisation_effort_I
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = SOV_new_army_schools }
+		
+		cost = 10
+		
+		x = 24
+		y = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_mechanisation_effort_I
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = SOV_motorisation_effort_I }
+		
+		cost = 10
+		
+		x = 24
+		y = 11
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = SOV_naval_effort_I
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = SOV_new_army_schools }
+		
+		cost = 10
+		
+		x = 26
+		y = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = SOV_fleet_reform
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = SOV_naval_effort_I }
+		
+		cost = 10
+		
+		x = 26
+		y = 11
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
 	
 	#############################
 	#	Diplomatic Efforts		#
 	#############################
 	
 	focus = {
-		id = SOV_diplomatic_efforts
+		id = SOV_foreign_policy
 		icon = GFX_goal_generic_intelligence_exchange
-		mutually_exclusive = { focus = SOV_expansionist_efforts }
 		
 		cost = 10
 		
-		x = 16
+		x = 30
 		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_completed_focus = SOV_imperial_duma_1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { diplomatic_efforts }
+		}
+	}
+	
+	focus = {
+		id = SOV_diplomatic_efforts
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus = SOV_expansionist_efforts }
+		prerequisite = { focus = SOV_foreign_policy }
+		
+		cost = 10
+		
+		x = 29
+		y = 1
 		
 		ai_will_do = {
 			factor = 1
@@ -786,11 +1856,12 @@ focus_tree = {
 		id = SOV_expansionist_efforts
 		icon = GFX_focus_expansionist_efforts
 		mutually_exclusive = { focus = SOV_diplomatic_efforts }
+		prerequisite = { focus = SOV_foreign_policy }
 		
 		cost = 10
 		
-		x = 18
-		y = 0
+		x = 31
+		y = 1
 		
 		ai_will_do = {
 			factor = 1
@@ -815,8 +1886,8 @@ focus_tree = {
 		
 		cost = 10
 		
-		x = 14
-		y = 1
+		x = 29
+		y = 2
 		
 		ai_will_do = {
 			factor = 1
@@ -854,8 +1925,8 @@ focus_tree = {
 		
 		cost = 10
 		
-		x = 16
-		y = 2
+		x = 28
+		y = 3
 		
 		ai_will_do = {
 			factor = 1
@@ -895,8 +1966,8 @@ focus_tree = {
 		
 		cost = 10
 		
-		x = 14
-		y = 2
+		x = 31
+		y = 3
 		
 		ai_will_do = {
 			factor = 1
@@ -930,15 +2001,95 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = SOV_liberate_romanian_slavs
-		icon = GFX_focus_war_on_romania
+		id = SOV_the_romanian_question
+		icon = GFX_focus_romanian_question
 		prerequisite = { focus = SOV_serbian_friendship }
 		prerequisite = { focus = SOV_bulgarian_friendship }
 		
 		cost = 10
 		
-		x = 16
-		y = 3
+		x = 31
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_liberate_romanian_slavs
+		icon = GFX_focus_war_on_romania
+		mutually_exclusive = { focus = SOV_romanian_friendship }
+		prerequisite = { focus = SOV_the_romanian_question }
+		
+		cost = 10
+		
+		x = 30
+		y = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = SOV_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = SOV_romanian_friendship
+		icon = GFX_focus_war_on_romania
+		mutually_exclusive = { focus = SOV_liberate_romanian_slavs }
+		prerequisite = { focus = SOV_the_romanian_question }
+		
+		cost = 10
+		
+		x = 32
+		y = 5
 		
 		ai_will_do = {
 			factor = 1
@@ -977,8 +2128,8 @@ focus_tree = {
 		
 		cost = 10
 		
-		x = 14
-		y = 3
+		x = 28
+		y = 4
 		
 		ai_will_do = {
 			factor = 1
@@ -1016,7 +2167,7 @@ focus_tree = {
 		
 		cost = 10
 		
-		x = 14
+		x = 50
 		y = 4
 		
 		ai_will_do = {
@@ -1055,7 +2206,7 @@ focus_tree = {
 		
 		cost = 10
 		
-		x = 16
+		x = 50
 		y = 4
 		
 		ai_will_do = {
@@ -1098,7 +2249,7 @@ focus_tree = {
 		
 		cost = 10
 		
-		x = 20
+		x = 50
 		y = 1
 		
 		ai_will_do = {
@@ -1137,7 +2288,7 @@ focus_tree = {
 		
 		cost = 10
 		
-		x = 18
+		x = 50
 		y = 2
 		
 		ai_will_do = {
@@ -1180,7 +2331,7 @@ focus_tree = {
 		
 		cost = 0
 		
-		x = 24
+		x = 50
 		y = 1
 		
 		ai_will_do = {
@@ -1208,7 +2359,7 @@ focus_tree = {
 		
 		cost = 10
 		
-		x = 23
+		x = 50
 		y = 2
 		
 		ai_will_do = {

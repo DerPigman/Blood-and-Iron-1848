@@ -1,0 +1,2396 @@
+focus_tree = {
+	id = russia_focus
+
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	
+	default = no
+	
+	#################################################
+	#	First Meeting of the Imperial Duma 			#
+	#################################################
+
+	focus = {
+		id = RUS_first_meeting_of_the_imperial_duma
+		icon = GFX_focus_RUS_imperial_duma
+		
+		cost = 5
+		
+		x = 8
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = soviet.BaI.1
+		}
+	}
+	
+	focus = {
+		id = RUS_take_massive_loans
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = RUS_first_meeting_of_the_imperial_duma }
+		
+		cost = 5
+		
+		x = 8
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+	}
+	
+	#############################
+	#	Strenghten the Tsar		#
+	#############################
+	
+	focus = {
+		id = RUS_strengthen_the_tsar
+		icon = GFX_focus_RUS_strengthen_the_tsar
+		prerequisite = { focus = RUS_first_meeting_of_the_imperial_duma }
+		#mutually_exclusive = { focus = RUS_work_out_a_compromise }
+		
+		cost = 2
+		
+		x = 10
+		y = 1
+		
+		available = {
+			has_country_flag = RUS_flag_strengthen_the_tsar
+		}
+		
+		bypass = {
+			has_country_flag = RUS_flag_strengthen_the_tsar
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+			
+		completion_reward = {
+			effect_tooltip = {
+				add_ideas = {
+					RUS_god_save_the_tsar_1
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = RUS_reinforce_the_okhrana
+		icon = GFX_focus_RUS_secret_police
+		prerequisite = { focus = RUS_strengthen_the_tsar }
+		
+		cost = 10
+		
+		x = 12
+		y = 2
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { RUS_secret_police }
+		}
+	}
+	
+	focus = {
+		id = RUS_imperial_industry_plan
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RUS_reinforce_the_okhrana }
+		
+		cost = 10
+		
+		x = 12
+		y = 3
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = RUS_construct_prison_camps_in_siberia
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_imperial_industry_plan }
+		
+		cost = 10
+		
+		x = 14
+		y = 4
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_seek_foreign_investors
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = RUS_imperial_industry_plan }
+		
+		cost = 10
+		
+		x = 11
+		y = 4
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_german_sponsorship
+		icon = GFX_focus_improve_relation_german_republic
+		prerequisite = { focus = RUS_seek_foreign_investors }
+		
+		cost = 10
+		
+		x = 10
+		y = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_french_sponsorship
+		icon = GFX_focus_improve_relation_france
+		prerequisite = { focus = RUS_seek_foreign_investors }
+		
+		cost = 10
+		
+		x = 12
+		y = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_strengthen_defense_industry
+		icon = GFX_goal_generic_construct_military
+		prerequisite = { focus = RUS_german_sponsorship }
+		prerequisite = { focus = RUS_french_sponsorship }
+		
+		cost = 10
+		
+		x = 11
+		y = 6
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_continue_the_imperial_transsiberian_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RUS_construct_prison_camps_in_siberia }
+		
+		cost = 10
+		
+		x = 14
+		y = 6
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_first_steps_to_catch_up_with_the_west
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = RUS_strengthen_defense_industry }
+		prerequisite = { focus = RUS_continue_the_imperial_transsiberian_railway }
+		
+		cost = 11
+		
+		x = 11
+		y = 7
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_the_russian_pogrom
+		icon = GFX_focus_generic_war_on_jews
+		prerequisite = { focus = RUS_strengthen_the_tsar
+						 focus = RUS_work_out_a_compromise }
+		
+		cost = 10
+		
+		x = 8
+		y = 2
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+			
+		completion_reward = {
+			custom_effect_tooltip = RUS_the_russian_pogrom_tt
+			country_event = soviet.BaI.2
+			add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = RUS_jesus_christ_conquers
+		icon = GFX_focus_generic_orthodox_cross
+		prerequisite = { focus = RUS_the_russian_pogrom }
+		
+		cost = 10
+		
+		x = 8
+		y = 3
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+			
+		completion_reward = {
+			add_ideas = { RUS_jesus_christ_conquers }
+		}
+	}
+	
+	focus = {
+		id = RUS_strengthen_the_church
+		icon = GFX_focus_generic_orthodox_cross
+		prerequisite = { focus = RUS_jesus_christ_conquers }
+		
+		cost = 10
+		
+		x = 8
+		y = 4
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+			
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_slavic_superiority
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = RUS_strengthen_the_church }
+		
+		cost = 10
+		
+		x = 8
+		y = 5
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+			
+		completion_reward = {
+		}
+	}
+	
+	
+	#############################
+	#	Work out a Compormise	#
+	#############################
+
+	focus = {
+		id = RUS_work_out_a_compromise
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = RUS_first_meeting_of_the_imperial_duma }
+		#mutually_exclusive = { focus = RUS_strengthen_the_tsar }
+		
+		cost = 10
+		
+		x = 6
+		y = 1
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_deadlock
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = RUS_work_out_a_compromise }
+		
+		cost = 10
+		
+		x = 5
+		y = 2
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_question_of_the_autocracy
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		prerequisite = { focus = RUS_deadlock }
+		
+		cost = 10
+		
+		x = 5
+		y = 3
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_force_abdication
+		icon = GFX_focus_rom_abdicate
+		prerequisite = { focus = RUS_question_of_the_autocracy }
+		mutually_exclusive = { focus = RUS_handle_the_tsar }
+		
+		cost = 10
+		
+		x = 4
+		y = 4
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_proclaim_the_russian_republic
+		icon = GFX_goal_support_democracy
+		prerequisite = { focus = RUS_force_abdication }
+		
+		cost = 10
+		
+		x = 4
+		y = 5
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_public_elections
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = RUS_proclaim_the_russian_republic }
+		
+		cost = 10
+		
+		x = 4
+		y = 6
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_handle_the_tsar
+		icon = GFX_focus_rom_handle_king
+		prerequisite = { focus = RUS_question_of_the_autocracy }
+		mutually_exclusive = { focus = RUS_force_abdication }
+		
+		cost = 10
+		
+		x = 6
+		y = 4
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_strengthen_the_duma
+		icon = GFX_goal_generic_neutrality_focus
+		prerequisite = { focus = RUS_handle_the_tsar }
+		
+		cost = 10
+		
+		x = 6
+		y = 5
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_limited_elections
+		icon = GFX_goal_generic_dangerous_deal
+		prerequisite = { focus = RUS_strengthen_the_duma }
+		
+		cost = 10
+		
+		x = 6
+		y = 6
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_the_tsar_has_abdicated
+		icon = GFX_focus_rom_abdicate
+		
+		cost = 10
+		
+		x = 2
+		y = 5
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_revolution
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = RUS_the_tsar_has_abdicated }
+		
+		cost = 10
+		
+		x = 2
+		y = 6
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_establish_the_constitutional_assembly
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = RUS_limited_elections
+						 focus = RUS_public_elections
+						 focus = RUS_revolution }
+		
+		cost = 10
+		
+		x = 5
+		y = 7
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_first_steps_to_end_corruption
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		prerequisite = { focus = RUS_work_out_a_compromise }
+		
+		cost = 10
+		
+		x = 1
+		y = 2
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_first_steps_to_wealth
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = RUS_first_steps_to_end_corruption }
+		
+		cost = 10
+		
+		x = 2
+		y = 3
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_expand_the_imperial_universities
+		icon = GFX_goal_generic_scientific_exchange
+		prerequisite = { focus = RUS_first_steps_to_end_corruption }
+		
+		cost = 10
+		
+		x = 0
+		y = 3
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_continue_the_transsiberian_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = RUS_first_steps_to_wealth }
+		prerequisite = { focus = RUS_expand_the_imperial_universities }
+		
+		cost = 10
+		
+		x = 1
+		y = 4
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	#################################################
+	#	Second Meeting of the Imperial Duma 		#
+	#################################################
+
+	focus = {
+		id = RUS_second_meeting_of_the_imperial_duma
+		icon = GFX_focus_RUS_imperial_duma
+		prerequisite = { focus = RUS_first_steps_to_catch_up_with_the_west
+						 focus = RUS_establish_the_constitutional_assembly } 
+		
+		cost = 5
+		
+		x = 8
+		y = 8
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = soviet.BaI.1
+		}
+	}
+	
+	focus = {
+		id = RUS_deadlock_in_the_constitutional_assembly
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = RUS_second_meeting_of_the_imperial_duma  }
+		prerequisite = { focus = RUS_establish_the_constitutional_assembly  }
+		
+		cost = 10
+		
+		x = 5
+		y = 9
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_the_tsar_steps_in
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = RUS_deadlock_in_the_constitutional_assembly  }
+		
+		cost = 10
+		
+		x = 9
+		y = 10
+		
+		available = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_purge_the_deputies
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = RUS_second_meeting_of_the_imperial_duma
+						 focus = RUS_the_tsar_steps_in }
+		
+		cost = 20
+		
+		x = 11
+		y = 11
+		
+		available = {
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			custom_effect_tooltip = RUS_purge_the_deputies_tt
+			set_country_flag = RUS_purge_the_deputies
+			swap_ideas = { remove_idea = RUS_duma_of_public_anger add_idea = RUS_duma_of_public_anger_purged }
+			hidden_effect = {
+				country_event = { id =soviet.BaI.3 days = 120 random = 120 }
+			}
+		}
+	}
+
+	focus = {
+		id = RUS_the_slavic_brotherhood
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = RUS_imperial_duma_2 }
+		
+		cost = 10
+		
+		x = 4
+		y = 11
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = soviet.BaI.1
+		}
+	}
+	
+	focus = {
+		id = RUS_the_patriotic_song
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = RUS_the_slavic_brotherhood }
+		
+		cost = 10
+		
+		x = 4
+		y = 11
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			country_event = soviet.BaI.1
+		}
+	}
+	
+	#############################
+	#	Industrial Efforts		#
+	#############################
+	
+	focus = {
+		id = RUS_the_industrial_problem
+		icon = GFX_goal_generic_production2
+		
+		cost = 10
+		
+		x = 20
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_the_urbanisation_problem
+		icon = GFX_goal_generic_construction
+		
+		cost = 10
+		
+		x = 22
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_vast_industrialisation_programm
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_the_industrial_problem }
+		prerequisite = { focus = RUS_take_massive_loans }
+		
+		cost = 10
+		
+		x = 17
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_construction_effort_I
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RUS_vast_industrialisation_programm }
+		
+		cost = 10
+		
+		x = 16
+		y = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_construction_effort_II
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RUS_construction_effort_I }
+		
+		cost = 10
+		
+		x = 16
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_construction_effort_III
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = RUS_construction_effort_II }
+		
+		cost = 10
+		
+		x = 16
+		y = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_armament_effort_I
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RUS_vast_industrialisation_programm }
+		
+		cost = 10
+		
+		x = 18
+		y = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_armament_effort_II
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RUS_armament_effort_I }
+		
+		cost = 10
+		
+		x = 18
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_armament_effort_III
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = RUS_armament_effort_II }
+		
+		cost = 10
+		
+		x = 18
+		y = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_the_resource_problem
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_armament_effort_III }
+		prerequisite = { focus = RUS_construction_effort_III }
+		
+		cost = 10
+		
+		x = 17
+		y = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_the_oil_problem
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = RUS_the_resource_problem }
+		
+		cost = 10
+		
+		x = 18
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_oil_effort_I
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = RUS_the_oil_problem }
+		
+		cost = 10
+		
+		x = 18
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_the_steel_problem
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = RUS_the_resource_problem }
+		
+		cost = 10
+		
+		x = 16
+		y = 7
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_steel_effort_I
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = RUS_the_steel_problem }
+		
+		cost = 10
+		
+		x = 16
+		y = 8
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	
+	focus = {
+		id = RUS_the_innovation_problem
+		icon = GFX_focus_research
+		prerequisite = { focus = RUS_steel_effort_I }
+		prerequisite = { focus = RUS_oil_effort_I }
+		
+		cost = 10
+		
+		x = 17
+		y = 9
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_invite_foreign_advisers
+		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = RUS_the_industrial_problem }
+		prerequisite = { focus = RUS_the_urbanisation_problem }
+		
+		cost = 10
+		
+		x = 21
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_oligarchic_industry
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_invite_foreign_advisers }
+		
+		cost = 10
+		
+		x = 20
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_state_founded_industry_programs
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_invite_foreign_advisers }
+		
+		cost = 10
+		
+		x = 22
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_state_concessions
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_oligarchic_industry 
+						 focus = RUS_state_founded_industry_programs }
+		
+		cost = 10
+		
+		x = 21
+		y = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_fund_the_banks
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_state_concessions }
+		
+		cost = 10
+		
+		x = 21
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_strengthen_the_central_bank
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_fund_the_banks }
+		
+		cost = 10
+		
+		x = 21
+		y = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_stabilise_the_rubel
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_strengthen_the_central_bank }
+		
+		cost = 10
+		
+		x = 21
+		y = 6
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_tax_reform
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_stabilise_the_rubel }
+		
+		cost = 10
+		
+		x = 21
+		y = 7
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_vast_urbanisation_program
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_the_urbanisation_problem }
+		
+		cost = 10
+		
+		x = 25
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_infastructure_effort_I
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_vast_urbanisation_program }
+		
+		cost = 10
+		
+		x = 24
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_infastructure_effort_II
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_infastructure_effort_I }
+		
+		cost = 10
+		
+		x = 24
+		y = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_infastructure_effort_III
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_infastructure_effort_II }
+		
+		cost = 10
+		
+		x = 24
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_compromise_with_the_landlords
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_vast_urbanisation_program }
+		
+		cost = 10
+		
+		x = 26
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_great_relocation_to_the_cities
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_compromise_with_the_landlords }
+		
+		cost = 10
+		
+		x = 26
+		y = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_the_railway_problem
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = RUS_great_relocation_to_the_cities }
+		prerequisite = { focus = RUS_infastructure_effort_III }
+		
+		cost = 10
+		
+		x = 25
+		y = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	#############################
+	#	Army Efforts			#
+	#############################
+	
+	focus = {
+		id = RUS_armed_peace
+		icon = GFX_goal_generic_military_sphere
+		prerequisite = { focus = RUS_the_railway_problem }
+		prerequisite = { focus = RUS_tax_reform }
+		
+		cost = 10
+		
+		x = 23
+		y = 8
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_war_economy
+		icon = GFX_goal_generic_military_deal
+		
+		cost = 10
+		
+		x = 21
+		y = 8
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+			has_war = yes
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_new_army_schools
+		icon = GFX_focus_generic_military_mission
+		prerequisite = { focus = RUS_war_economy 
+						 focus = RUS_armed_peace }
+		
+		cost = 10
+		
+		x = 22
+		y = 9
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_equipment_effort_I
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = RUS_new_army_schools }
+		
+		cost = 10
+		
+		x = 20
+		y = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_equipment_effort_II
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = RUS_equipment_effort_I }
+		
+		cost = 10
+		
+		x = 20
+		y = 11
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_doctrine_effort_I
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RUS_new_army_schools }
+		
+		cost = 10
+		
+		x = 22
+		y = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_doctrine_effort_II
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = RUS_doctrine_effort_I }
+		
+		cost = 10
+		
+		x = 22
+		y = 11
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_motorisation_effort_I
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = RUS_new_army_schools }
+		
+		cost = 10
+		
+		x = 24
+		y = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_mechanisation_effort_I
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = RUS_motorisation_effort_I }
+		
+		cost = 10
+		
+		x = 24
+		y = 11
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = RUS_naval_effort_I
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = RUS_new_army_schools }
+		
+		cost = 10
+		
+		x = 26
+		y = 10
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_fleet_reform
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = RUS_naval_effort_I }
+		
+		cost = 10
+		
+		x = 26
+		y = 11
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		
+		available = {
+		}
+
+		completion_reward = {
+		}
+	}
+	
+	#############################
+	#	Diplomatic Efforts		#
+	#############################
+	
+	focus = {
+		id = RUS_foreign_policy
+		icon = GFX_goal_generic_intelligence_exchange
+		
+		cost = 10
+		
+		x = 30
+		y = 0
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_completed_focus = RUS_imperial_duma_1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { diplomatic_efforts }
+		}
+	}
+	
+	focus = {
+		id = RUS_diplomatic_efforts
+		icon = GFX_goal_generic_intelligence_exchange
+		mutually_exclusive = { focus = RUS_expansionist_efforts }
+		prerequisite = { focus = RUS_foreign_policy }
+		
+		cost = 10
+		
+		x = 29
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_completed_focus = RUS_imperial_duma_1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { diplomatic_efforts }
+		}
+	}
+	
+	focus = {
+		id = RUS_expansionist_efforts
+		icon = GFX_focus_expansionist_efforts
+		mutually_exclusive = { focus = RUS_diplomatic_efforts }
+		prerequisite = { focus = RUS_foreign_policy }
+		
+		cost = 10
+		
+		x = 31
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_completed_focus = RUS_imperial_duma_1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = { expansionist_efforts }
+		}
+	}
+	
+	focus = {
+		id = RUS_balkan_dominance
+		icon = GFX_focus_generic_balkan_politics
+		prerequisite = { focus = RUS_diplomatic_efforts 
+						 focus = RUS_expansionist_efforts }
+		
+		cost = 10
+		
+		x = 29
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_bulgarian_friendship
+		icon = GFX_focus_improve_relation_bulgaria
+		prerequisite = { focus = RUS_balkan_dominance }
+		
+		cost = 10
+		
+		x = 28
+		y = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+			give_guarantee = BUL
+			diplomatic_relation = { country = BUL relation = non_aggression_pact }
+		}
+	}
+	
+	focus = {
+		id = RUS_serbian_friendship
+		icon = GFX_focus_improve_relation_serbia
+		prerequisite = { focus = RUS_balkan_dominance }
+		
+		cost = 10
+		
+		x = 31
+		y = 3
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+			give_guarantee = SER
+			diplomatic_relation = { country = SER relation = non_aggression_pact }
+		}
+	}
+	
+	focus = {
+		id = RUS_the_romanian_question
+		icon = GFX_focus_romanian_question
+		prerequisite = { focus = RUS_serbian_friendship }
+		prerequisite = { focus = RUS_bulgarian_friendship }
+		
+		cost = 10
+		
+		x = 31
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_liberate_romanian_slavs
+		icon = GFX_focus_war_on_romania
+		mutually_exclusive = { focus = RUS_romanian_friendship }
+		prerequisite = { focus = RUS_the_romanian_question }
+		
+		cost = 10
+		
+		x = 30
+		y = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_romanian_friendship
+		icon = GFX_focus_war_on_romania
+		mutually_exclusive = { focus = RUS_liberate_romanian_slavs }
+		prerequisite = { focus = RUS_the_romanian_question }
+		
+		cost = 10
+		
+		x = 32
+		y = 5
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_weapons_for_our_brothers
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = RUS_serbian_friendship }
+		prerequisite = { focus = RUS_bulgarian_friendship }
+		
+		cost = 10
+		
+		x = 28
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_together_for_victory
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = RUS_weapons_for_our_brothers }
+		
+		cost = 10
+		
+		x = 50
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_proclaim_the_great_slavic_empire
+		icon = GFX_focus_proclaim_the_great_slavic_empire
+		prerequisite = { focus = RUS_liberate_romanian_slavs }
+		
+		cost = 10
+		
+		x = 50
+		y = 4
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_guaranteed = SER
+			SER = { has_opinion = { target = RUS value > 69 } }
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_cosmetic_tag = RUS_SLAVIC
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_eastern_europe_politics
+		icon = GFX_focus_generic_eastern_europe_politics
+		prerequisite = { focus = RUS_diplomatic_efforts 
+						 focus = RUS_expansionist_efforts }
+		
+		cost = 10
+		
+		x = 50
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_accept_polish_independence
+		icon = GFX_focus_improve_relation_poland
+		prerequisite = { focus = RUS_eastern_europe_politics }
+		
+		cost = 10
+		
+		x = 50
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			POL = {
+				every_owned_state = { remove_core_of = RUS }
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+		}
+	}
+	
+	focus = {
+		id = RUS_chinese_civil_war
+		icon = GFX_focus_chinese_civil_war
+		prerequisite = { focus = RUS_diplomatic_efforts 
+						 focus = RUS_expansionist_efforts }
+		
+		cost = 0
+		
+		x = 50
+		y = 1
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			has_global_flag = flag_chinese_civil_war
+		}
+		
+		bypass = {
+			has_global_flag = flag_chinese_civil_war
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+	
+	focus = {
+		id = RUS_russian_mongolian_treaty
+		icon = GFX_goal_generic_more_territorial_claims
+		prerequisite = { focus = RUS_chinese_civil_war }
+		
+		cost = 10
+		
+		x = 50
+		y = 2
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		available = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				has_political_power > 100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				has_political_power > 75
+			}
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger }
+				add_political_power = -100
+			}
+			if = {
+				limit = { has_idea = RUS_duma_of_public_anger_purged }
+				add_political_power = -75
+			}
+			give_guarantee = BUL
+			diplomatic_relation = { country = BUL relation = non_aggression_pact }
+		}
+	}
+	
+}

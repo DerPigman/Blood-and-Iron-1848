@@ -94,6 +94,21 @@ spriteTypes = {
 		textureFile = "gfx/interface/autonomy/autonomy_satellite.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_autonomy_wtt_imperial_associate_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_imperial_associate.dds"
+	}
+
+	spriteType = {
+		name = "GFX_autonomy_wtt_imperial_subject_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_imperial_associate.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_autonomy_wtt_imperial_protectorate_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_imperial_protectorate.dds"
+	}
+	
 	#-------------
 
 	spriteType = {
@@ -332,54 +347,59 @@ spriteTypes = {
 	}
 
 	spriteType = {
-        name = "GFX_ideology_conservatism_ideology_group"
-        texturefile ="gfx/interface/ideologies/conservatism_ideology_group.dds"
-    }
+		name = "GFX_ideology_conservatism_ideology_group"
+		texturefile ="gfx/interface/ideologies/conservatism_ideology_group.dds"
+	}
 
-    spriteType = {
-        name = "GFX_ideology_liberalism_ideology_group"
-        texturefile ="gfx/interface/ideologies/liberalism_ideology_group.dds"
-    }
+	spriteType = {
+		name = "GFX_ideology_market_liberalism_ideology_group"
+		texturefile ="gfx/interface/ideologies/market_liberalism_ideology_group.dds"
+	}
 
-    spriteType = {
-        name = "GFX_ideology_centrism_ideology_group"
-        texturefile ="gfx/interface/ideologies/centrism_ideology_group.dds"
-    }
+	spriteType = {
+		name = "GFX_ideology_social_liberalism_ideology_group"
+		texturefile ="gfx/interface/ideologies/social_liberalism_ideology_group.dds"
+	}
 
-    spriteType = {
-        name = "GFX_ideology_socialism_ideology_group"
-        texturefile ="gfx/interface/ideologies/socialism_ideology_group.dds"
-    }
+	spriteType = {
+		name = "GFX_ideology_centrism_ideology_group"
+		texturefile ="gfx/interface/ideologies/centrism_ideology_group.dds"
+	}
 
-    spriteType = {
-        name = "GFX_ideology_jacobinism_ideology_group"
-        texturefile ="gfx/interface/ideologies/jacobinism_ideology_group.dds"
-    }
+	spriteType = {
+		name = "GFX_ideology_reformist_socialism_ideology_group"
+		texturefile ="gfx/interface/ideologies/reformist_socialism_ideology_group.dds"
+	}
 
-    spriteType = {
-        name = "GFX_ideology_marxism_ideology_group"
-        texturefile ="gfx/interface/ideologies/marxism_ideology_group.dds"
-    }
+	spriteType = {
+		name = "GFX_ideology_revolutionary_socialism_ideology_group"
+		texturefile ="gfx/interface/ideologies/revolutionary_socialism_ideology_group.dds"
+	}
 
-    spriteType = {
-        name = "GFX_ideology_nationalism_ideology_group"
-        texturefile ="gfx/interface/ideologies/nationalism_ideology_group.dds"
-    }
+	spriteType = {
+		name = "GFX_ideology_marxism_ideology_group"
+		texturefile ="gfx/interface/ideologies/marxism_ideology_group.dds"
+	}
 
-    spriteType = {
-        name = "GFX_ideology_authoritarianism_ideology_group"
-        texturefile ="gfx/interface/ideologies/authoritarianism_ideology_group.dds"
-    }
+	spriteType = {
+		name = "GFX_ideology_nationalism_ideology_group"
+		texturefile ="gfx/interface/ideologies/nationalism_ideology_group.dds"
+	}
 
-    spriteType = {
-        name = "GFX_ideology_monarchism_ideology_group"
-        texturefile ="gfx/interface/ideologies/monarchism_ideology_group.dds"
-    }
+	spriteType = {
+		name = "GFX_ideology_authoritarianism_ideology_group"
+		texturefile ="gfx/interface/ideologies/authoritarianism_ideology_group.dds"
+	}
 
-    spriteType = {
-        name = "GFX_ideology_oligarchism_ideology_group"
-        texturefile ="gfx/interface/ideologies/oligarchism_ideology_group.dds"
-    }
+	spriteType = {
+		name = "GFX_ideology_monarchism_ideology_group"
+		texturefile ="gfx/interface/ideologies/monarchism_ideology_group.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_oligarchism_ideology_group"
+		texturefile ="gfx/interface/ideologies/oligarchism_ideology_group.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_ideology_unknown"
@@ -444,6 +464,11 @@ spriteTypes = {
 		name = "GFX_pol_leader_frame"
 		textureFile = "gfx//interface//pol_leader_frame.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_event_leader_frame"
+		textureFile = "gfx//interface//event_leader_frame.dds"
+	}
 
 	spriteType = {
 		name = "GFX_pol_goal_bg"
@@ -476,6 +501,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_leader_unknown"
 		textureFile = "gfx/leaders/leader_unknown.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_leader_marshal_unknown"
+		textureFile = "gfx/leaders/leader_marshal_unknown.dds"
 		legacy_lazy_load = no
 	}
 

@@ -7,7 +7,8 @@ set_research_slots = 3
 
 # [1] META
 set_convoys = 0
-set_national_unity = 0.5
+set_stability = 0.5
+set_war_support = 0.5
 add_political_power = 0
 
 # [2] IDEAS
@@ -33,16 +34,19 @@ set_politics = {
       conservatism_ideology = {
          popularity = 54
       }
-      liberalism_ideology = {
+      market_liberalism_ideology = {
          popularity = 17
+      }
+      social_liberalism_ideology = {
+         popularity = 0
       }
       centrism_ideology = {
          popularity = 15
       }
-      socialism_ideology = {
+      reformist_socialism_ideology = {
          popularity = 3
       }
-      jacobinism_ideology = {
+      revolutionary_socialism_ideology = {
          popularity = 0
       }
       marxism_ideology = {
@@ -90,7 +94,7 @@ create_country_leader = {
    desc = "POLITICS_STOYAN_DANEV_DESC"
    picture = "Portrait_Bulgaria_Stoyan_Danev.dds"
    expire = "1960.1.1"
-   ideology = liberalism
+   ideology = market_liberalism
    traits = {
    }
 }
@@ -117,7 +121,7 @@ create_country_leader = {
    desc = "POLITICS_YANKO_SAKAZOV_DESC"
    picture = "Portrait_Bulgaria_Yanko_Sakazov.dds"
    expire = "1960.1.1"
-   ideology = socialism
+   ideology = reformist_liberalism
    traits = {
    }
 }

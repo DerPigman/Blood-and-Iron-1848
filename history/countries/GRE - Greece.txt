@@ -7,7 +7,8 @@ set_research_slots = 3
 
 # [1] META
 set_convoys = 10
-set_national_unity = 0.5
+set_stability = 0.5
+set_war_support = 0.5
 add_political_power = 0
 
 # [2] IDEAS
@@ -38,16 +39,19 @@ set_politics = {
       conservatism_ideology = {
          popularity = 4
       }
-      liberalism_ideology = {
+      market_liberalism_ideology = {
          popularity = 84
+      }
+      social_liberalism_ideology = {
+         popularity = 0
       }
       centrism_ideology = {
          popularity = 9
       }
-      socialism_ideology = {
+      reformist_socialism_ideology = {
          popularity = 0
       }
-      jacobinism_ideology = {
+      revolutionary_socialism_ideology = {
          popularity = 0
       }
       marxism_ideology = {
@@ -104,7 +108,7 @@ create_country_leader = {
    desc = "POLITICS_ELEFTHERIOS_VENIZELOS_DESC"
    picture = "Portrait_Greece_Eleftherios_Venizelos.dds"
    expire = "1960.1.1"
-   ideology = liberalism
+   ideology = market_liberalism
    traits = {
    }
 }

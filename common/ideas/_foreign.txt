@@ -1,0 +1,156 @@
+ideas = {
+
+	foreign_policy = { 
+		law = yes
+
+		expansionist_focus = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				
+			}
+
+			modifier = {
+				justify_war_goal_time = -0.10
+				send_volunteers_tension = -0.10
+				generate_wargoal_tension = -0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		diplomatic_efforts = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			default = yes
+			
+			available = {
+				
+			}
+
+			modifier = {
+				opinion_gain_monthly_factor  = 0.10
+				trade_opinion_factor = 0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		neutral_foreign_policy = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				
+			}
+
+			modifier = {
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 1.00
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				ai_badass_factor = 0.01    # Will receive 1% of the threat from others
+				ai_get_ally_desire_factor = -100
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		striving_for_recognition = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				
+			}
+
+			modifier = {
+				justify_war_goal_time = -0.10
+				send_volunteers_tension = -0.10
+				generate_wargoal_tension = -0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		extensive_colonialism = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				is_major = yes
+			}
+
+			modifier = {
+				justify_war_goal_time = -0.10
+				send_volunteers_tension = -0.10
+				generate_wargoal_tension = -0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		world_revolution = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				has_government = revolutionary_socialism_ideology
+				has_government = marxism_ideology
+			}
+
+			modifier = {
+				opinion_gain_monthly_same_ideology_factor  = 0.20
+				subversive_activites_upkeep = -0.50
+				opinion_gain_monthly_factor = -0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		global_policeman = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				has_army_manpower = { size > 549999 }
+			}
+
+			modifier = {
+				justify_war_goal_time = -0.10
+				send_volunteers_tension = -0.10
+				generate_wargoal_tension = -0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		diplomatic_isolation = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				always = no
+			}
+
+			modifier = {
+				justify_war_goal_time = -0.10
+				send_volunteers_tension = -0.10
+				generate_wargoal_tension = -0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}

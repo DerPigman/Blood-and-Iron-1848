@@ -1,0 +1,24 @@
+﻿l_english:
+ constitutional_monarchy:0 "Constitutional Monarchy"
+ constitutional_monarchy_desc:0 "A constitutional monarchy is a form of monarchy in which the sovereign exercises their authorities in accordance with a written or unwritten constitution."
+ elections_abandoned:0 "Elections Abandoned"
+ 
+ ### LAWS AND GOVERNMENT
+ foreign_policy: "Foreign Policy"
+ expansionist_focus:0 "Expansionist Focus"
+ diplomatic_efforts:0 "Diplomatic Efforts"
+ neutral_foreign_policy:0 "Neutral Foreign Policy"
+ world_revolution:0 "World Revolution"
+ striving_for_recognition:0 "Striving for Recognition"
+ global_policeman:0 "Global Policeman"
+ diplomatic_isolation:0 "Diplomatic Isolation"
+ extensive_colonialism:0 "Extensive Colonialism"
+ 
+ internal_policy
+ 
+ military_policy: "Military Policy"
+ defensive_strategy:0 "Defensive Strategy"
+ aggressive_strategy:0 "Aggressive Strategy"
+ extensive_training:0 "Extensive Training"
+ public_preference: "Public Peference"
+ rise_of_marxism:0 "Rise of Marxism"

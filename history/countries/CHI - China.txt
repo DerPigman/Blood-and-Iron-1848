@@ -7,7 +7,8 @@ set_research_slots = 3
 
 # [1] META
 set_convoys = 30
-set_national_unity = 0.5
+set_stability = 0.5
+set_war_support = 0.5
 add_political_power = 0
 
 # [2] IDEAS
@@ -34,16 +35,19 @@ set_politics = {
       conservatism_ideology = {
          popularity = 32
       }
-      liberalism_ideology = {
+      market_liberalism_ideology = {
          popularity = 7
+      }
+      social_liberalism_ideology = {
+         popularity = 0
       }
       centrism_ideology = {
          popularity = 9
       }
-      socialism_ideology = {
+      reformist_socialism_ideology = {
          popularity = 0
       }
-      jacobinism_ideology = {
+      revolutionary_socialism_ideology = {
          popularity = 0
       }
       marxism_ideology = {
@@ -118,7 +122,7 @@ create_country_leader = {
    desc = "POLITICS_TANG_HUALONG_DESC"
    picture = "Portrait_China_Tang_Hualong.dds"
    expire = "1960.1.1"
-   ideology = liberalism
+   ideology = market_liberalism
    traits = {
    }
 }

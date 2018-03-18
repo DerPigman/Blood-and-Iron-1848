@@ -116,7 +116,7 @@ ideas = {
          removal_cost = -1
 
          modifier = {
-            conscription = -0.002
+            conscription = -0.2
             jacobinism_ideology_drift = 0.05
          }
       }
@@ -236,7 +236,7 @@ ideas = {
          traits = { conservatism_ideology_political_advisor }
 
          on_add = {
-            country_event = political.BaI.1
+            country_event = #Add Event Here
          }
 
          do_effect = {
@@ -264,7 +264,7 @@ ideas = {
          traits = { liberalism_ideology_political_advisor }
 
          on_add = {
-            country_event = political.BaI.9
+            country_event = #Add Event Here
          }
 
          do_effect = {
@@ -292,7 +292,7 @@ ideas = {
          traits = { centrism_ideology_political_advisor }
 
          on_add = {
-            country_event = political.BaI.17
+            country_event = #Add Event Here
          }
 
          do_effect = {
@@ -320,7 +320,7 @@ ideas = {
          traits = { socialism_ideology_political_advisor }
 
          on_add = {
-            country_event = political.BaI.25
+            country_event = #Add Event Here
          }
 
          do_effect = {
@@ -348,7 +348,7 @@ ideas = {
          traits = { jacobinism_ideology_political_advisor }
 
          on_add = {
-            country_event = political.BaI.33
+            country_event = #Add Event Here
          }
 
          do_effect = {
@@ -376,7 +376,7 @@ ideas = {
          traits = { marxism_ideology_political_advisor }
 
          on_add = {
-            country_event = political.BaI.42
+            country_event = #Add Event Here
          }
 
          do_effect = {
@@ -404,7 +404,7 @@ ideas = {
          traits = { nationalism_ideology_political_advisor }
 
          on_add = {
-            country_event = political.BaI.51
+            country_event = #Add Event Here
          }
 
          do_effect = {
@@ -432,7 +432,7 @@ ideas = {
          traits = { authoritarianism_ideology_political_advisor }
 
          on_add = {
-            country_event = political.BaI.59
+            country_event = #Add Event Here
          }
 
          do_effect = {
@@ -488,7 +488,7 @@ ideas = {
          traits = { oligarchism_ideology_political_advisor }
 
          on_add = {
-            country_event = political.BaI.68
+            country_event = #Add Event Here
          }
 
          do_effect = {

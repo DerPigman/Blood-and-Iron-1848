@@ -7,7 +7,8 @@ set_research_slots = 3
 
 # [1] META
 set_convoys = 120
-set_national_unity = 0.5
+set_stability = 0.5
+set_war_support = 0.5
 add_political_power = 0
 
 # [2] IDEAS
@@ -37,16 +38,19 @@ set_politics = {
       conservatism_ideology = {
          popularity = 28
       }
-      liberalism_ideology = {
+      market_liberalism_ideology = {
          popularity = 18
+      }
+      social_liberalism_ideology = {
+         popularity = 0
       }
       centrism_ideology = {
          popularity = 25
       }
-      socialism_ideology = {
+      reformist_socialism_ideology = {
          popularity = 13
       }
-      jacobinism_ideology = {
+      revolutionary_socialism_ideology = {
          popularity = 0
       }
       marxism_ideology = {
@@ -65,7 +69,7 @@ set_politics = {
          popularity = 0
       }
    }
-   ruling_party = liberalism_ideology
+   ruling_party = market_liberalism_ideology
    last_election = 1910.3.13
    election_frequency = 48
    elections_allowed = yes
@@ -94,7 +98,7 @@ create_country_leader = {
    desc = "POLITICS_BARTOLOME_MITRE_DESC"
    picture = "Portrait_Argentina_Bartolome_Mitre.dds"
    expire = "1960.1.1"
-   ideology = liberalism
+   ideology = market_liberalism
    traits = {
    }
 }
@@ -103,7 +107,7 @@ create_country_leader = {
    desc = "POLITICS_NICOLAS_REPETTO_DESC"
    picture = "Portrait_Argentina_Nicolas_Repetto.dds"
    expire = "1960.1.1"
-   ideology = socialism
+   ideology = reformist_liberalism
    traits = {
    }
 }
