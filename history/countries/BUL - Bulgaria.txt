@@ -55,6 +55,9 @@ set_politics = {
       nationalism_ideology = {
          popularity = 11
       }
+      radical_nationalism_ideology = {
+         popularity = 0
+      }
       authoritarianism_ideology = {
          popularity = 0
       }

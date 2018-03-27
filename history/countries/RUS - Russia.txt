@@ -15,6 +15,7 @@ set_cosmetic_tag = RUS_monarchism_ideology
 
 # [2] IDEAS
 add_ideas = {
+   revolutionary_ideas_spreading_marxism
    RUS_duma_of_public_anger
    RUS_socialist_revolutionaries
 }
@@ -78,6 +79,9 @@ set_politics = {
       nationalism_ideology = {
          popularity = 0
       }
+      radical_nationalism_ideology = {
+         popularity = 0
+      }
       authoritarianism_ideology = {
          popularity = 0
       }
@@ -88,7 +92,7 @@ set_politics = {
          popularity = 0
       }
    }
-   ruling_party = monarchism_ideology
+   ruling_party = market_liberalism_ideology
    last_election = 1906.4.26
    election_frequency = 48
    elections_allowed = no
@@ -107,6 +111,15 @@ create_country_leader = {
    name = "Pavel Milyukov"
    desc = "POLITICS_PAVEL_MILYUKOV_DESC"
    picture = "Portrait_Russia_Pavel_Milyukov.dds"
+   expire = "1960.1.1"
+   ideology = market_liberalism
+   traits = {
+   }
+}
+create_country_leader = {
+   name = "Nikolay II"
+   desc = "POLITICS_NIKOLAY_II_DESC"
+   picture = "Portrait_Russia_Nikolay_II.dds"
    expire = "1960.1.1"
    ideology = market_liberalism
    traits = {

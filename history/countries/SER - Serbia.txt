@@ -60,6 +60,9 @@ set_politics = {
       nationalism_ideology = {
          popularity = 13
       }
+      radical_nationalism_ideology = {
+         popularity = 0
+      }
       authoritarianism_ideology = {
          popularity = 0
       }
@@ -81,7 +84,7 @@ create_country_leader = {
    desc = "POLITICS_NIKOLA_PAšIć_DESC"
    picture = "Portrait_Serbia_Nikola_Pašić.dds"
    expire = "1960.1.1"
-   ideology = revolutionary_liberalism
+   ideology = revolutionary_socialism
    traits = {
    }
 }

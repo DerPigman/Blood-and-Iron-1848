@@ -1,9 +1,8 @@
 ideologies = {
-   authoritarianism_ideology = {
+   radical_nationalism_ideology = {
 
       types = {
-         authoritarianism = {}
-         military_dictatorship = {}
+         nationalism = {}
       }
 
       dynamic_faction_names = {
