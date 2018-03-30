@@ -455,7 +455,7 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_question_of_the_autocracy
-		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		icon = GFX_focus_question_of_the_autocracy
 		prerequisite = { focus = RUS_deadlock }
 		
 		cost = 10
@@ -672,7 +672,7 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_establish_the_constitutional_assembly
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_focus_generic_treaty
 		prerequisite = { focus = RUS_limited_elections
 						 focus = RUS_public_elections
 						 focus = RUS_revolution }
@@ -1182,7 +1182,7 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_the_steel_problem
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = RUS_the_resource_problem }
 		
 		cost = 10
@@ -1201,7 +1201,7 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_steel_effort_I
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = RUS_the_steel_problem }
 		
 		cost = 10
@@ -1423,7 +1423,7 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_infastructure_effort_I
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = RUS_vast_urbanisation_program }
 		
 		cost = 10
@@ -1443,7 +1443,7 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_infastructure_effort_II
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = RUS_infastructure_effort_I }
 		
 		cost = 10
@@ -1463,7 +1463,7 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_infastructure_effort_III
-		icon = GFX_goal_generic_construct_civilian
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = RUS_infastructure_effort_II }
 		
 		cost = 10
@@ -1592,7 +1592,7 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_new_army_schools
-		icon = GFX_focus_generic_military_mission
+		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = RUS_war_economy 
 						 focus = RUS_armed_peace }
 		
@@ -2082,7 +2082,7 @@ focus_tree = {
 	
 	focus = {
 		id = RUS_romanian_friendship
-		icon = GFX_focus_war_on_romania
+		icon = GFX_focus_improve_relation_romania
 		mutually_exclusive = { focus = RUS_liberate_romanian_slavs }
 		prerequisite = { focus = RUS_the_romanian_question }
 		

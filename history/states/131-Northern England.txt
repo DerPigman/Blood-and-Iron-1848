@@ -1,41 +1,44 @@
-# NORTHERN ENGLAND
-state = {
-   # META
-   id = 131
-   name = "STATE_131"
-   manpower = 2128860
-   state_category = city
 
-   # RESOURCES
-   resources = {
-      steel = 60
-      aluminium = 8
-   }
+state={
+	id=131
+	name="STATE_131"
+	resources={
+		steel=38.000
+		aluminium=5.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = ENG
-      controller = ENG
-      add_core_of = ENG
+	history={
+		owner = ENG
+		victory_points = {
+			351 10 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			dockyard = 4
+			air_base = 6
+			351 = {
+				naval_base = 6
 
-      # VICTORY POINTS
-      victory_points = { 351 10 }
+			}
 
-      # BUILDINGS
-      buildings = {
-         351 = {
-            naval_base = 6
-         }
-         infrastructure = 6
-         industrial_complex = 2
-         dockyard = 5
-         air_base = 6
-      }
-   }
+		}
+		add_core_of = ENG
+		1939.1.1 = {
+			buildings = {
+				dockyard = 5
+				industrial_complex = 2
 
-   # PROVINCES
-   provinces = {
-      219 351 3311 6399 9285 11270 11299 11332
-   }
+			}
+
+		}
+
+	}
+
+	provinces={
+		219 351 6399 9285 11270 11299 11332 
+	}
+	manpower=2100000
+	buildings_max_level_factor=1.000
+	state_category=city
 }

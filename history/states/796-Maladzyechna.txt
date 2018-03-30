@@ -1,0 +1,23 @@
+state={
+	id=796
+	name="STATE_796"
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 5
+			air_base = 5
+
+		}
+		add_core_of = POL
+		add_core_of = BLR
+
+	}
+
+	provinces={
+		233 277 358 406 6340 9341 11391 13260 
+	}
+	manpower=523000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

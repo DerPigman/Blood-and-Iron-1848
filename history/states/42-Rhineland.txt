@@ -1,38 +1,43 @@
-# MOSELLAND
-state = {
-   # META
-   id = 42
-   name = "STATE_42"
-   manpower = 3027739
-   state_category = metropolis
 
-   # RESOURCES
-   resources = {
-      steel = 100
-      aluminium = 24
-   }
+state={
+	id=42
+	name="STATE_42"
+	resources={
+		steel=59.000
+		aluminium=14.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = GER
-      controller = GER
-      add_core_of = GER
+	history={
+		owner = GER
+		victory_points = {
+			11435 10 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 3
 
-      # VICTORY POINTS
-      victory_points = { 11435 10 }
+		}
+		add_core_of = GER
+		set_demilitarized_zone = yes
+		1936.3.7 = {
+			set_demilitarized_zone = no
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 7
-         industrial_complex = 3
-         radar_station = 1
-         synthetic_refinery = 3
-      }
-   }
+		}
+		1939.1.1 = {
+			buildings = {
+				radar_station = 1
+				synthetic_refinery = 3
 
-   # PROVINCES
-   provinces = {
-      563 3423 3558 9575 11435 11470 11494 11531 11547
-   }
+			}
+
+		}
+
+	}
+
+	provinces={
+		563 3423 3558 11435 11470 11494 11547 11560 
+	}
+	manpower=3014430
+	buildings_max_level_factor=1.000
+	state_category=metropolis
 }

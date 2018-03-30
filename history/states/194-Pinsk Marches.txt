@@ -1,32 +1,22 @@
-# MOZYR
-state = {
-   # META
-   id = 194
-   name = "STATE_194"
-   manpower = 934632
-   state_category = rural
 
-   # RESOURCES
+state={
+	id=194
+	name="STATE_194" # Mozyr
+	manpower = 934632
+	
+	state_category = rural
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
-      add_core_of = BLR
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+		}
+		add_core_of = RUS
+		add_core_of = BLR
+	}
 
-      # VICTORY POINTS
-
-      # BUILDINGS
-      buildings = {
-         infrastructure = 3
-         air_base = 3
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      215 3203 3293 3507 6232 6319 6556 9249 9554 11453
-   }
+	provinces={
+		215 3203 3293 3507 6232 6319 6556 9249 9554 11453 
+	}
 }

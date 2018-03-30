@@ -1,0 +1,21 @@
+state={
+	id=873
+	name="STATE_873"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ZIM
+
+	}
+
+
+	provinces={
+		1874 2151 2216 4851 7842 10929 
+	}
+	manpower=94000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+}

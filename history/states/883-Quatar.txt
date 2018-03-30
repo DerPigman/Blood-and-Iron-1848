@@ -1,0 +1,24 @@
+state={
+	id=883
+	name="STATE_883"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			8051 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		8051 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

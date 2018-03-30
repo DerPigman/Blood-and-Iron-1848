@@ -1,0 +1,27 @@
+state={
+	id=917
+	name="STATE_917"
+
+	history={
+		owner = SWI
+		victory_points = {
+			9620 15 
+		}
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		add_core_of = SWI
+
+	}
+
+
+	provinces={
+		6666 6683 9622 11590 13124 
+	}
+	manpower=900340
+	buildings_max_level_factor=1.000
+	state_category=town
+}

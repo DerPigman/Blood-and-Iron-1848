@@ -1,0 +1,21 @@
+state={
+	id=832
+	name="STATE_832"
+
+	history={
+		owner = MCO
+		add_core_of = MCO
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+
+	provinces={
+		13281 
+	}
+	manpower=3431
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

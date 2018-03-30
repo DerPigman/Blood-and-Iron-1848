@@ -1,38 +1,33 @@
-# POITOU
-state = {
-   # META
-   id = 23
-   name = "STATE_23"
-   manpower = 1603100
-   state_category = town
 
-   # RESOURCES
-   resources = {
-      steel = 48
-   }
+state={
+	id=23
+	name="STATE_23"
+	resources={
+		steel=30.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = FRA
-      controller = FRA
-      add_core_of = FRA
+	history={
+		owner = FRA
+		victory_points = {
+			6657 5 
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			6657 = {
+				naval_base = 3
 
-      # VICTORY POINTS
-      victory_points = { 6657 5 }
+			}
 
-      # BUILDINGS
-      buildings = {
-         6657 = {
-            naval_base = 3
-         }
-         infrastructure = 6
-         industrial_complex = 1
-      }
-   }
+		}
+		add_core_of = FRA
 
-   # PROVINCES
-   provinces = {
-      595 629 655 3659 6657 9597 9631 11582 11596 11600
-   }
+	}
+
+	provinces={
+		595 629 655 3659 6657 9597 9631 11565 11582 11596 11600 
+	}
+	manpower=1603100
+	buildings_max_level_factor=1.000
+	state_category=town
 }

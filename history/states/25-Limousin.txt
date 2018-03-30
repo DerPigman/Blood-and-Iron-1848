@@ -1,31 +1,25 @@
-# LIMOUSIN
-state = {
-   # META
-   id = 25
-   name = "STATE_25"
-   manpower = 1343700
-   state_category = large_town
 
-   # RESOURCES
+state={
+	id=25
+	name="STATE_25"
 
-   # HISTORY
-   history = {
-      # META
-      owner = FRA
-      controller = FRA
-      add_core_of = FRA
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 5
 
-      # VICTORY POINTS
-      victory_points = { 620 5 }
+		}
+		victory_points = {
+			620 5 
+		}
+		add_core_of = FRA
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 5
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      620 625 755 3598 3771 6618 6775 6792 9717 9734 9751 11718 11720
-   }
+	provinces={
+		620 625 755 3598 3771 6618 6775 6792 9734 9751 11718 11720 
+	}
+	manpower=1343700
+	buildings_max_level_factor=1.000
+	state_category=large_town
 }

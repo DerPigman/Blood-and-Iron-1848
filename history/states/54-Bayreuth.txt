@@ -1,34 +1,31 @@
-# FRANKEN
-state = {
-   # META
-   id = 54
-   name = "STATE_54"
-   manpower = 2508159
-   state_category = city
 
-   # RESOURCES
+state={
+	id=54
+	name="STATE_54"
+	manpower = 2508159
 
-   # HISTORY
-   history = {
-      # META
-      owner = GER
-      controller = GER
-      add_core_of = GER
+	state_category = city
 
-      # VICTORY POINTS
-      victory_points = { 11544 10 }
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+		}
+		victory_points = {
+			11544 10 
+		}
+		add_core_of = GER
+		add_core_of = BAV
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 7
-         industrial_complex = 2
-         arms_factory = 1
-         air_base = 3
-      }
-   }
+		1939.1.1 = {
+			buildings = {
+				air_base = 3
+			}
+		}
+	}
 
-   # PROVINCES
-   provinces = {
-      561 3474 6421 6594 9416 9557 9572 11404 11417 11529 11544 13116
-   }
+	provinces={
+		561 3474 6421 6594 9416 9557 9572 11404 11417 11529 11544 13116 
+	}
 }

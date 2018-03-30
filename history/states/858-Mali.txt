@@ -1,0 +1,23 @@
+state={
+	id=858
+	name="STATE_858"
+
+	impassable = yes
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 0
+
+		}
+		add_core_of = MRI
+
+	}
+
+	provinces={
+		1115 2044 10725 10788 10868 
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

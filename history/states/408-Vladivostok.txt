@@ -1,40 +1,35 @@
-# VLADIVOSTOK
-state = {
-   # META
-   id = 408
-   name = "STATE_408"
-   manpower = 841465
-   state_category = town
 
-   # RESOURCES
-   resources = {
-      chromium = 28
-   }
+state={
+	id=408
+	name="STATE_408"
+	resources={
+		chromium=20.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
+	history={
+		owner = RUS
+		victory_points = {
+			957 15 
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			air_base = 5
+			957 = {
+				naval_base = 8
+				coastal_bunker = 3
 
-      # VICTORY POINTS
-      victory_points = { 957 15 }
+			}
 
-      # BUILDINGS
-      buildings = {
-         957 = {
-            naval_base = 8
-            coastal_bunker = 3
-         }
-         infrastructure = 4
-         dockyard = 1
-         air_base = 5
-      }
-   }
+		}
+		add_core_of = RUS
 
-   # PROVINCES
-   provinces = {
-      664 681 837 957 3695 3723 3739 3753 3787 3811 3977 6684 6686 6715 6833 6838 6961 6989 9639 9641 9762 9895 9926 11624 11626 11629 11643 11745 11750 11765 11777 11879 11904
-   }
+	}
+
+	provinces={
+		957 3787 3977 6684 6838 6961 6989 9762 9895 9926 11750 11879 
+	}
+	manpower=741030
+	buildings_max_level_factor=1.000
+	state_category=town
 }

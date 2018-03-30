@@ -1,33 +1,25 @@
-# ZLATOUST
-state = {
-   # META
-   id = 573
-   name = "STATE_573"
-   manpower = 556677
-   state_category = pastoral
 
-   # RESOURCES
-   resources = {
-      chromium = 32
-   }
+state={
+	id=573
+	name="STATE_573"
+	resources={
+		chromium=23.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 4
 
-      # VICTORY POINTS
+		}
+		add_core_of = RUS
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 4
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      237 278 361 3280 4758 7320 10136 10142 10329 11223 11307 12117
-   }
+	provinces={
+		237 278 3280 4758 7320 10136 10142 10329 11223 11307 12117 
+	}
+	manpower=556677
+	buildings_max_level_factor=1.000
+	state_category=pastoral
 }

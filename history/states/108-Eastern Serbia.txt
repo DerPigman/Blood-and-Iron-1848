@@ -1,33 +1,26 @@
-# MORAVA
-state = {
-   # META
-   id = 108
-   name = "STATE_108"
-   manpower = 1533000
-   state_category = town
 
-   # RESOURCES
-   resources = {
-      steel = 4
-   }
+state={
+	id=108
+	name="STATE_108"
+	resources={
+		steel=3.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = SER
-      controller = SER
-      add_core_of = SER
+	history={
+		owner = SER
+		buildings = {
+			infrastructure = 4
 
-      # VICTORY POINTS
+		}
+		add_core_of = YUG
+		add_core_of = SER
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 4
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      630 3939 6953 6970 6998 9602 9756 9890 9906 11887
-   }
+	provinces={
+		3939 6953 6970 6998 9874 9890 9906 13255 13256 
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category=town
 }

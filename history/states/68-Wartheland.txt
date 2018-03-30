@@ -1,34 +1,26 @@
-# OSTMARK
-state = {
-   # META
-   id = 68
-   name = "STATE_68"
-   manpower = 1250840
-   state_category = city
 
-   # RESOURCES
-   resources = {
-      aluminium = 24
-   }
+state={
+	id=68
+	name="STATE_68"
+	resources={
+		aluminium=15.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = GER
-      controller = GER
-      add_core_of = GER
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
 
-      # VICTORY POINTS
+		}
+		add_core_of = GER
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 6
-         industrial_complex = 1
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      444 478 537 3473 3572 6236 9387 9496 11415 11478
-   }
+	provinces={
+		444 537 3473 6236 9387 11478 
+	}
+	manpower=1250840
+	buildings_max_level_factor=1.000
+	state_category=city
 }

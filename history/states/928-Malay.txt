@@ -1,0 +1,30 @@
+state={
+	id=928
+	name="STATE_928"
+
+	history={
+		owner = MAL
+		victory_points = {
+			12299 10 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			12299 = {
+				naval_base = 8
+				coastal_bunker = 3
+
+			}
+
+		}
+		add_core_of = MAL
+
+	}
+
+	provinces={
+		12299 
+	}
+	manpower=1591600
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

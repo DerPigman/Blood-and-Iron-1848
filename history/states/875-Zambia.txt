@@ -1,0 +1,21 @@
+state={
+	id=875
+	name="STATE_875"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = ZIM
+
+	}
+
+	provinces={
+		1846 5221 10594 10930 13173 
+	}
+	manpower=1155000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

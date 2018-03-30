@@ -1,32 +1,25 @@
-# BRABANT
-state = {
-   # META
-   id = 35
-   name = "STATE_35"
-   manpower = 1449000
-   state_category = city
 
-   # RESOURCES
+state={
+	id=35
+	name="STATE_35"
 
-   # HISTORY
-   history = {
-      # META
-      owner = HOL
-      controller = HOL
-      add_core_of = HOL
+	history={
+		owner = HOL
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 5
 
-      # VICTORY POINTS
-      victory_points = { 6496 5 }
+		}
+		victory_points = {
+			6496 5 
+		}
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 7
-         industrial_complex = 5
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      3262 6496 6500 11456 11562
-   }
+	provinces={
+		3262 6496 6500 
+	}
+	manpower=925000
+	buildings_max_level_factor=1.000
+	state_category=city
 }

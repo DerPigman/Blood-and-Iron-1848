@@ -1,35 +1,24 @@
-# SAVOY
-state = {
-   # META
-   id = 735
-   name = "STATE_735"
-   manpower = 907500
-   state_category = town
 
-   # RESOURCES
+state={
+	id=735
+	name="STATE_735"
 
-   # HISTORY
-   history = {
-      # META
-      owner = FRA
-      controller = FRA
-      add_core_of = FRA
+	history={
+		owner = FRA
+		add_core_of = FRA
+		victory_points = {
+			778 1 
+		}
+		buildings = {
+			infrastructure = 4
+		}
 
-      # VICTORY POINTS
-      victory_points = { 778 1 }
-      victory_points = { 9909 5 }
+	}
 
-      # BUILDINGS
-      buildings = {
-         9909 = {
-            naval_base = 2
-         }
-         infrastructure = 4
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      764 778 3764 3959 3961 6609 6975 9603 9736 9745 9909 11573
-   }
+	provinces={
+		764 778 6609 9603 9745 11573 
+	}
+	manpower=450250
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

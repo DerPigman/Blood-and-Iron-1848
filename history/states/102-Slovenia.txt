@@ -1,31 +1,26 @@
-# SLOVENIA
-state = {
-   # META
-   id = 102
-   name = "STATE_102"
-   manpower = 1144300
-   state_category = large_town
 
-   # RESOURCES
+state={
+	id=102
+	name="STATE_102"
 
-   # HISTORY
-   history = {
-      # META
-      owner = AUS
-      controller = AUS
-      add_core_of = YUG
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 6
 
-      # VICTORY POINTS
-      victory_points = { 9627 3 }
+		}
+		victory_points = {
+			9627 3 
+		}
+		add_core_of = YUG
+		add_core_of = SVN
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 6
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      596 665 3631 3654 6650 6672 9596 9627 11612
-   }
+	provinces={
+		6650 9627 
+	}
+	manpower=504000
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

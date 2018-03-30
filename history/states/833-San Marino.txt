@@ -1,0 +1,21 @@
+state={
+	id=833
+	name="STATE_833"
+
+	history={
+		owner = SMR
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
+		add_core_of = SMR
+	}
+
+
+	provinces={
+		13282 
+	}
+	manpower=4035
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+}

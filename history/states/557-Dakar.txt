@@ -1,30 +1,24 @@
-# MAURITANIA
-state = {
-   # META
-   id = 557
-   name = "STATE_557"
-   manpower = 429200
-   state_category = wasteland
 
-   # RESOURCES
+state={
+	id=557
+	name="STATE_557"
 
-   # HISTORY
-   history = {
-      # META
-      owner = FRA
-      controller = FRA
-      add_core_of = FRA
+	impassable = yes
 
-      # VICTORY POINTS
+	history={
+		owner = FRA
+		add_core_of = MRT
+		buildings = {
+			infrastructure = 0
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 0
-      }
-   }
+		}
 
-   # PROVINCES
-   provinces = {
-      1115 1897 1962 5034 5077 7943 7992 8035 8058 10725 10779 10814 10838 10868
-   }
+	}
+
+	provinces={
+		1897 1962 7943 8035 8058 10771 10779 10814 10838 
+	}
+	manpower=180000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
 }

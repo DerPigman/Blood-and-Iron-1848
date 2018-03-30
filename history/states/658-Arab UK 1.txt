@@ -1,37 +1,31 @@
-# ABU DHABI
-state = {
-   # META
-   id = 658
-   name = "STATE_658"
-   manpower = 220000
-   state_category = pastoral
 
-   # RESOURCES
-   resources = {
-      oil = 6
-   }
+state={
+	id=658
+	name="STATE_658"
+	resources={
+		oil=5.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = ENG
-      controller = ENG
-      add_core_of = ENG
+	history={
+		owner = ENG
+		victory_points = {
+			7960 1 
+		}
+		buildings = {
+			infrastructure = 2
+			7960 = {
+				naval_base = 3
 
-      # VICTORY POINTS
-      victory_points = { 7960 1 }
+			}
 
-      # BUILDINGS
-      buildings = {
-         7960 = {
-            naval_base = 3
-         }
-         infrastructure = 2
-      }
-   }
+		}
 
-   # PROVINCES
-   provinces = {
-      2048 7960 8051 8108 10904
-   }
+	}
+
+	provinces={
+		2048 7960 8108 10904 13262 13263 
+	}
+	manpower=185000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
 }

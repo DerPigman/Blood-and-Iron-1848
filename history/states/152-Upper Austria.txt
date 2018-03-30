@@ -1,36 +1,36 @@
-# UPPER AUSTRIA
-state = {
-   # META
-   id = 152
-   name = "STATE_152"
-   manpower = 2275377
-   state_category = city
 
-   # RESOURCES
-   resources = {
-      steel = 8
-      aluminium = 1
-   }
+state={
+	id=152
+	name="STATE_152"
+	resources={
+		steel=5.000
+		aluminium=1.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = AUS
-      controller = AUS
-      add_core_of = AUS
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
 
-      # VICTORY POINTS
-      victory_points = { 688 10 }
+		}
+		victory_points = {
+			688 10 
+		}
+		add_core_of = AUS
+		1938.3.12 = {
+			owner = GER
+			controller = GER
+			add_core_of = GER
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 6
-         industrial_complex = 3
-      }
-   }
+		}
 
-   # PROVINCES
-   provinces = {
-      688 732 3673 3674 3684 3703 6552 6687 6691 6708 6723 9650 9665 11651
-   }
+	}
+
+	provinces={
+		671 688 3675 3684 3703 6691 6708 9665 
+	}
+	manpower=1132333
+	buildings_max_level_factor=1.000
+	state_category=town
 }

@@ -1,0 +1,124 @@
+ideas = {
+
+	domestic_policy = { 
+		law = yes
+
+		cultural_norms = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			default = yes
+			
+			available = {
+			}
+
+			modifier = {
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		public_education = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+			}
+
+			modifier = {
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		industrialization = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+			}
+
+			modifier = {
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		bread_and_land = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+			}
+
+			modifier = {
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		police_state = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+			}
+
+			modifier = {
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		empathihze_civil_rights = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+			}
+
+			modifier = {
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		racial_doctrine = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				has_government = radical_nationalism_ideology
+			}
+
+			modifier = {
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		collectivization  = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				has_government = revolutionary_socialism_ideology
+				has_government = marxism_ideology
+			}
+
+			modifier = {
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+	}
+}

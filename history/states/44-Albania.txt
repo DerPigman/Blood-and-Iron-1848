@@ -1,42 +1,39 @@
-# ALBANIA
-state = {
-   # META
-   id = 44
-   name = "STATE_44"
-   manpower = 1003000
-   state_category = town
 
-   # RESOURCES
-   resources = {
-      aluminium = 3
-      chromium = 3
-   }
+state={
+	id=44
+	name="STATE_44"
+	resources={
+		aluminium=2.000
+		chromium=2.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = ALB
-      controller = ALB
-      add_core_of = ALB
-      add_claim_by = ITA
+	history={
+		owner = ALB
+		victory_points = {
+			9914 5 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 3
 
-      # VICTORY POINTS
-      victory_points = { 9914 5 }
+		}
+		add_core_of = ALB
+		add_claim_by = ITA
+		1939.4.12 = {
+			owner = ITA
+			controller = ITA
+			remove_claim_by = ITA
 
-      # BUILDINGS
-      buildings = {
-         11767 = {
-            naval_base = 4
-         }
-         infrastructure = 3
-         arms_factory = 1
-         industrial_complex = 2
-         air_base = 3
-      }
-   }
+		}
 
-   # PROVINCES
-   provinces = {
-      3884 3896 9780 9875 9914 11762
-   }
+	}
+
+	provinces={
+		3884 3896 9780 9875 9914 11762 
+	}
+	manpower=1960000
+	buildings_max_level_factor=1.000
+	state_category=town
 }

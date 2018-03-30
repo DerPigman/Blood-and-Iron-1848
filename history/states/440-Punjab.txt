@@ -1,30 +1,24 @@
-# PUNJAB
-state = {
-   # META
-   id = 440
-   name = "STATE_440"
-   manpower = 13665000
-   state_category = town
 
-   # RESOURCES
+state={
+	id=440
+	name="STATE_440"
+	manpower = 13665000
+	
+	state_category = town
 
-   # HISTORY
-   history = {
-      # META
-      owner = RAJ
-      controller = RAJ
-      add_core_of = PAK
+	history={
+		owner = RAJ
+		victory_points = {
+			10887 5 
+		}
 
-      # VICTORY POINTS
+		buildings = {
+			infrastructure = 5
+		}
+		add_core_of = PAK
+	}
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 5
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      4979 8007 8022 8106 9084 10066 10139 10173 10772 10843 10887 10898 12005 12792 12822
-   }
+	provinces={
+		4979 8007 8022 8106 9084 10066 10139 10173 10772 10843 10887 10898 12005 12792 12822 
+	}
 }

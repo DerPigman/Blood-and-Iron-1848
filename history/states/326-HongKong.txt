@@ -1,36 +1,27 @@
-# HONG KONG
-state = {
-   # META
-   id = 326
-   name = "STATE_326"
-   manpower = 1143516
-   state_category = large_town
-
-   # RESOURCES
-
-   # HISTORY
-   history = {
-      # META
-      owner = ENG
-      controller = ENG
-      add_core_of = CHI
-
-      # VICTORY POINTS
-      victory_points = { 10062 3 }
-
-      # BUILDINGS
-      buildings = {
-         10062 = {
-            naval_base = 6
-            coastal_bunker = 1
-         }
-         infrastructure = 5
-         air_base = 1
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      10062
-   }
+state=
+{
+	id=326
+	name="STATE_326"
+	manpower = 1143516
+	state_category = large_town
+	history=
+	{
+		owner = ENG
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			10062 3 
+		}
+		buildings = {
+			infrastructure = 5
+			air_base = 1
+			10062 = {
+				naval_base = 6
+				coastal_bunker = 1
+			}
+		}
+	}
+	provinces={
+		10062
+	}
 }

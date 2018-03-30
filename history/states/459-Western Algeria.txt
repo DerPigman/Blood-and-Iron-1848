@@ -1,39 +1,37 @@
-# ALGIERS
-state = {
-   # META
-   id = 459
-   name = "STATE_459"
-   manpower = 3089944
-   state_category = town
 
-   # RESOURCES
-   resources = {
-      steel = 36
-   }
+state={
+	id=459
+	name="STATE_459" # Algiers
+	manpower = 3089944
+	state_category = town
+	
+	resources={
+		steel=26 # was: 36
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = FRA
-      controller = FRA
-      add_core_of = FRA
+	history={
+		owner = FRA
+		add_core_of = ALG
+		
+		victory_points = {
+			1145 5 
+		}
+		victory_points = {
+			7132 5 
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 5
+			1145 = {
+				naval_base = 2
+			}
+			7132 = {
+				naval_base = 6
+			}
+		}
+	}
 
-      # VICTORY POINTS
-      victory_points = { 1145 5 }
-      victory_points = { 7132 5 }
-
-      # BUILDINGS
-      buildings = {
-         1145 = {
-            naval_base = 2
-         }
-         infrastructure = 4
-         air_base = 5
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      1013 1145 4116 4131 4146 7132 9964 11923 11939 12760
-   }
+	provinces={
+		1013 1145 4116 4131 4146 7132 9964 11923 11939 12760 
+	}
 }

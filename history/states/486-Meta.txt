@@ -1,30 +1,20 @@
-# META
-state = {
-   # META
-   id = 486
-   name = "STATE_486"
-   manpower = 186515
-   state_category = pastoral
 
-   # RESOURCES
+state={
+	id=486
+	name="STATE_486"
+	manpower = 213160
+	
+	state_category = pastoral
 
-   # HISTORY
-   history = {
-      # META
-      owner = COL
-      controller = COL
-      add_core_of = COL
+	history={
+		owner = COL
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = COL
+	}
 
-      # VICTORY POINTS
-
-      # BUILDINGS
-      buildings = {
-         infrastructure = 1
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      1887 2007 5026 10792 12729 12770
-   }
+	provinces={
+		1887 2007 5026 10792 12729 12770 
+	}
 }

@@ -1,31 +1,22 @@
-# KUSTANAY
-state = {
-   # META
-   id = 583
-   name = "STATE_583"
-   manpower = 315450
-   state_category = rural
 
-   # RESOURCES
+state={
+	id=583
+	name="STATE_583" # Kustanay
+	manpower = 315450
+	
+	state_category = rural
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
-      add_core_of = KAZ
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 4
 
-      # VICTORY POINTS
+		}
+		add_core_of = RUS
+		add_core_of = KAZ
+	}
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 4
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      1272 1276 1303 1331 1360 1363 4337 4340 4369 7233 7357 7429 10140 10168 10196 10284 10295 10312 12115 12139 12143 12170 12185 12198 12229 12257 12266 12285
-   }
+	provinces={
+		1272 1276 1303 1331 1360 1363 4337 4340 4369 7233 7357 7429 10140 10168 10196 10284 10295 10312 12115 12139 12143 12170 12185 12198 12229 12257 12266 12285 
+	}
 }

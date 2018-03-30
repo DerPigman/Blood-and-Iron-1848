@@ -1,35 +1,25 @@
-# CHACO BOREAL
-state = {
-   # META
-   id = 688
-   name = "STATE_688"
-   manpower = 45900
-   state_category = pastoral
+state={
+	id=688
+	name="STATE_688"
+	manpower = 45900
+	
+	state_category = pastoral
+	
+	resources={
+		tungsten=3 # was: 4
+		steel=2 # was: 2
+	}
 
-   # RESOURCES
-   resources = {
-      tungsten = 4
-      steel = 2
-   }
-
-   # HISTORY
-   history = {
-      # META
-      owner = BOL
-      controller = BOL
-      add_core_of = PAR
-      add_core_of = BOL
-
-      # VICTORY POINTS
-
-      # BUILDINGS
-      buildings = {
-         infrastructure = 2
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      2195 2209 5165 8203 10973
-   }
+	history={
+		owner = BOL
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = PAR
+		add_core_of = BOL
+	}
+	
+	provinces={
+		2195 2209 5165 8203 10973 
+	}
 }

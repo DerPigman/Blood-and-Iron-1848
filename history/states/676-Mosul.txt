@@ -1,34 +1,27 @@
-# MOSUL
-state = {
-   # META
-   id = 676
-   name = "STATE_676"
-   manpower = 1182741
-   state_category = town
+state={
+	id=676
+	name="STATE_676"
+	manpower = 1182741
+	
+	state_category = town
+	
+	resources={
+		oil=8 # was: 10
+	}
 
-   # RESOURCES
-   resources = {
-      oil = 10
-   }
 
-   # HISTORY
-   history = {
-      # META
-      owner = IRQ
-      controller = IRQ
-      add_core_of = IRQ
-
-      # VICTORY POINTS
-      victory_points = { 10106 1 }
-
-      # BUILDINGS
-      buildings = {
-         infrastructure = 3
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      1600 1938 3916 5014 6826 8123 10106 10793 10804 10811 12372
-   }
+	history={
+		owner = TUR
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			10106 1 
+		}
+		add_core_of = IRQ
+	}
+	
+	provinces={
+		1600 1938 3916 5014 6826 8123 10106 10793 10804 10811 12372 
+	}
 }

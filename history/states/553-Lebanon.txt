@@ -1,36 +1,29 @@
-# LEBANON
-state = {
-   # META
-   id = 553
-   name = "STATE_553"
-   manpower = 1104000
-   state_category = town
 
-   # RESOURCES
+state={
+	id=553
+	name="STATE_553"
+	manpower = 1104000
+	
+	state_category = town
 
-   # HISTORY
-   history = {
-      # META
-      owner = FRA
-      controller = FRA
-      add_core_of = LEB
+	history={
+		owner = TUR
+		victory_points = {
+			792 5 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 5
+			792 = {
+				naval_base = 3
+			}
+		}
 
-      # VICTORY POINTS
-      victory_points = { 792 5 }
+		add_core_of = LEB
+	}
 
-      # BUILDINGS
-      buildings = {
-         792 = {
-            naval_base = 3
-         }
-         infrastructure = 4
-         industrial_complex = 1
-         air_base = 5
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      792 1108 11919
-   }
+	provinces={
+		792 1108 11919 
+	}
 }

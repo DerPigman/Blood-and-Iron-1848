@@ -1,35 +1,30 @@
-# ADEN
-state = {
-   # META
-   id = 659
-   name = "STATE_659"
-   manpower = 891505
-   state_category = pastoral
 
-   # RESOURCES
+state={
+	id=659
+	name="STATE_659"
 
-   # HISTORY
-   history = {
-      # META
-      owner = ENG
-      controller = ENG
-      add_core_of = YEM
+	history={
+		owner = ENG
+		victory_points = {
+			5074 1 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 4
+			5074 = {
+				naval_base = 3
 
-      # VICTORY POINTS
-      victory_points = { 5074 1 }
+			}
 
-      # BUILDINGS
-      buildings = {
-         5074 = {
-            naval_base = 3
-         }
-         infrastructure = 3
-         air_base = 4
-      }
-   }
+		}
+		add_core_of = YEM
 
-   # PROVINCES
-   provinces = {
-      2029 4976 5074 8000 12821 12894 13079
-   }
+	}
+
+	provinces={
+		2029 4976 5074 12821 12894 13079 
+	}
+	manpower=811255
+	buildings_max_level_factor=1.000
+	state_category=pastoral
 }

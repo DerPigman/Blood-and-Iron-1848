@@ -1,32 +1,26 @@
-# OLONETS
-state = {
-   # META
-   id = 216
-   name = "STATE_216"
-   manpower = 229564
-   state_category = rural
+state={
+	id=216
+	name="STATE_216"
+	
+	state_category = rural
 
-   # RESOURCES
+	history={
+		owner = RUS
+		victory_points = {
+			11159 1 
+		}
+		buildings = {
+			infrastructure = 4
+			air_base = 3
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
+		}
+		add_core_of = RUS
 
-      # VICTORY POINTS
-      victory_points = { 11159 1 }
+	}
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 4
-         air_base = 3
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      40 90 92 2356 2994 3033 3084 3144 6057 6070 6094 6106 6172 9078 9118 9231 11092 11150 11153 11159 13194 13198
-   }
+	provinces={
+		40 90 92 2356 2994 3033 3084 3144 6057 6070 6094 6106 6172 9078 9118 9231 11092 11150 11153 11159 13194 13198 
+	}
+	manpower=229564
+	buildings_max_level_factor=1.000
 }

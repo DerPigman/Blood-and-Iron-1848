@@ -1,40 +1,33 @@
-# TUNISIA
-state = {
-   # META
-   id = 458
-   name = "STATE_458"
-   manpower = 1982940
-   state_category = town
 
-   # RESOURCES
-   resources = {
-      steel = 8
-   }
+state={
+	id=458
+	name="STATE_458"
+	manpower = 1982940
+	state_category = town
+	resources={
+		steel=6 # was: 8
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = FRA
-      controller = FRA
-      add_core_of = FRA
+	history={
+		owner = FRA
+		add_core_of = TUN
+		victory_points = {
+			11969 10 
+		}
+		victory_points = {
+			9994 1 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 8
+			9994 = {
+				naval_base = 8
+			}
+		}
+	}
 
-      # VICTORY POINTS
-      victory_points = { 9994 1 }
-      victory_points = { 11969 10 }
-
-      # BUILDINGS
-      buildings = {
-         9994 = {
-            naval_base = 8
-         }
-         infrastructure = 4
-         industrial_complex = 1
-         air_base = 8
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      1037 1046 4061 4129 4163 7077 7162 7180 9994 10091 11921 11969
-   }
+	provinces={
+		1037 1046 4061 4129 4163 7077 7162 7180 9994 10091 11921 11969 
+	}
 }

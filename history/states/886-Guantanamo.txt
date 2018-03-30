@@ -1,0 +1,23 @@
+state={
+	id=886
+	name="STATE_886"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 4
+			13214 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = CUB
+
+	}
+
+	provinces={
+		13214 
+	}
+	manpower=1210
+	buildings_max_level_factor=1.000
+	state_category = enclave
+}

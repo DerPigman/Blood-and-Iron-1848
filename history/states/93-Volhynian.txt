@@ -1,31 +1,22 @@
-# WOLYN
-state = {
-   # META
-   id = 93
-   name = "STATE_93"
-   manpower = 1985600
-   state_category = town
+state={
+	id=93
+	name="STATE_93"
 
-   # RESOURCES
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 5
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = UKR
+		}
+		add_core_of = POL
+		add_core_of = UKR
 
-      # VICTORY POINTS
+	}
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 5
-         state_category = 0
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      422 474 513 572 3412 6435 6520 6557 11441 11543
-   }
+	provinces={
+		422 474 513 572 3412 6435 6520 6557 11441 11543 
+	}
+	manpower=1985600
+	buildings_max_level_factor=1.000
+	state_category=town
 }

@@ -1,38 +1,57 @@
-# SUDETENLAND
-state = {
-   # META
-   id = 69
-   name = "STATE_69"
-   manpower = 2830000
-   state_category = town
 
-   # RESOURCES
-   resources = {
-      steel = 8
-   }
+state={
+	id=69
+	name="STATE_69"
+	resources={
+		steel=4.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = AUS
-      controller = AUS
-      add_core_of = CZE
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 8
+			industrial_complex = 2
+			anti_air_building = 1
+			424 = {
+				bunker = 1
 
-      # VICTORY POINTS
+			}
+			469 = {
+				bunker = 1
 
-      # BUILDINGS
-      buildings = {
-         424 = {
-            bunker = 1
-         }
-         infrastructure = 8
-         industrial_complex = 2
-         anti_air_building = 1
-      }
-   }
+			}
+			3585 = {
+				bunker = 1
 
-   # PROVINCES
-   provinces = {
-      424 469 543 557 3418 3585 5283 6470 7857 9555 11401 11414 11432 11525
-   }
+			}
+			6470 = {
+				bunker = 1
+
+			}
+			9555 = {
+				bunker = 1
+
+			}
+			11432 = {
+				bunker = 1
+
+			}
+
+		}
+		add_core_of = CZE
+		add_core_of = AUS
+		1938.9.30 = {
+			owner = GER
+			controller = GER
+
+		}
+
+	}
+
+	provinces={
+		424 469 3418 3585 6470 9555 11401 11414 11432 
+	}
+	manpower=1730000
+	buildings_max_level_factor=1.000
+	state_category=town
 }

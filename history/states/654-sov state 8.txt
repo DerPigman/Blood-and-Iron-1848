@@ -1,30 +1,20 @@
-# GORNO-ALTAYSK
-state = {
-   # META
-   id = 654
-   name = "STATE_654"
-   manpower = 153510
-   state_category = wasteland
 
-   # RESOURCES
+state={
+	id=654
+	name="STATE_654" # Gorno-Altaysk
+	manpower = 153510
+	
+	state_category = wasteland
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = RUS
+	}
 
-      # VICTORY POINTS
-
-      # BUILDINGS
-      buildings = {
-         infrastructure = 1
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      4781 4800 10531 10713 12509
-   }
+	provinces={
+		4781 4800 10531 10713 12509 
+	}
 }

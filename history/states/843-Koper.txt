@@ -1,0 +1,23 @@
+state={
+	id=843
+	name="STATE_843"
+
+	history={
+		owner = AUS
+		add_core_of = ITA
+		add_core_of = YUG
+		add_core_of = SVN
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		6626 
+	}
+	manpower=9000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

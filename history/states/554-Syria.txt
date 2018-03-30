@@ -1,32 +1,26 @@
-# DAMASCUS
-state = {
-   # META
-   id = 554
-   name = "STATE_554"
-   manpower = 547797
-   state_category = rural
 
-   # RESOURCES
+state={
+	id=554
+	name="STATE_554"
+	manpower = 547797
+	
+	state_category = rural
 
-   # HISTORY
-   history = {
-      # META
-      owner = FRA
-      controller = FRA
-      add_core_of = SYR
+	history={
+		owner = TUR
+		victory_points = {
+			4111 3 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+		}
+		add_core_of = SYR	
 
-      # VICTORY POINTS
-      victory_points = { 4111 3 }
+	}
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 3
-         air_base = 1
-      }
-   }
 
-   # PROVINCES
-   provinces = {
-      1074 4111 4486 4550 7184
-   }
+	provinces={
+		1074 4111 4486 4550 7184 
+	}
 }

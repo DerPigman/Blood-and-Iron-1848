@@ -1,40 +1,33 @@
-# GABON
-state = {
-   # META
-   id = 539
-   name = "STATE_539"
-   manpower = 2564000
-   state_category = rural
 
-   # RESOURCES
-   resources = {
-      rubber = 1
-   }
+state={
+	id=539
+	name="STATE_539"
+	resources={
+		rubber=1.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = FRA
-      controller = FRA
-      add_core_of = FRA
+	history={
+		owner = FRA
+		victory_points = {
+			5139 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+			5139 = {
+				naval_base = 1
 
-      # VICTORY POINTS
-      victory_points = { 5139 1 }
-      victory_points = { 8193 2 }
+			}
 
-      # BUILDINGS
-      buildings = {
-         5139 = {
-            naval_base = 1
-         }
-         infrastructure = 3
-         industrial_complex = 1
-         air_base = 1
-      }
-   }
+		}
 
-   # PROVINCES
-   provinces = {
-      2080 2192 3109 5036 5054 5139 6008 6039 8193 8207 9137 10948 11012 12975
-   }
+	}
+
+	provinces={
+		2192 5139 8207 10948 
+	}
+	manpower=1225225
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

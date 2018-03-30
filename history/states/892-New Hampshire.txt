@@ -1,0 +1,22 @@
+state={
+	id=892
+	name="STATE_892"
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		733 3712 3715 10481 
+	}
+	manpower=1101350
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

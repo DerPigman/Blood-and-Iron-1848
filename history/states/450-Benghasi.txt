@@ -1,35 +1,30 @@
-# BENGHASI
-state = {
-   # META
-   id = 450
-   name = "STATE_450"
-   manpower = 82535
-   state_category = enclave
 
-   # RESOURCES
+state={
+	id=450
+	name="STATE_450"
 
-   # HISTORY
-   history = {
-      # META
-      owner = ITA
-      controller = ITA
-      add_core_of = LBA
+	history={
+		owner = TUR
+		victory_points = {
+			11954 3 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			11954 = {
+				naval_base = 1
 
-      # VICTORY POINTS
-      victory_points = { 11954 3 }
+			}
 
-      # BUILDINGS
-      buildings = {
-         11954 = {
-            naval_base = 1
-         }
-         infrastructure = 3
-         air_base = 1
-      }
-   }
+		}
+		add_core_of = LBA
 
-   # PROVINCES
-   provinces = {
-      1127 4120 10123 11954
-   }
+	}
+
+	provinces={
+		1127 1198 4057 4120 10123 11954 
+	}
+	manpower=82535
+	buildings_max_level_factor=1.000
+	state_category=enclave
 }

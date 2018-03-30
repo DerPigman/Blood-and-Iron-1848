@@ -1,38 +1,27 @@
-# EPIRUS
-state = {
-   # META
-   id = 185
-   name = "STATE_185"
-   manpower = 760900
-   state_category = town
 
-   # RESOURCES
-   resources = {
-      chromium = 20
-      steel = 20
-   }
+state={
+	id=185
+	name="STATE_185"
+	resources={
+		chromium=14.000
+		steel=14.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = GRE
-      controller = GRE
-      add_core_of = GRE
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+			air_base = 3
 
-      # VICTORY POINTS
+		}
+		add_core_of = GRE
 
-      # BUILDINGS
-      buildings = {
-         9805 = {
-            naval_base = 1
-         }
-         infrastructure = 4
-         air_base = 3
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      841 1106 1205 3914 3980 9805 9837 9916 10203 11786 11895 12001
-   }
+	provinces={
+		1106 1205 9916 10203 11786 11895 12001 
+	}
+	manpower=500000
+	buildings_max_level_factor=1.000
+	state_category=town
 }

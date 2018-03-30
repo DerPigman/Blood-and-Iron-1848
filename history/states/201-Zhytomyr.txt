@@ -1,32 +1,24 @@
-# ZHYTOMYR
-state = {
-   # META
-   id = 201
-   name = "STATE_201"
-   manpower = 1417834
-   state_category = town
 
-   # RESOURCES
+state={
+	id=201
+	name="STATE_201"
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
-      add_core_of = UKR
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 5
+			air_base = 3
 
-      # VICTORY POINTS
+		}
+		add_core_of = RUS
+		add_core_of = UKR
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 5
-         air_base = 3
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      441 550 3470 3570 6593 9466 9493 9533 11464 11477 11490 11514
-   }
+	provinces={
+		441 550 3470 3570 6593 9466 9481 9493 9533 11464 11477 11490 11514 
+	}
+	manpower=1417834
+	buildings_max_level_factor=1.000
+	state_category=town
 }

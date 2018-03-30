@@ -1,36 +1,24 @@
-# OSTPREUSSEN
-state = {
-   # META
-   id = 5
-   name = "STATE_5"
-   manpower = 3378108
-   state_category = large_city
 
-   # RESOURCES
+state={
+	id=5
+	name="STATE_5"
 
-   # HISTORY
-   history = {
-      # META
-      owner = GER
-      controller = GER
-      add_core_of = GER
+	history={
+		owner = GER
+		controller = GER
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
 
-      # VICTORY POINTS
-      victory_points = { 6332 10 }
+		}
+		add_core_of = GER
 
-      # BUILDINGS
-      buildings = {
-         6332 = {
-            bunker = 1
-         }
-         infrastructure = 6
-         industrial_complex = 2
-         anti_air_building = 5
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      266 281 348 395 3351 3380 3384 6332 6375 6402 9327 9346 9372 9398 11245 11265 11386
-   }
+	provinces={
+		266 3351 3380 6375 6402 9327 9346 9372 9398 11245 11386 
+	}
+	manpower=1500108
+	buildings_max_level_factor=1.000
+	state_category=town
 }

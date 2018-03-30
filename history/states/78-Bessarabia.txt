@@ -1,36 +1,24 @@
-# BESSARABIA
-state = {
-   # META
-   id = 78
-   name = "STATE_78"
-   manpower = 2863400
-   state_category = town
 
-   # RESOURCES
+state={
+	id=78
+	name="STATE_78"
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			air_base = 2
 
-      # VICTORY POINTS
+		}
+		add_core_of = ROM
 
-      # BUILDINGS
-      buildings = {
-         6727 = {
-            naval_base = 3
-         }
-         infrastructure = 4
-         industrial_complex = 2
-         air_base = 2
-         dockyard = 1
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      414 565 657 687 3076 3407 3577 3701 3704 3707 3724 6600 6727 6743 9635 9683 11686 11705
-   }
+	provinces={
+		414 565 3407 3577 3707 3724 6600 6743 9683 11686 11705 
+	}
+	manpower=2220200
+	buildings_max_level_factor=1.000
+	state_category=town
 }

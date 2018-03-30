@@ -1,42 +1,35 @@
-# NORMANDY
-state = {
-   # META
-   id = 15
-   name = "STATE_15"
-   manpower = 2332100
-   state_category = city
 
-   # RESOURCES
-   resources = {
-      steel = 36
-   }
+state={
+	id=15
+	name="STATE_15"
+	resources={
+		steel=21.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = FRA
-      controller = FRA
-      add_core_of = FRA
+	history={
+		owner = FRA
+		victory_points = {
+			6449 15 
+		}
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			air_base = 6
+			6449 = {
+				naval_base = 5
+				coastal_bunker = 1
 
-      # VICTORY POINTS
-      victory_points = { 6449 15 }
-      victory_points = { 9434 5 }
-      victory_points = { 11563 5 }
+			}
 
-      # BUILDINGS
-      buildings = {
-         6449 = {
-            naval_base = 5
-            coastal_bunker = 1
-         }
-         infrastructure = 7
-         industrial_complex = 2
-         air_base = 6
-      }
-   }
+		}
+		add_core_of = FRA
 
-   # PROVINCES
-   provinces = {
-      485 539 553 3534 3549 3579 6449 6569 6599 9434 9550 9578 11521 11535 11563
-   }
+	}
+
+	provinces={
+		539 553 3534 3579 6449 6599 9550 11521 11535 
+	}
+	manpower=1180100
+	buildings_max_level_factor=1.000
+	state_category=town
 }

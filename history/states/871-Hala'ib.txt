@@ -1,0 +1,21 @@
+state={
+	id=871
+	name="STATE_871"
+
+	history = {
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+		}
+
+		add_core_of = SDN
+		add_core_of = EGY
+	}
+
+	provinces={
+		13222 13223 
+	}
+	manpower=1194
+	buildings_max_level_factor=1.000
+	state_category = wasteland
+}

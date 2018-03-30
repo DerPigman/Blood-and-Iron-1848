@@ -1,0 +1,22 @@
+state={
+	id=927
+	name="STATE_927"
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = RUS
+		add_core_of = KAZ
+
+	}
+
+	provinces={
+		1247 4254 4294 7341 7370 10253 12235 12254 
+	}
+	manpower=20045
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

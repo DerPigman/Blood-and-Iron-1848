@@ -1,0 +1,22 @@
+state={
+	id=925
+	name="STATE_925"
+
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 4
+
+		}
+		add_core_of = POL
+		add_core_of = BLR
+
+	}
+
+	provinces={
+		318 3281 
+	}
+	manpower=342400
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

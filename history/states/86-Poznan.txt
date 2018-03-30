@@ -1,35 +1,39 @@
-# POSEN
-state = {
-   # META
-   id = 86
-   name = "STATE_86"
-   manpower = 2106500
-   state_category = city
+state={
+	id=86
+	name="STATE_86"
+	manpower = 2106500
+	
+	
+	state_category = city
+	history={
+		owner = GER
+		victory_points = {
+			6558 5
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			11232 = {
+				bunker = 1
 
-   # RESOURCES
+			}
+			9532 = {
+				bunker = 1
 
-   # HISTORY
-   history = {
-      # META
-      owner = GER
-      controller = GER
-      add_core_of = GER
+			}
+			3381 = {
+				bunker = 1
 
-      # VICTORY POINTS
-      victory_points = { 6558 5 }
+			}
+			air_base = 3
+		}
+		add_core_of = GER
+		1938.3.12 = {
+			add_claim_by = GER
+		}
+	}
 
-      # BUILDINGS
-      buildings = {
-         11232 = {
-            bunker = 1
-         }
-         infrastructure = 6
-         industrial_complex = 1
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      17 243 388 3381 3460 3532 6558 9532 11232
-   }
+	provinces={
+		17 388 3381 3460 3532 6558 9532 11232 11558
+	}
 }

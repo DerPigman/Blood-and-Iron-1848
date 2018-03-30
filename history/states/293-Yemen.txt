@@ -1,39 +1,31 @@
-# YEMEN
-state = {
-   # META
-   id = 293
-   name = "STATE_293"
-   manpower = 2489500
-   state_category = rural
 
-   # RESOURCES
-   resources = {
-      oil = 1
-   }
+state={
+	id=293
+	name="STATE_293"
+	manpower = 2489500
+	
+	state_category = rural
+	
+	resources={
+		oil=1 # was: 1
+	}
+	history={
+		owner = YEM
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			10840 = {
+				naval_base = 1
+			}
+		}
+		victory_points = {
+			10840 3 
+		}
+		add_core_of = YEM
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = YEM
-      controller = YEM
-      add_core_of = YEM
-
-      # VICTORY POINTS
-      victory_points = { 10840 3 }
-
-      # BUILDINGS
-      buildings = {
-         10840 = {
-            naval_base = 1
-         }
-         infrastructure = 3
-         arms_factory = 1
-         industrial_complex = 1
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      1920 1973 4924 10752 10840
-   }
+	provinces={
+		1920 1973 4924 10752 10840 
+	}
 }

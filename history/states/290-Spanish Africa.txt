@@ -1,38 +1,33 @@
-# SPANISH AFRICA
-state = {
-   # META
-   id = 290
-   name = "STATE_290"
-   manpower = 744000
-   state_category = rural
 
-   # RESOURCES
-   resources = {
-      steel = 20
-   }
+state={
+	id=290
+	name="STATE_290"
+	resources={
+		steel=15.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = SPR
-      controller = SPR
-      add_core_of = SPR
+	history={
+		owner = SPR
+		add_core_of = MAR
+		victory_points = {
+			9945 5 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 3
+			12100 = {
+				naval_base = 3
 
-      # VICTORY POINTS
-      victory_points = { 9945 5 }
+			}
 
-      # BUILDINGS
-      buildings = {
-         12100 = {
-            naval_base = 3
-         }
-         infrastructure = 3
-         air_base = 3
-      }
-   }
+		}
 
-   # PROVINCES
-   provinces = {
-      4199 7215 9945 10113 12087 12100
-   }
+	}
+
+	provinces={
+		4199 7215 9945 10113 12087 12100 13212 
+	}
+	manpower=744000
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

@@ -1,37 +1,30 @@
-# HINTERPOMMERN
-state = {
-   # META
-   id = 63
-   name = "STATE_63"
-   manpower = 724417
-   state_category = town
 
-   # RESOURCES
-   resources = {
-      steel = 36
-      aluminium = 12
-   }
+state={
+	id=63
+	name="STATE_63"
+	resources={
+		steel=23.000
+		aluminium=8.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = GER
-      controller = GER
-      add_core_of = GER
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 6
+			11372 = {
+				naval_base = 1
 
-      # VICTORY POINTS
+			}
 
-      # BUILDINGS
-      buildings = {
-         11372 = {
-            naval_base = 1
-         }
-         infrastructure = 6
-      }
-   }
+		}
+		add_core_of = GER
 
-   # PROVINCES
-   provinces = {
-      9252 9277 9306 9361 11260 11288 11316 11343 11372
-   }
+	}
+
+	provinces={
+		6309 6334 6390 9252 9277 9306 9334 9361 11260 11288 11316 11343 11372 
+	}
+	manpower=724417
+	buildings_max_level_factor=1.000
+	state_category=town
 }

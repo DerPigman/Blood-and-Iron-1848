@@ -1,0 +1,27 @@
+state={
+	id=836
+	name="STATE_836"
+
+	history={
+		owner = TUR
+		add_core_of = MNT
+		buildings = {
+			infrastructure = 3
+			9809 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = YUG
+
+	}
+
+
+	provinces={
+		9809 9821 
+	}
+	manpower=5500
+	buildings_max_level_factor=1.000
+	state_category=enclave
+}

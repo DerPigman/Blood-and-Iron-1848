@@ -1,39 +1,31 @@
-# WALES
-state = {
-   # META
-   id = 122
-   name = "STATE_122"
-   manpower = 2309230
-   state_category = city
+state= {
+	id=122
+	name="STATE_122"
+	manpower = 2309230
+	
+	state_category = city
+	
+	resources={
+		steel=11 # was: 16
+		aluminium=3 # was: 4
+	}
 
-   # RESOURCES
-   resources = {
-      steel = 16
-      aluminium = 4
-   }
+	history=
+	{
+		owner = ENG
+		victory_points = { 377 5 }
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			377 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = ENG
+		add_core_of = WLS
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = ENG
-      controller = ENG
-      add_core_of = ENG
-
-      # VICTORY POINTS
-      victory_points = { 377 5 }
-
-      # BUILDINGS
-      buildings = {
-         377 = {
-            naval_base = 3
-         }
-         infrastructure = 5
-         industrial_complex = 1
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      253 311 377 407 3274 6363 9364 11361
-   }
+	provinces=
+	{
+253 311 377 407 3274 6363 9364 11361 	}
 }

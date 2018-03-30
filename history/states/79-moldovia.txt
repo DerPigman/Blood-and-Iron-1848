@@ -1,33 +1,27 @@
-# MOLDOVA
-state = {
-   # META
-   id = 79
-   name = "STATE_79"
-   manpower = 2806400
-   state_category = rural
 
-   # RESOURCES
+state={
+	id=79
+	name="STATE_79"
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			air_base = 2
 
-      # VICTORY POINTS
-      victory_points = { 9716 1 }
+		}
+		victory_points = {
+			9716 1 
+		}
+		add_core_of = ROM
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 5
-         industrial_complex = 1
-         air_base = 2
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      674 723 744 3728 3741 6584 6677 6706 6729 6747 6761 9651 9701 9716 11534 11603 11636 11652 11655 11672 11689
-   }
+	provinces={
+		723 744 3728 3741 6706 6729 6747 9701 9716 11534 11652 11655 11672 
+	}
+	manpower=2803200
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

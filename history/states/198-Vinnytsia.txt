@@ -1,32 +1,24 @@
-# VINNYTSIA
-state = {
-   # META
-   id = 198
-   name = "STATE_198"
-   manpower = 1893391
-   state_category = large_town
 
-   # RESOURCES
+state={
+	id=198
+	name="STATE_198"
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
-      add_core_of = UKR
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 5
+			air_base = 3
 
-      # VICTORY POINTS
+		}
+		add_core_of = RUS
+		add_core_of = UKR
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 5
-         air_base = 3
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      476 6455 6480 9423 9435 9481 9576
-   }
+	provinces={
+		476 6429 6455 9423 9435 9576 
+	}
+	manpower=1893391
+	buildings_max_level_factor=1.000
+	state_category=large_town
 }

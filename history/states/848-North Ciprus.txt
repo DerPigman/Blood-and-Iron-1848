@@ -1,0 +1,25 @@
+state={
+	id=848
+	name="STATE_848"
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 4
+			air_base = 1
+			11984 = {
+				naval_base = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		11984 
+	}
+	manpower=190900
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

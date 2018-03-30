@@ -1,34 +1,32 @@
-# HESSEN
-state = {
-   # META
-   id = 55
-   name = "STATE_55"
-   manpower = 3798235
-   state_category = large_city
 
-   # RESOURCES
+state={
+	id=55
+	name="STATE_55"
 
-   # HISTORY
-   history = {
-      # META
-      owner = GER
-      controller = GER
-      add_core_of = GER
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 7
+			arms_factory = 1
+			industrial_complex = 1
 
-      # VICTORY POINTS
-      victory_points = { 6488 20 }
+		}
+		add_core_of = GER
+		1939.1.1 = {
+			buildings = {
+				air_base = 3
+				arms_factory = 4
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 7
-         arms_factory = 4
-         industrial_complex = 2
-         air_base = 3
-      }
-   }
+			}
 
-   # PROVINCES
-   provinces = {
-      564 589 3397 3524 3574 6444 6488 6549 9486 9524 9547 11445 11533 11560
-   }
+		}
+
+	}
+
+	provinces={
+		564 3397 3524 6549 9524 9547 11445 11533 
+	}
+	manpower=2148033
+	buildings_max_level_factor=1.000
+	state_category=city
 }

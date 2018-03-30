@@ -1,37 +1,28 @@
-# LORRAINE
-state = {
-   # META
-   id = 17
-   name = "STATE_17"
-   manpower = 1517500
-   state_category = city
 
-   # RESOURCES
-   resources = {
-      steel = 48
-   }
+state={
+	id=17
+	name="STATE_17"
+	resources={
+		steel=28.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = FRA
-      controller = FRA
-      add_core_of = FRA
+	history={
+		owner = FRA
+		victory_points = {
+			9642 5 
+		}
+		buildings = {
+			infrastructure = 7
 
-      # VICTORY POINTS
-      victory_points = { 9642 5 }
-      victory_points = { 11516 5 }
+		}
+		add_core_of = FRA
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 7
-         industrial_complex = 1
-         air_base = 5
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      521 698 3646 3666 6698 9642 9658 11488 11516 11642
-   }
+	provinces={
+		698 6698 11488 11642 
+	}
+	manpower=922250
+	buildings_max_level_factor=1.000
+	state_category=city
 }

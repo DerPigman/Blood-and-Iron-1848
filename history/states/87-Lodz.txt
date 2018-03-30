@@ -1,33 +1,33 @@
-# LODZ
-state = {
-   # META
-   id = 87
-   name = "STATE_87"
-   manpower = 2632000
-   state_category = town
 
-   # RESOURCES
+state={
+	id=87
+	name="STATE_87"
 
-   # HISTORY
-   history = {
-      # META
-      owner = POL
-      controller = POL
-      add_core_of = RUS
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 2
 
-      # VICTORY POINTS
-      victory_points = { 9508 1 }
+		}
+		victory_points = {
+			9508 1 
+		}
+		add_core_of = POL
+		1939.1.1 = {
+			buildings = {
+				air_base = 3
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 6
-         industrial_complex = 2
-         air_base = 3
-      }
-   }
+			}
 
-   # PROVINCES
-   provinces = {
-      493 584 9439 9508 9546 11428 11515 11558
-   }
+		}
+
+	}
+
+	provinces={
+		493 548 584 6401 9439 9508 9546 11428 11515 
+	}
+	manpower=2632000
+	buildings_max_level_factor=1.000
+	state_category=town
 }

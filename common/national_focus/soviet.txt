@@ -1182,7 +1182,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_the_steel_problem
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = SOV_the_resource_problem }
 		
 		cost = 10
@@ -1201,7 +1201,7 @@ focus_tree = {
 	
 	focus = {
 		id = SOV_steel_effort_I
-		icon = GFX_goal_generic_construction2
+		icon = GFX_focus_generic_steel
 		prerequisite = { focus = SOV_the_steel_problem }
 		
 		cost = 10

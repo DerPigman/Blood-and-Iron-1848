@@ -1,35 +1,26 @@
-# KHERSON
-state = {
-   # META
-   id = 196
-   name = "STATE_196"
-   manpower = 728363
-   state_category = rural
 
-   # RESOURCES
-   resources = {
-      chromium = 22
-   }
+state={
+	id=196
+	name="STATE_196"
+	manpower = 728363
+	
+	state_category = rural
+	
+	resources={
+		chromium=15 # was: 22
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
-      add_core_of = UKR
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 5
+			air_base = 3
+		}
+		add_core_of = RUS
+		add_core_of = UKR
+	}
 
-      # VICTORY POINTS
-
-      # BUILDINGS
-      buildings = {
-         infrastructure = 5
-         air_base = 3
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      568 721 737 767 3573 6771 9712 11715
-   }
+	provinces={
+		568 721 737 767 3573 6771 9712 11715 
+	}
 }

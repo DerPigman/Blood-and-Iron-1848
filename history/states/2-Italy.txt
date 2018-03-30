@@ -1,38 +1,37 @@
-# LATIUM
-state = {
-   # META
-   id = 2
-   name = "STATE_2"
-   manpower = 2781971
-   state_category = city
+state= {
+	id=2
+	name="STATE_2" # Latium
+	manpower = 2777000
+	
+	state_category = city
 
-   # RESOURCES
+	history=
+	{
+		owner = ITA
+		victory_points = { 9904 40 }
+		victory_points = { 11846 5 }
+		buildings = {
+			infrastructure = 8
+			air_base = 8
+			arms_factory = 1
+			industrial_complex = 4
+			11751 = {
+				naval_base = 5
+			}
+			11846 = {
+				naval_base = 2
+			}
+		}
+		add_core_of = ITA
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+				industrial_complex = 5
+			}
+		}
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = ITA
-      controller = ITA
-      add_core_of = ITA
-
-      # VICTORY POINTS
-      victory_points = { 9904 40 }
-      victory_points = { 11846 5 }
-
-      # BUILDINGS
-      buildings = {
-         11751 = {
-            naval_base = 5
-         }
-         infrastructure = 8
-         air_base = 8
-         arms_factory = 2
-         industrial_complex = 5
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      923 6862 9794 9904 11751 11846 11882
-   }
+	provinces= {
+		923 6862 9794 9904 11751 11846 11882
+ 	}
 }

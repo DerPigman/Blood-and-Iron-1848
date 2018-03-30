@@ -1,31 +1,26 @@
-# BARNAUL
-state = {
-   # META
-   id = 40
-   name = "STATE_40"
-   manpower = 2107451
-   state_category = large_town
 
-   # RESOURCES
+state={
+	id=40
+	name="STATE_40" # Barnaul
+	manpower = 2107451
+	
+	state_category = large_town
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = RUS
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 2
+			}
+		}
+	}
 
-      # VICTORY POINTS
-
-      # BUILDINGS
-      buildings = {
-         infrastructure = 2
-         industrial_complex = 2
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      1297 1779 1794 1797 4803 7680 10537 10546 11410 12515 12528 12613
-   }
+	provinces={
+		1297 1779 1794 1797 4803 7680 10537 10546 11410 12515 12528 12613 
+	}
 }

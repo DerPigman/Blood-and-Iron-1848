@@ -1,39 +1,37 @@
-# KIEV
-state = {
-   # META
-   id = 202
-   name = "STATE_202"
-   manpower = 2495352
-   state_category = city
 
-   # RESOURCES
-   resources = {
-      oil = 14
-      aluminium = 12
-   }
+state={
+	id=202
+	name="STATE_202"
+	manpower = 2495352
+	resources={
+		oil=8 # was: 14
+		aluminium=7 # was: 12
+	}
+	
+	state_category = city
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
-      add_core_of = UKR
+	history={
+		owner = RUS
+		victory_points = {
+			525 25
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 3
+			industrial_complex = 2
+			air_base = 8
+		}
+		add_core_of = RUS
+		add_core_of = UKR
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 4
+				industrial_complex = 3
+			}
+		}
+	}
 
-      # VICTORY POINTS
-      victory_points = { 525 25 }
-
-      # BUILDINGS
-      buildings = {
-         infrastructure = 7
-         arms_factory = 4
-         industrial_complex = 3
-         air_base = 8
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      489 504 525 582 3494 3543 6497 9465 9543 9568 11557
-   }
+	provinces={
+		489 504 525 582 3494 3543 6497 9465 9543 9568 11557 
+	}
 }

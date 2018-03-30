@@ -1,0 +1,21 @@
+state={
+	id=777
+	name="STATE_777"
+
+	history={
+		owner = AST
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = AST
+
+	}
+
+	provinces={
+		1511 1540 4645 10971 12323 
+	}
+	manpower=8000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

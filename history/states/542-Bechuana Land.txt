@@ -1,33 +1,25 @@
-# BECHUANALAND
-state = {
-   # META
-   id = 542
-   name = "STATE_542"
-   manpower = 234000
-   state_category = wasteland
 
-   # RESOURCES
-   resources = {
-      chromium = 168
-   }
+state={
+	id=542
+	name="STATE_542"
+	manpower = 140000
+	
+	state_category = wasteland
+	
+	resources={
+		chromium=90 # was: 168
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = ENG
-      controller = ENG
-      add_core_of = BOT
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BOT
 
-      # VICTORY POINTS
+	}
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 1
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      1580 8214 10525 12940 12963
-   }
+	provinces={
+		1580 8214 10525 12940 12963 
+	}
 }

@@ -1,35 +1,27 @@
-# POHJANMAA
-state = {
-   # META
-   id = 149
-   name = "STATE_149"
-   manpower = 811029
-   state_category = town
 
-   # RESOURCES
+state={
+	id=149
+	name="STATE_149" # Pohjanmaa
+	manpower = 811029
+	
+	state_category = town
+	
+	history={
+		owner = RUS
+		victory_points = {
+			3122 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			3122 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = FIN
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = FIN
-
-      # VICTORY POINTS
-      victory_points = { 3122 3 }
-
-      # BUILDINGS
-      buildings = {
-         3122 = {
-            naval_base = 1
-         }
-         infrastructure = 4
-         industrial_complex = 2
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      63 66 82 120 132 158 195 3119 3122 3172 6013 6081 6138 6141 6198 6212 9038 9156 9166 9219 11033 11041 11065 11081 11121 11126 11132 11144 13113
-   }
+	provinces={
+		63 66 82 120 132 158 195 3119 3122 3172 6013 6081 6138 6141 6198 6212 9038 9156 9166 9219 11033 11041 11065 11081 11121 11126 11132 11144 13113 
+	}
 }

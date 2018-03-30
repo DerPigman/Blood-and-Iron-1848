@@ -1,32 +1,21 @@
-# UST URT
-state = {
-   # META
-   id = 587
-   name = "STATE_587"
-   manpower = 245133
-   state_category = rural
+state={
+	id=587
+	name="STATE_587"
 
-   # RESOURCES
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 1
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
-      add_core_of = KAZ
+		}
+		add_core_of = RUS
+		add_core_of = KAZ
+	}
 
-      # VICTORY POINTS
-
-      # BUILDINGS
-      buildings = {
-         infrastructure = 1
-         state_category = 0
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      475 642 1517 3593 4523 4620 7641 10262 10348 11701 12163 12383 12474 13008
-   }
+	provinces={
+		475 642 1517 3593 4523 4620 7641 10262 10348 11701 12163 12383 12474 13008 
+	}
+	manpower=245133
+	buildings_max_level_factor=1.000
+	state_category=rural
 }

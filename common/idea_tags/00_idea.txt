@@ -19,7 +19,7 @@ idea_categories = {
 		slot = trade_laws
 		slot = economy
 		slot = foreign_policy
-		slot = internal_policy
+		slot = domestic_policy
 		slot = public_preference
 		
 		cost = 150

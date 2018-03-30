@@ -1,39 +1,39 @@
-# ALMA-ATA
-state = {
-   # META
-   id = 586
-   name = "STATE_586"
-   manpower = 2563404
-   state_category = city
 
-   # RESOURCES
-   resources = {
-      steel = 48
-      chromium = 44
-      tungsten = 14
-      aluminium = 32
-   }
+state={
+	id=586
+	name="STATE_586"
+	resources={
+		steel=20.000
+		chromium=12.000
+		tungsten=4.000
+		aluminium=10.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
-      add_core_of = KAZ
+	history={
+		owner = RUS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
 
-      # VICTORY POINTS
-      victory_points = { 1591 3 }
+		}
+		victory_points = {
+			1591 3 
+		}
+		add_core_of = RUS
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 4
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 3
-         industrial_complex = 4
-      }
-   }
+			}
 
-   # PROVINCES
-   provinces = {
-      1591 1825 4224 4686 7706 10148 10660 12583 12640 13147
-   }
+		}
+
+	}
+
+	provinces={
+		1591 1825 4224 4686 7706 10148 10660 12583 12640 13147 13269 13270 
+	}
+	manpower=2563404
+	buildings_max_level_factor=1.000
+	state_category=city
 }

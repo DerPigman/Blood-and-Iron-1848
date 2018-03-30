@@ -1,31 +1,28 @@
-# ZAOLZIE
-state = {
-   # META
-   id = 72
-   name = "STATE_72"
-   manpower = 152000
-   state_category = rural
 
-   # RESOURCES
+state={
+	id=72
+	name="STATE_72"
 
-   # HISTORY
-   history = {
-      # META
-      owner = AUS
-      controller = AUS
-      add_core_of = CZE
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
 
-      # VICTORY POINTS
+		}
+		add_core_of = CZE
+		1939.3.14 = {
+			owner = POL
+			controller = POL
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 6
-         industrial_complex = 1
-      }
-   }
+		}
 
-   # PROVINCES
-   provinces = {
-      9551 9567
-   }
+	}
+
+	provinces={
+		9567 
+	}
+	manpower=82000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
 }

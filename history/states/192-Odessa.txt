@@ -1,38 +1,35 @@
-# ODESSA
-state = {
-   # META
-   id = 192
-   name = "STATE_192"
-   manpower = 1469986
-   state_category = city
 
-   # RESOURCES
+state={
+	id=192
+	name="STATE_192"
+	manpower = 1469986
+	
+	state_category = city
 
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
-      add_core_of = UKR
+	history={
+		owner = RUS
+		victory_points = {
+			11670 10 
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 2
+			air_base = 6
+			11670 ={
+				naval_base = 3
+				coastal_bunker = 1
+			}
+		}
+		add_core_of = RUS
+		add_core_of = UKR
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 3
+			}
+		}
+	}
 
-      # VICTORY POINTS
-      victory_points = { 11670 10 }
-
-      # BUILDINGS
-      buildings = {
-         11670 = {
-            naval_base = 3
-            coastal_bunker = 1
-         }
-         infrastructure = 5
-         industrial_complex = 3
-         air_base = 6
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      741 754 3575 3738 3757 9698 9714 11670 11703
-   }
+	provinces={
+		741 754 3575 3738 3757 9698 9714 11670 11703 
+	}
 }

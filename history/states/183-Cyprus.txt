@@ -1,37 +1,24 @@
-# CYPRUS
-state = {
-   # META
-   id = 183
-   name = "STATE_183"
-   manpower = 347959
-   state_category = rural
 
-   # RESOURCES
-   resources = {
-      chromium = 4
-   }
+state={
+	id=183
+	name="STATE_183"
+	resources={
+		chromium=3.000
+	}
 
-   # HISTORY
-   history = {
-      # META
-      owner = ENG
-      controller = ENG
-      add_core_of = ENG
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 4
 
-      # VICTORY POINTS
+		}
 
-      # BUILDINGS
-      buildings = {
-         11984 = {
-            naval_base = 2
-         }
-         infrastructure = 4
-         air_base = 1
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      7193 11984
-   }
+	provinces={
+		7193 
+	}
+	manpower=197059
+	buildings_max_level_factor=1.000
+	state_category=pastoral
 }

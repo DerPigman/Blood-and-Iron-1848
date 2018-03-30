@@ -1,31 +1,20 @@
-# BUCOVINA
-state = {
-   # META
-   id = 80
-   name = "STATE_80"
-   manpower = 474600
-   state_category = rural
-
-   # RESOURCES
-
-   # HISTORY
-   history = {
-      # META
-      owner = RUS
-      controller = RUS
-      add_core_of = RUS
-
-      # VICTORY POINTS
-
-      # BUILDINGS
-      buildings = {
-         infrastructure = 6
-         arms_factory = 1
-      }
-   }
-
-   # PROVINCES
-   provinces = {
-      577 9548
-   }
+state={
+	id=80
+	name="STATE_80"
+	manpower = 474600
+	
+	state_category = rural
+	
+	history=
+	{
+		owner = RUS
+		buildings = {
+			infrastructure = 6
+			arms_factory = 1
+		}
+		add_core_of = ROM
+	}
+	provinces={
+		577 9548
+	}
 }

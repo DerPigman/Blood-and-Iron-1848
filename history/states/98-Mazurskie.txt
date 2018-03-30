@@ -1,30 +1,22 @@
-# PLOCK
-state = {
-   # META
-   id = 98
-   name = "STATE_98"
-   manpower = 1412100
-   state_category = rural
 
-   # RESOURCES
+state={
+	id=98
+	name="STATE_98"
 
-   # HISTORY
-   history = {
-      # META
-      owner = POL
-      controller = POL
-      add_core_of = RUS
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 6
 
-      # VICTORY POINTS
+		}
+		add_core_of = POL
 
-      # BUILDINGS
-      buildings = {
-         infrastructure = 6
-      }
-   }
+	}
 
-   # PROVINCES
-   provinces = {
-      548 3230 6259 6321 6347 6401 6567 9290 9316 11385
-   }
+	provinces={
+		3230 6259 6321 6567 9290 9316 11385 
+	}
+	manpower=1412100
+	buildings_max_level_factor=1.000
+	state_category=rural
 }
