@@ -30,11 +30,11 @@ set_politics = {
       conservatism_ideology = {
          popularity = 38
       }
-      market_liberalism_ideology = {
-         popularity = 14
-      }
       social_liberalism_ideology = {
          popularity = 0
+      }
+      market_liberalism_ideology = {
+         popularity = 14
       }
       centrism_ideology = {
          popularity = 19
@@ -93,7 +93,7 @@ create_country_leader = {
    desc = "POLITICS_KAZYS_GRINIUS_DESC"
    picture = "Portrait_Lithuania_Kazys_Grinius.dds"
    expire = "1960.1.1"
-   ideology = reformist_liberalism
+   ideology = reformist_socialism
    traits = {
    }
 }

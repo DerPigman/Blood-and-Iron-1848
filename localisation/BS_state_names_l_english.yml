@@ -1,5 +1,8 @@
 ﻿l_english:
-
+ ### CUSTOM CHANGES
+ STATE_161:0 "Romagna"
+ STATE_929:1 "Emilia"
+ ### BETTER STATES MOD
  STATE_762:0 "Jeolla"
  STATE_763:0 "Chungcheong"
  STATE_764:0 "Gyeongsang"

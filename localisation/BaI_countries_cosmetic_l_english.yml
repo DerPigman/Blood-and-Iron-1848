@@ -3,3 +3,17 @@
  BLZ_ENG_autonomy_colony_DEF:0 "British Honduras"
  SOV_SLAVIC_monarchism_ideologie:0 "Great Slavic Empire"
  SOV_SLAVIC_monarchism_ideologie_DEF:0 "The Great Slavic Empire"
+ 
+ ####  SAR - Sardinia  ####
+ SAR_empire_conservatism_ideology: "Kingdom of Sardinia-Piedmont"
+ SAR_empire_conservatism_ideology_DEF: "The Kingdom of Sardinia-Piedmont"
+ SAR_empire_market_liberalism_ideology: "Kingdom of Sardinia-Piedmont"
+ SAR_empire_market_liberalism_ideology_DEF: "The Kingdom of Sardinia-Piedmont"
+ SAR_empire_social_liberalism_ideology: "Kingdom of Sardinia-Piedmont"
+ SAR_empire_social_liberalism_ideology_DEF: "The Kingdom of Sardinia-Piedmont"
+ SAR_empire_centrism_ideology: "Kingdom of Sardinia-Piedmont"
+ SAR_empire_centrism_ideology_DEF: "The Kingdom of Sardinia-Piedmont"
+ SAR_empire_reformist_socialism_ideology: "Kingdom of Sardinia-Piedmont"
+ SAR_empire_reformist_socialism_ideology_DEF: "The Kingdom of Sardinia-Piedmont"
+ SAR_empire_nationalism_ideology: "Kingdom of Sardinia-Piedmont"
+ SAR_empire_nationalism_ideology_DEF: "The Kingdom of Sardinia-Piedmont"

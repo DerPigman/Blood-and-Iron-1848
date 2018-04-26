@@ -1,0 +1,108 @@
+####  GAR - Golden Ambrosian Republic  ####
+# [0] DEFAULT
+
+## [0] DEFAULT
+capital = 159
+set_research_slots = 3
+
+# [1] META
+set_convoys = 0
+set_stability = 0.5
+set_war_support = 0.5
+add_political_power = 0
+
+# [2] IDEAS
+add_ideas = {
+}
+
+oob = "GAR_1910"
+
+# [3] TECHNOLOGY
+set_technology = {
+   infantry_weapons = 1
+   infantry_weapons1 = 1
+   gw_artillery = 1
+   tech_recon = 1
+   tech_support = 1
+   tech_engineers = 1
+   gwtank = 1
+   basic_light_tank = 1
+   CAS1 = 1
+   early_fighter = 1
+   naval_bomber1 = 1
+   cv_naval_bomber1 = 1
+   early_bomber = 1
+   early_submarine = 1
+   early_destroyer = 1
+   basic_destroyer = 1
+   early_light_cruiser = 1
+   early_heavy_cruiser = 1
+   transport = 1
+}
+
+# [4] POLITICS
+set_politics = {
+   parties = {
+      conservatism_ideology = {
+         popularity = 0
+      }
+      social_liberalism_ideology = {
+         popularity = 0
+      }
+      market_liberalism_ideology = {
+         popularity = 0
+      }
+      centrism_ideology = {
+         popularity = 0
+      }
+      reformist_socialism_ideology = {
+         popularity = 0
+      }
+      revolutionary_socialism_ideology = {
+         popularity = 0
+      }
+      marxism_ideology = {
+         popularity = 0
+      }
+      nationalism_ideology = {
+         popularity = 0
+      }
+      radical_nationalism_ideology = {
+         popularity = 0
+      }
+      authoritarianism_ideology = {
+         popularity = 0
+      }
+      monarchism_ideology = {
+         popularity = 0
+      }
+      oligarchism_ideology = {
+         popularity = 100
+      }
+   }
+   ruling_party = oligarchism_ideology
+   last_election = 1910.1.1
+   election_frequency = 48
+   elections_allowed = no
+}
+# [5] COUNTRY LEADERS
+create_country_leader = {
+   name = "Guy XY"
+   desc = "POLITICS_GUY_XY_DESC"
+   picture = "Portrait_Golden_Ambrosian_Republic_Guy_XY.dds"
+   expire = "1960.1.1"
+   ideology = oligarchism
+   traits = {
+   }
+}
+# [6] AUTONOMY
+
+# [7] GUARANTEE
+
+# [7] COMPLETE NATIONAL FOCUS
+complete_national_focus = {
+}
+
+# [9] COMMANDERS
+
+# [9] EQUIPMENT VARIANTS

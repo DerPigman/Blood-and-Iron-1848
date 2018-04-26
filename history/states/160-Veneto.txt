@@ -8,7 +8,7 @@ state={
 	}
 
 	history={
-		owner = ITA
+		owner = VIC
 		victory_points = {
 			11584 10 
 		}
@@ -24,7 +24,7 @@ state={
 			}
 
 		}
-		add_core_of = ITA
+		add_core_of = VIC
 		1939.1.1 = {
 			buildings = {
 				dockyard = 2

@@ -40,11 +40,11 @@ set_politics = {
       conservatism_ideology = {
          popularity = 4
       }
-      market_liberalism_ideology = {
-         popularity = 41
-      }
       social_liberalism_ideology = {
          popularity = 0
+      }
+      market_liberalism_ideology = {
+         popularity = 41
       }
       centrism_ideology = {
          popularity = 46

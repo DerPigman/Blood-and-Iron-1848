@@ -10,12 +10,12 @@ state={
 	}
 
 	history={
-		owner = ITA
+		owner = SAR
 		victory_points = {
-			6788 10 
+			6788 5
 		}
 		victory_points = {
-			6780 5 
+			6780 10
 		}
 		buildings = {
 			infrastructure = 7
@@ -29,7 +29,7 @@ state={
 			}
 
 		}
-		add_core_of = ITA
+		add_core_of = SAR
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 10

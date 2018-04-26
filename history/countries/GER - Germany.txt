@@ -63,11 +63,11 @@ set_politics = {
       conservatism_ideology = {
          popularity = 19
       }
-      market_liberalism_ideology = {
-         popularity = 16
-      }
       social_liberalism_ideology = {
          popularity = 0
+      }
+      market_liberalism_ideology = {
+         popularity = 16
       }
       centrism_ideology = {
          popularity = 29
@@ -126,7 +126,7 @@ create_country_leader = {
    desc = "POLITICS_FRIEDRICH_EBERT_DESC"
    picture = "Portrait_Germany_Friedrich_Ebert.dds"
    expire = "1960.1.1"
-   ideology = reformist_liberalism
+   ideology = reformist_socialism
    traits = {
    }
 }

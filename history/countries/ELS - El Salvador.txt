@@ -30,11 +30,11 @@ set_politics = {
       conservatism_ideology = {
          popularity = 9
       }
-      market_liberalism_ideology = {
-         popularity = 8
-      }
       social_liberalism_ideology = {
          popularity = 0
+      }
+      market_liberalism_ideology = {
+         popularity = 8
       }
       centrism_ideology = {
          popularity = 53
@@ -84,7 +84,7 @@ create_country_leader = {
    desc = "POLITICS_ARTURO_ARAUJO_DESC"
    picture = "Portrait_El_Salvador_Arturo_Araujo.dds"
    expire = "1960.1.1"
-   ideology = reformist_liberalism
+   ideology = reformist_socialism
    traits = {
    }
 }

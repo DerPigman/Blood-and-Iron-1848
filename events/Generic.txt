@@ -1,0 +1,118 @@
+###########################
+# Generic Events
+###########################
+
+add_namespace = generic.BaI
+
+# Completed Focus: far_left_rhetoric
+country_event = {
+	id = generic.BaI.1											# Not Communist
+	title = generic.BaI.1.t
+	desc = generic.BaI.1.d
+
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+
+	option = {
+		ai_will_do = {
+			factor = 40
+		}
+		name = generic.BaI.1.a
+		add_ideas = pp_revolutionary_socialism_ideology
+	}
+	option = {
+		ai_will_do = {
+			factor = 40
+		}
+		name = generic.BaI.1.b
+		add_ideas = pp_marxism_ideology
+	}
+}
+
+country_event = {
+	id = generic.BaI.2											# Already Communist
+	title = generic.BaI.2.t
+	desc = generic.BaI.2.d
+
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	option = {
+		ai_will_do = {
+			factor = 40
+		}
+		name = generic.BaI.2.a
+		add_ideas = pp_revolutionary_socialism_ideology
+	}
+	option = {
+		ai_will_do = {
+			factor = 40
+		}
+		name = generic.BaI.2.b
+		add_ideas = pp_marxism_ideology
+	}
+}
+
+# GENERIC PP COUP
+country_event = {
+	id = generic.BaI.3
+	title = generic.BaI.3.t
+	desc = generic.BaI.3.d
+
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = pp_revolutionary_socialism_ideology
+				}
+				set_politics = { 
+					ruling_party = revolutionary_socialism_ideology 
+					elections_allowed = no
+				}
+			}
+			if = {
+				limit = {
+					has_idea = pp_marxism_ideology
+				}
+				set_politics = { 
+					ruling_party = marxism_ideology 
+					elections_allowed = no
+				}
+			}
+		}	
+	}
+	
+	option = {
+		ai_will_do = {
+			factor = 40
+		}
+		name = generic.BaI.3.a
+		news_event = news.2
+	}
+}
+
+# GENERIC PP CIVIL WAR
+country_event = {
+	id = generic.BaI.2											
+	title = generic.BaI.2.t
+	desc = generic.BaI.2.d
+
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+
+	option = {
+		name = generic.BaI.2.a
+		add_ideas = pp_revolutionary_socialism_ideology
+	}
+	option = {
+		name = generic.BaI.2.b
+		add_ideas = pp_marxism_ideology
+	}
+}

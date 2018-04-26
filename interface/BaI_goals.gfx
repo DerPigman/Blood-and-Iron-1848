@@ -3,6 +3,16 @@ spriteTypes = {
 	### blood and iron
 	
 	SpriteType = {
+	name = "GFX_focus_communist_science_focus"
+	texturefile = "gfx/interface/goals/focus_communist_science_focus.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_communist_treaty"
+	texturefile = "gfx/interface/goals/focus_communist_treaty.dds"			
+	}
+	
+	SpriteType = {
 	name = "GFX_focus_question_of_the_autocracy"
 	texturefile = "gfx/interface/goals/focus_question_of_the_autocracy.dds"			
 	}

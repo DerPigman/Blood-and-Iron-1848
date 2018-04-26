@@ -2,6 +2,11 @@
  constitutional_monarchy:0 "Constitutional Monarchy"
  constitutional_monarchy_desc:0 "A constitutional monarchy is a form of monarchy in which the sovereign exercises their authorities in accordance with a written or unwritten constitution."
  elections_abandoned:0 "Elections Abandoned"
+ far_left_rhetoric:0 "Far Left Rhetoric"
+ union_of_the_workers:0 "Union of the Workers"
+ disloyal_comrades_purged:0 "Disloyal Comrades Purged"
+ education_programs:0 "Education Programs"
+ mass_education_programs:0 "Mass Education Programs"
  
  ### LAWS AND GOVERNMENT
  foreign_policy: "Foreign Policy"
@@ -13,12 +18,7 @@
  global_policeman:0 "Global Policeman"
  diplomatic_isolation:0 "Diplomatic Isolation"
  extensive_colonialism:0 "Extensive Colonialism"
- 
- internal_policy
- 
- military_policy: "Military Policy"
- defensive_strategy:0 "Defensive Strategy"
- aggressive_strategy:0 "Aggressive Strategy"
- extensive_training:0 "Extensive Training"
+ domestic_policy: "Domestic Policy"
+ collectivization:0 "Collectivization"
  public_preference: "Public Peference"
- rise_of_marxism:0 "Rise of Marxism"
+ pp_revolutionary_socialism_ideology:0 "Rise of Revolutionary Socialism"

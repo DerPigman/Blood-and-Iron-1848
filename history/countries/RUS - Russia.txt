@@ -11,7 +11,7 @@ set_stability = 0.5
 set_war_support = 0.5
 add_political_power = 0
 
-set_cosmetic_tag = RUS_monarchism_ideology
+set_cosmetic_tag = RUS_empire
 
 # [2] IDEAS
 add_ideas = {
@@ -58,11 +58,11 @@ set_politics = {
       conservatism_ideology = {
          popularity = 6
       }
-      market_liberalism_ideology = {
-         popularity = 42
-      }
       social_liberalism_ideology = {
          popularity = 0
+      }
+      market_liberalism_ideology = {
+         popularity = 42
       }
       centrism_ideology = {
          popularity = 17
@@ -130,7 +130,7 @@ create_country_leader = {
    desc = "POLITICS_ALEXEY_ALADYIN_DESC"
    picture = "Portrait_Russia_Alexey_Aladyin.dds"
    expire = "1960.1.1"
-   ideology = reformist_liberalism
+   ideology = reformist_socialism
    traits = {
    }
 }

@@ -1,11 +1,8 @@
 ideas = {
-
-	# Special ones that can be applied on other countries through focus system.
 	country = {
-		
-		expansionist_efforts = {
-		
-			picture = CZE_planning_bonus
+		# IDEOLOGY DRIFTS 
+		far_left_rhetoric = {
+			picture = generic_communism_drift_bonus
 			
 			allowed = {
 				always = no
@@ -17,10 +14,91 @@ ideas = {
 
 			removal_cost = -1
 			
-			modifier = {	
-				justify_war_goal_time = -0.05
-				send_volunteers_tension = -0.05
-				generate_wargoal_tension = -0.05
+			modifier = {
+				revolutionary_socialism_ideology_drift = 0.05
+				marxism_ideology_drift = 0.05
+			}
+		}
+		
+		# COMMUNIST SPECIFIC IDEAS
+		union_of_the_workers = {
+		
+			picture = trotskyite_plot_purged
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = -0.25
+				political_power_factor = 0.25
+			}
+		}
+		
+		disloyal_comrades_purged = {
+		
+			picture = officers_purged
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.25
+				political_power_factor = -0.25
+			}
+		}
+		
+		
+		# EDUCATION PROGRAMS
+		education_programs = {
+		
+			picture = generic_research_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = -0.05
+			}
+		}
+		
+		mass_education_programs = {
+		
+			picture = generic_research_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_time_factor = -0.05
+				conscription = 0.02
 			}
 		}
 		
@@ -67,6 +145,16 @@ ideas = {
 			}
 		}
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 	
 	political_advisor = {
 	

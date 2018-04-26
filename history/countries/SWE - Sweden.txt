@@ -47,11 +47,11 @@ set_politics = {
       conservatism_ideology = {
          popularity = 30
       }
-      market_liberalism_ideology = {
-         popularity = 39
-      }
       social_liberalism_ideology = {
          popularity = 0
+      }
+      market_liberalism_ideology = {
+         popularity = 39
       }
       centrism_ideology = {
          popularity = 0
@@ -119,7 +119,7 @@ create_country_leader = {
    desc = "POLITICS_OSCAR_NISSEN_DESC"
    picture = "Portrait_Sweden_Oscar_Nissen.dds"
    expire = "1960.1.1"
-   ideology = reformist_liberalism
+   ideology = reformist_socialism
    traits = {
    }
 }

@@ -1,0 +1,38 @@
+ideas = {
+
+	public_preference = { 
+		law = yes
+
+		pp_revolutionary_socialism_ideology = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				
+			}
+
+			modifier = {
+				revolutionary_socialism_ideology_drift = 0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		pp_marxism_ideology = {
+						
+			cost = 150
+			removal_cost = -1
+			
+			available = {
+				
+			}
+
+			modifier = {
+				marxism_ideology_drift = 0.10
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}

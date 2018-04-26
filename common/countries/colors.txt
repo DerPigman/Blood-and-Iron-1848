@@ -91,8 +91,8 @@ RUS = {
    color_ui = rgb { 40 90 40 }
 }
 QIN = {
-   color = rgb { 30 56 80 }
-   color_ui = rgb { 30 56 80 }
+   color = rgb { 8 99 156 }
+   color_ui = rgb { 8 99 156 }
 }
 MON = {
    color = rgb { 108 140 42 }
@@ -125,6 +125,34 @@ TUR = {
 SWE = {
    color = rgb { 36 132 247 }
    color_ui = rgb { 47 172 255 }
+}
+SAR = {
+   color = rgb { 0 206 201 }
+   color_ui = rgb { 0 206 201 }
+}
+VIC = {
+   color = rgb { 253 203 110 }
+   color_ui = rgb { 253 203 110 }
+}
+PAP = {
+   color = rgb { 253 121 168 }
+   color_ui = rgb { 253 121 168 }
+}
+GAR = {
+   color = rgb { 0 184 148 }
+   color_ui = rgb { 0 184 148 }
+}
+FLO = {
+   color = rgb { 225 112 85 }
+   color_ui = rgb { 225 112 85 }
+}
+SIC = {
+   color = rgb { 108 92 231 }
+   color_ui = rgb { 108 92 231 }
+}
+SWI = {
+   color = rgb { 224 5 5 }
+   color_ui = rgb { 193 81 81 }
 }
 NOR = {
    color = rgb { 111 71 71 }

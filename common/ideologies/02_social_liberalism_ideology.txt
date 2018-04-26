@@ -1,8 +1,8 @@
 ideologies = {
-   market_liberalism_ideology = {
+   social_liberalism_ideology = {
 
       types = {
-         market_liberalism = {}
+         social_liberalism = {}
       }
 
       dynamic_faction_names = {
@@ -13,7 +13,7 @@ ideologies = {
          "FACTION_NAME_DEMOCRATIC_5"
       }
 
-      color = { 246 219 102 }
+      color = { 255 233 0 }
 
       war_impact_on_world_tension = -1
       faction_impact_on_world_tension = -0.1

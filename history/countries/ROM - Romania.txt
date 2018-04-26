@@ -39,11 +39,11 @@ set_politics = {
       conservatism_ideology = {
          popularity = 60
       }
-      market_liberalism_ideology = {
-         popularity = 19
-      }
       social_liberalism_ideology = {
          popularity = 0
+      }
+      market_liberalism_ideology = {
+         popularity = 19
       }
       centrism_ideology = {
          popularity = 16
@@ -129,7 +129,7 @@ create_country_leader = {
    desc = "POLITICS_MIHAIL_GHEORGHIU_BUJOR_DESC"
    picture = "Portrait_Romania_Mihail_Gheorghiu_Bujor.dds"
    expire = "1960.1.1"
-   ideology = reformist_liberalism
+   ideology = reformist_socialism
    traits = {
    }
 }

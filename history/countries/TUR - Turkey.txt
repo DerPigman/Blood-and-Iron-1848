@@ -13,6 +13,7 @@ add_political_power = 0
 
 # [2] IDEAS
 add_ideas = {
+   constitutional_monarchy
 }
 
 oob = "TUR_1910"
@@ -39,11 +40,11 @@ set_politics = {
       conservatism_ideology = {
          popularity = 0
       }
-      market_liberalism_ideology = {
-         popularity = 3
-      }
       social_liberalism_ideology = {
          popularity = 0
+      }
+      market_liberalism_ideology = {
+         popularity = 3
       }
       centrism_ideology = {
          popularity = 0

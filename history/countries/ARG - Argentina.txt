@@ -38,11 +38,11 @@ set_politics = {
       conservatism_ideology = {
          popularity = 28
       }
-      market_liberalism_ideology = {
-         popularity = 18
-      }
       social_liberalism_ideology = {
          popularity = 0
+      }
+      market_liberalism_ideology = {
+         popularity = 18
       }
       centrism_ideology = {
          popularity = 25
@@ -110,7 +110,7 @@ create_country_leader = {
    desc = "POLITICS_NICOLAS_REPETTO_DESC"
    picture = "Portrait_Argentina_Nicolas_Repetto.dds"
    expire = "1960.1.1"
-   ideology = reformist_liberalism
+   ideology = reformist_socialism
    traits = {
    }
 }
