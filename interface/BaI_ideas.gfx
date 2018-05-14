@@ -85,3 +85,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/laws/idea_extensive_colonialism.dds"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_cultural_norms"
+		texturefile = "gfx/interface/ideas/laws/idea_cultural_norms.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_pp_supporting_the_status_quo"
+		texturefile = "gfx/interface/ideas/laws/idea_pp_supporting_the_status_quo.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_pp_revolutionary_socialism_ideology"
+		texturefile = "gfx/interface/ideas/laws/idea_pp_revolutionary_socialism_ideology.dds"
+	}
+	

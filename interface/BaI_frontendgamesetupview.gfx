@@ -1,0 +1,36 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_select_date_1880"
+		texturefile = "gfx/interface/bookmarks/select_date_1880.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_select_date_1910"
+		texturefile = "gfx/interface/bookmarks/select_date_1910.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_select_date_1920"
+		texturefile = "gfx/interface/bookmarks/select_date_1920.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_select_date_1930"
+		texturefile = "gfx/interface/bookmarks/select_date_1930.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_select_date_1880_WIP"
+		texturefile = "gfx/interface/bookmarks/select_date_1880_WIP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_select_date_1920_WIP"
+		texturefile = "gfx/interface/bookmarks/select_date_1920_WIP.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_select_date_1930_WIP"
+		texturefile = "gfx/interface/bookmarks/select_date_1930_WIP.dds"
+	}
+}

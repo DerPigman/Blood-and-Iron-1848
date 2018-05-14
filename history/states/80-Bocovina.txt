@@ -7,7 +7,7 @@ state={
 	
 	history=
 	{
-		owner = RUS
+		owner = AUS
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
